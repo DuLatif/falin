@@ -1,0 +1,81 @@
+$font-regular: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+
+$text-h1: 4.5rem;
+$text-h2: 3.75rem;
+$text-h3: 3rem;
+$text-h4: 2.25rem;
+$text-h5: 1.875rem;
+$text-h6: 1.5rem;
+$text-subtitle1: 1.25rem;
+$text-subtitle2: 1.125rem;
+$text-body1: 1rem;
+$text-body2: 0.875rem;
+$text-caption: 0.75rem;
+$text-overline: 0.625rem;
+
+@mixin h1 {
+  font-size: 4.5rem;
+  line-height: 5.625rem;
+  letter-spacing: -2%;
+}
+
+@mixin h2 {
+  font-size: 3.75rem;
+  line-height: 4.5rem;
+  letter-spacing: -2%;
+}
+
+@mixin h3 {
+  font-size: 3rem;
+  line-height: 3.75rem;
+  letter-spacing: -2%;
+}
+
+@mixin h4 {
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  letter-spacing: -2%;
+}
+
+@mixin h5 {
+  font-size: 1.875rem;
+  line-height: 2.375rem;
+}
+
+@mixin h6 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+@mixin subtitle1 {
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+}
+
+@mixin subtitle2 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+@mixin body1 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+@mixin body2 {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+@mixin caption {
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+}
+
+@mixin overline {
+  font-size: 0.625rem;
+  line-height: 1rem;
+}
