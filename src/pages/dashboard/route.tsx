@@ -14,6 +14,8 @@ const styles: { root: SxProps } = {
   root: {
     display: "flex",
     flexDirection: "row",
+    position: "fixed",
+    width: "100vw",
   },
 };
 

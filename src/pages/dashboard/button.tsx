@@ -1,7 +1,13 @@
-import React from "react";
+import ButtonGuide from "@/features/dashboard/button";
+import { CircularProgress } from "@mui/material";
+import React, { Suspense } from "react";
 
 const ButtonPage: React.FC = () => {
-  return <div>ButtonPage</div>;
+  return (
+    <Suspense fallback={<CircularProgress />}>
+      <ButtonGuide />
+    </Suspense>
+  );
 };
 
 export default ButtonPage;
