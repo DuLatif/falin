@@ -18,6 +18,7 @@ import {
   Link,
   Tabs,
   StackSimple,
+  Textbox,
 } from "phosphor-react";
 import { IMenuProps } from "@/components/dashboard/Menu";
 
@@ -58,7 +59,7 @@ export const listComponents: IMenuProps[] = [
   {
     text: "Inputs",
     path: "/dashboard/input",
-    icon: <TextT size={26} weight={"bold"} />,
+    icon: <Textbox size={26} weight={"bold"} />,
   },
   {
     text: "Checkbox",

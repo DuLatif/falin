@@ -7,6 +7,7 @@ import Error404 from "../error/404";
 import ButtonPage from "./button";
 import ColorPage from "./color";
 import HomePage from "./home";
+import InputPage from "./input";
 import ShadowPage from "./shadow";
 import TypographyPage from "./typography";
 
@@ -30,6 +31,7 @@ const DashboardRoute: React.FC = () => {
           <Route path={"/color"} element={<ColorPage />} />
           <Route path={"/button"} element={<ButtonPage />} />
           <Route path={"/shadow"} element={<ShadowPage />} />
+          <Route path={"/input"} element={<InputPage />} />
           <Route path={"*"} element={<Error404 />} />
         </Routes>
       </Content>

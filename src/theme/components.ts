@@ -194,4 +194,72 @@ export const components: Components = {
       },
     },
   },
+  MuiFormControl: {
+    styleOverrides: {
+      root: {
+        marginTop: "16px",
+        "& .MuiFormHelperText-root": {
+          transform: "translate(-14px)",
+          fontSize: "14px",
+          marginTop: "6px",
+        },
+      },
+    },
+  },
+  MuiInputLabel: {
+    defaultProps: {
+      shrink: true,
+    },
+    styleOverrides: {
+      root: {
+        marginBottom: "4px",
+        color: "inherit",
+        "& .MuiFormLabel-asterisk": {
+          color: danger[400],
+        },
+      },
+      shrink: {
+        fontSize: "14px",
+        transform: "scale(1) translate(0px, -8px)",
+      },
+    },
+  },
+  MuiInput: {
+    defaultProps: {
+      disableUnderline: true,
+    },
+    styleOverrides: {
+      root: {
+        "&:not([datatype='select-input'])": {
+          backgroundColor: "#fff",
+          border: `1px solid ${neutral[300]}`,
+          borderRadius: "8px",
+          height: "40px",
+          padding: "8px 12px",
+          width: "100%",
+          transition: ".25s",
+          "& ::placeholder": {
+            color: neutral[500],
+          },
+          "&.Mui-focused": {
+            border: `1px solid ${primary[300]}`,
+            boxShadow: `0px 0px 0px 3px ${primary[100]}`,
+          },
+        },
+        "&.Mui-error": {
+          border: `1px solid ${danger[300]}`,
+          "& svg": {
+            color: danger[500],
+          },
+          "&.Mui-focused": {
+            border: `1px solid ${danger[300]}`,
+            boxShadow: `0px 0px 0px 3px ${danger[100]}`,
+          },
+        },
+        "&.MuiInputBase-multiline": {
+          height: "auto",
+        },
+      },
+    },
+  },
 };
