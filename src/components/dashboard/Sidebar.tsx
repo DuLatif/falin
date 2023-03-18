@@ -21,14 +21,14 @@ const Sidebar: React.FC = () => {
         <Typography className={styles.TitleMenu}>Customization</Typography>
         {listCustomization
           .sort((a, b) => a.text.localeCompare(b.text))
-          .map((item) => (
-            <Menu {...item} />
+          .map((item, i) => (
+            <Menu key={i} {...item} />
           ))}
         <Typography className={styles.TitleMenu}>Components</Typography>
         {listComponents
           .sort((a, b) => a.text.localeCompare(b.text))
-          .map((item) => (
-            <Menu {...item} />
+          .map((item, i) => (
+            <Menu key={i} {...item} />
           ))}
       </MenuList>
     </Box>

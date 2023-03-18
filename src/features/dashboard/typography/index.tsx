@@ -4,7 +4,6 @@ import {
   Divider,
   Grid,
   Stack,
-  SxProps,
   Typography,
   TypographyVariant,
 } from "@mui/material";
@@ -25,22 +24,16 @@ const listTypograpy: TypographyVariant[] = [
   "overline",
 ];
 
-const styles: { card: SxProps } = {
-  card: {
-    padding: "20px",
-    boxShadow: 3,
-  },
-};
 const TypographyList: React.FC = () => {
   return (
     <Box>
       <Typography variant="h6">Typography</Typography>
       <Grid container mt={4} spacing={1}>
         <Grid item md={3}>
-          <Card sx={styles.card}>
+          <Card>
             <Typography variant="h6">Regular</Typography>
             <Divider sx={{ mt: 1, mb: 2 }} />
-            <Stack direction={"column"}>
+            <Stack direction={"column"} spacing={1}>
               {listTypograpy.map((variant, i) => (
                 <Typography variant={variant} key={i} fontWeight="regular">
                   Text {variant}
@@ -50,10 +43,10 @@ const TypographyList: React.FC = () => {
           </Card>
         </Grid>
         <Grid item md={3}>
-          <Card sx={styles.card}>
+          <Card>
             <Typography variant="h6">Medium</Typography>
             <Divider sx={{ mt: 1, mb: 2 }} />
-            <Stack direction={"column"}>
+            <Stack direction={"column"} spacing={1}>
               {listTypograpy.map((variant, i) => (
                 <Typography variant={variant} key={i} fontWeight="medium">
                   Text {variant}
@@ -63,10 +56,10 @@ const TypographyList: React.FC = () => {
           </Card>
         </Grid>
         <Grid item md={3}>
-          <Card sx={styles.card}>
+          <Card>
             <Typography variant="h6">Semi Bold</Typography>
             <Divider sx={{ mt: 1, mb: 2 }} />
-            <Stack direction={"column"}>
+            <Stack direction={"column"} spacing={1}>
               {listTypograpy.map((variant, i) => (
                 <Typography variant={variant} key={i} fontWeight="semiBold">
                   Text {variant}
@@ -76,10 +69,10 @@ const TypographyList: React.FC = () => {
           </Card>
         </Grid>
         <Grid item md={3}>
-          <Card sx={styles.card}>
+          <Card>
             <Typography variant="h6">Bold</Typography>
             <Divider sx={{ mt: 1, mb: 2 }} />
-            <Stack direction={"column"}>
+            <Stack direction={"column"} spacing={1}>
               {listTypograpy.map((variant, i) => (
                 <Typography variant={variant} key={i} fontWeight="bold">
                   Text {variant}

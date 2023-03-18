@@ -1,6 +1,6 @@
 export const neutral = {
-  25: "#f2f4f7",
-  50: "#f9fafb",
+  25: "#f9fafb",
+  50: "#f2f4f7",
   100: "#f2f4f7",
   200: "#eaecf0",
   300: "#d0d5dd",
@@ -19,7 +19,7 @@ export const primary = {
   200: "#b2ccff",
   300: "#84adff",
   400: "#528bff",
-  500: "#2970ff",
+  500: "#2970dd",
   600: "#155eef",
   700: "#004eeb",
   800: "#0040c1",
