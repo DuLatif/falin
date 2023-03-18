@@ -1,9 +1,9 @@
 // ------------- Sidebar ------------
 .Sidebar {
-  width: 350px;
+  width: 280px;
   height: 100vh;
   overflow: auto;
-  padding: 24px 32px;
+  padding: 12px 24px;
   border-right: 1px solid $neutral-200;
 
   .Header {
@@ -23,6 +23,7 @@
     margin-bottom: 4px;
     border-radius: 8px;
     padding: 12px 24px;
+    transition: 0.25s;
 
     p:global(.MuiTypography-root) {
       text-decoration: none;
@@ -31,10 +32,10 @@
     }
 
     &.Active {
-      background-color: $primary-50;
+      background-color: $primary-400;
       p:global(.MuiTypography-root),
       svg {
-        color: $primary-500;
+        color: $primary-50;
       }
     }
   }

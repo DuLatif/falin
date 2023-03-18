@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Typography, Stack, Box } from "@mui/material";
 
-const Error404 = () => {
+const Error404: React.FC = () => {
   return (
     <>
       <Container maxWidth="xl">

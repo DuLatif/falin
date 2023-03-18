@@ -1,7 +1,13 @@
-import React from "react";
+import TypographyList from "@/features/dashboard/typography";
+import { CircularProgress } from "@mui/material";
+import React, { Suspense } from "react";
 
 const TypographyPage: React.FC = () => {
-  return <div>TypographyPage</div>;
+  return (
+    <Suspense fallback={<CircularProgress />}>
+      <TypographyList />
+    </Suspense>
+  );
 };
 
 export default TypographyPage;
