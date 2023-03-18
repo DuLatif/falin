@@ -1,0 +1,49 @@
+// ------------- Sidebar ------------
+.Sidebar {
+  width: 350px;
+  height: 100vh;
+  overflow: auto;
+  padding: 24px 32px;
+  border-right: 1px solid $neutral-200;
+
+  .Header {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid $neutral-200;
+  }
+
+  .TitleMenu {
+    @include body2;
+    font-weight: $font-bold;
+    margin-bottom: 8px;
+    margin-top: 20px;
+  }
+
+  .Menu {
+    margin-bottom: 4px;
+    border-radius: 8px;
+    padding: 12px 24px;
+
+    p:global(.MuiTypography-root) {
+      text-decoration: none;
+      margin-left: 12px;
+      color: $neutral-500;
+    }
+
+    &.Active {
+      background-color: $primary-50;
+      p:global(.MuiTypography-root),
+      svg {
+        color: $primary-500;
+      }
+    }
+  }
+}
+
+// ------------- Content ------------
+.Content {
+  background-color: $neutral-100;
+  flex: 1;
+  height: 100vh;
+  padding: 32px;
+}
