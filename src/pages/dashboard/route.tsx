@@ -7,6 +7,7 @@ import Error404 from "../error/404";
 import ButtonPage from "./button";
 import ColorPage from "./color";
 import HomePage from "./home";
+import ShadowPage from "./shadow";
 import TypographyPage from "./typography";
 
 const styles: { root: SxProps } = {
@@ -26,6 +27,7 @@ const DashboardRoute: React.FC = () => {
           <Route path={"/typography"} element={<TypographyPage />} />
           <Route path={"/color"} element={<ColorPage />} />
           <Route path={"/button"} element={<ButtonPage />} />
+          <Route path={"/shadow"} element={<ShadowPage />} />
           <Route path={"*"} element={<Error404 />} />
         </Routes>
       </Content>
