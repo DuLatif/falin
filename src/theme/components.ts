@@ -316,4 +316,22 @@ export const components: Components = {
       },
     },
   },
+  MuiTooltip: {
+    defaultProps: {
+      arrow: true,
+      placement: "top",
+    },
+    styleOverrides: {
+      tooltip: {
+        padding: "8px 12px",
+        background: "#fff",
+        color: neutral[500],
+        boxShadow: shadows.lg,
+        borderRadius: "8px",
+      },
+      arrow: {
+        color: "#fff",
+      },
+    },
+  },
 };

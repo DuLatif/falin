@@ -12,6 +12,7 @@ import HomePage from "./home";
 import InputPage from "./input";
 import RadioPage from "./radio";
 import ShadowPage from "./shadow";
+import TooltipPage from "./tooltip";
 import TypographyPage from "./typography";
 
 const styles: { root: SxProps } = {
@@ -38,6 +39,7 @@ const DashboardRoute: React.FC = () => {
           <Route path={"/checkbox"} element={<CheckboxPage />} />
           <Route path={"/radio"} element={<RadioPage />} />
           <Route path={"/alert"} element={<AlertPage />} />
+          <Route path={"/tooltip"} element={<TooltipPage />} />
           <Route path={"*"} element={<Error404 />} />
         </Routes>
       </Content>
