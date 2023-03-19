@@ -271,4 +271,49 @@ export const components: Components = {
       },
     },
   },
+  MuiAlert: {
+    styleOverrides: {
+      root: {
+        borderRadius: "12px",
+      },
+      filled: {
+        color: "#fff",
+      },
+      filledError: {
+        background: danger[400],
+      },
+      filledWarning: {
+        background: warning[300],
+      },
+      filledInfo: {
+        background: info[500],
+      },
+      filledSuccess: {
+        background: success[400],
+      },
+      outlinedError: {
+        border: `1px solid ${danger[300]}`,
+        color: danger[700],
+      },
+      outlinedWarning: {
+        border: `1px solid ${warning[300]}`,
+        color: warning[700],
+      },
+      outlinedInfo: {
+        border: `1px solid ${info[300]}`,
+        color: info[700],
+      },
+      outlinedSuccess: {
+        border: `1px solid ${success[300]}`,
+        color: success[700],
+      },
+    },
+  },
+  MuiAlertTitle: {
+    styleOverrides: {
+      root: {
+        fontWeight: 600,
+      },
+    },
+  },
 };

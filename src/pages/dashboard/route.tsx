@@ -4,6 +4,7 @@ import { Box, SxProps } from "@mui/material";
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Error404 from "../error/404";
+import AlertPage from "./alert";
 import ButtonPage from "./button";
 import CheckboxPage from "./checkbox";
 import ColorPage from "./color";
@@ -36,6 +37,7 @@ const DashboardRoute: React.FC = () => {
           <Route path={"/input"} element={<InputPage />} />
           <Route path={"/checkbox"} element={<CheckboxPage />} />
           <Route path={"/radio"} element={<RadioPage />} />
+          <Route path={"/alert"} element={<AlertPage />} />
           <Route path={"*"} element={<Error404 />} />
         </Routes>
       </Content>
