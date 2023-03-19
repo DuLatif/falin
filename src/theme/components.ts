@@ -262,4 +262,13 @@ export const components: Components = {
       },
     },
   },
+  MuiFormControlLabel: {
+    styleOverrides: {
+      root: {
+        "&.MuiFormControlLabel-label": {
+          fontWeight: 400,
+        },
+      },
+    },
+  },
 };

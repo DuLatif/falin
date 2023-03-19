@@ -5,9 +5,11 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Error404 from "../error/404";
 import ButtonPage from "./button";
+import CheckboxPage from "./checkbox";
 import ColorPage from "./color";
 import HomePage from "./home";
 import InputPage from "./input";
+import RadioPage from "./radio";
 import ShadowPage from "./shadow";
 import TypographyPage from "./typography";
 
@@ -32,6 +34,8 @@ const DashboardRoute: React.FC = () => {
           <Route path={"/button"} element={<ButtonPage />} />
           <Route path={"/shadow"} element={<ShadowPage />} />
           <Route path={"/input"} element={<InputPage />} />
+          <Route path={"/checkbox"} element={<CheckboxPage />} />
+          <Route path={"/radio"} element={<RadioPage />} />
           <Route path={"*"} element={<Error404 />} />
         </Routes>
       </Content>
