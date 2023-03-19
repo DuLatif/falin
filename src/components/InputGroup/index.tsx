@@ -16,6 +16,7 @@ const InputGroup: React.FC<IInputGroup> = (props) => {
   const { label, helperText, ...inputProps } = props;
   return (
     <FormControl
+      fullWidth
       required={props.required}
       error={props.error}
       disabled={props.disabled}

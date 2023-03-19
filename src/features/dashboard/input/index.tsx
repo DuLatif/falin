@@ -9,13 +9,16 @@ import {
 } from "@mui/material";
 import { CurrencyDollar, EnvelopeSimple, Question } from "phosphor-react";
 import React from "react";
+import BaseInput from "./BasicInput";
 
 const InputGuide: React.FC = () => {
   return (
     <Box>
       <Typography variant="h6">Input Guide</Typography>
+      <Box mt={4}></Box>
+      <BaseInput />
       <Card sx={{ mt: 4 }}>
-        <Stack direction="column" gap={1}>
+        <Stack direction="column" gap={1} mt={4}>
           <Grid container spacing={2}>
             <Grid item md={3}>
               <InputGroup label="Name" placeholder="Full Name" />
@@ -159,6 +162,7 @@ const InputGuide: React.FC = () => {
               />
             </Grid>
           </Grid>
+
           <Grid container spacing={2}>
             <Grid item md={3}>
               <InputGroup
