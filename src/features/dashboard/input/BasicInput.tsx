@@ -31,20 +31,20 @@ const BasicInputGuide: React.FC = () => {
         </Grid>
         <Grid item md={6}>
           <InputGroup
+            label="Readonly input"
+            placeholder="This is value"
+            readOnly
+          />
+          <CodeSnippet code={baseInputReadonly} />
+        </Grid>
+        <Grid item md={6}>
+          <InputGroup
             label="Disabled Input"
             placeholder="This is value"
             type="text"
             disabled
           />
           <CodeSnippet code={baseInputDisabled} />
-        </Grid>
-        <Grid item md={6}>
-          <InputGroup
-            label="Readonly input"
-            placeholder="This is value"
-            readOnly
-          />
-          <CodeSnippet code={baseInputReadonly} />
         </Grid>
       </Grid>
     </Card>

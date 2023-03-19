@@ -14,7 +14,7 @@ const InputAdormentGuide: React.FC = () => {
   return (
     <Card sx={{ mb: 4 }}>
       <Typography variant="subtitle1" fontWeight={"semiBold"}>
-        Input Adorment
+        Input Adornment
       </Typography>
       <Grid container spacing={2}>
         <Grid item md={6}>

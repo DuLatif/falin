@@ -1,3 +1,4 @@
+// =============== Basic Input ================
 const baseContainer = (code: string) => {
   return `import React from "react";
 import InputGroup from "@/components/InputGroup";
@@ -33,6 +34,8 @@ export const baseInputReadonly = baseContainer(`<InputGroup
         placeholder="This is value"
         readOnly
       />`);
+
+// =============== Input Adornment ================
 
 export const inputAdorName = `import React from "react";
 import InputGroup from "@/components/InputGroup";
@@ -117,6 +120,120 @@ const App : React.FC = () => {
         type="number"
         value={20}
         disabled
+        startAdornment={
+          <InputAdornment position="start">
+            <CurrencyDollar size={22} />
+          </InputAdornment>
+        }
+      />
+    </Box>
+  )
+}`;
+
+// =============== Input Helper Text ================
+export const inputHelperName = `import React from "react";
+import InputGroup from "@/components/InputGroup";
+
+const App : React.FC = () => {
+  return (
+    <Box>
+      <InputGroup
+        label="Name"
+        placeholder="Full Name"
+        helperText="This is a hint text to help user"
+      />
+    </Box>
+  )
+}`;
+
+export const inputHelperEmail = `import React from "react";
+import InputGroup from "@/components/InputGroup";
+import { InputAdornment } from "@mui/material":
+import { EnvelopeSimple } from "phosphor-react";
+
+const App : React.FC = () => {
+  return (
+    <Box>
+      <InputGroup
+        label="Email"
+        placeholder="email@address.com"
+        required
+        helperText="This is required input"
+        startAdornment={
+          <InputAdornment position="start">
+            <EnvelopeSimple size={22} />
+          </InputAdornment>
+        }
+      />
+    </Box>
+  )
+}`;
+
+export const inputHelperReadonly = `import React from "react";
+import InputGroup from "@/components/InputGroup";
+
+const App : React.FC = () => {
+  return (
+    <Box>
+      <InputGroup
+        label="Readonly input"
+        placeholder="This is value"
+        helperText="This is readonly input"
+        readOnly
+      />
+    </Box>
+  )
+}`;
+
+export const inputHelperDisabled = `import React from "react";
+import InputGroup from "@/components/InputGroup";
+
+const App : React.FC = () => {
+  return (
+    <Box>
+      <InputGroup
+        label="Disabled Input"
+        placeholder="This is value"
+        type="text"
+        disabled
+        helperText="This is disabled input"
+      />
+    </Box>
+  )
+}`;
+
+export const inputHelperAddress = `import React from "react";
+import InputGroup from "@/components/InputGroup";
+
+const App : React.FC = () => {
+  return (
+    <Box>
+      <InputGroup
+        error
+        required
+        helperText="This is error message"
+        label="Address"
+        placeholder="Your address"
+      />
+    </Box>
+  )
+}`;
+
+export const inputHelperSale = `import React from "react";
+import InputGroup from "@/components/InputGroup";
+import { InputAdornment } from "@mui/material":
+import { CurrencyDollar } from "phosphor-react";
+
+const App : React.FC = () => {
+  return (
+    <Box>
+      <InputGroup
+        error
+        required
+        helperText="This is error message"
+        label="Sale Amount"
+        type="number"
+        placeholder="1.000"
         startAdornment={
           <InputAdornment position="start">
             <CurrencyDollar size={22} />
