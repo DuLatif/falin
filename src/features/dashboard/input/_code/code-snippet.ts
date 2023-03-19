@@ -1,55 +1,127 @@
-export const baseInputName = `import React from "react";
+const baseContainer = (code: string) => {
+  return `import React from "react";
 import InputGroup from "@/components/InputGroup";
 
 const App : React.FC = () => {
   return (
     <Box>
-      <InputGroup label="Name" placeholder="Full Name" />
+      ${code}
     </Box>
   )
 }`;
+};
+export const baseInputName = baseContainer(
+  `<InputGroup label="Name" placeholder="Full Name" />`
+);
 
-export const baseInputAmount = `import React from "react";
-import InputGroup from "@/components/InputGroup";
-
-const App : React.FC = () => {
-  return (
-    <Box>
-      <InputGroup
+export const baseInputAmount = baseContainer(`<InputGroup
+        required
         label="Amount"
         placeholder="Donation Amount"
         type="number"
-      />
-    </Box>
-  )
-}`;
+      />`);
 
-export const baseInputDisabled = `import React from "react";
-import InputGroup from "@/components/InputGroup";
-
-const App : React.FC = () => {
-  return (
-    <Box>
-      <InputGroup
+export const baseInputDisabled = baseContainer(`<InputGroup
         label="Disabled Input"
         placeholder="This is value"
         type="text"
         disabled
-      />
-    </Box>
-  )
-}`;
+      />`);
 
-export const baseInputReadonly = `import React from "react";
+export const baseInputReadonly = baseContainer(`<InputGroup
+        label="Readonly input"
+        placeholder="This is value"
+        readOnly
+      />`);
+
+export const inputAdorName = `import React from "react";
 import InputGroup from "@/components/InputGroup";
+import { InputAdornment } from "@mui/material":
+import { User } from "phosphor-react";
 
 const App : React.FC = () => {
   return (
     <Box>
       <InputGroup
-        label="Readonly input"
-        placeholder="This is value"
+        label="Name"
+        placeholder="Full Name"
+        startAdornment={
+          <InputAdornment position="start">
+            <User size={22} />
+          </InputAdornment>
+        }
+      />
+    </Box>
+  )
+}`;
+
+export const inputAdorEmail = `import React from "react";
+import InputGroup from "@/components/InputGroup";
+import { InputAdornment } from "@mui/material":
+import { EnvelopeSimple } from "phosphor-react";
+
+const App : React.FC = () => {
+  return (
+    <Box>
+      <InputGroup
+        label="Email"
+        placeholder="email@address.com"
+        required
+        startAdornment={
+          <InputAdornment position="start">
+            <EnvelopeSimple size={22} />
+          </InputAdornment>
+        }
+      />
+    </Box>
+  )
+}`;
+
+export const inputAdorAddress = `import React from "react";
+import InputGroup from "@/components/InputGroup";
+import { InputAdornment } from "@mui/material":
+import { Question } from "phosphor-react";
+
+const App : React.FC = () => {
+  return (
+    <Box>
+      <InputGroup
+        label="Address"
+        placeholder="Your address"
+        required
         readOnly
+        value="Singpore"
+        endAdornment={
+          <InputAdornment position="end">
+            <Tooltip title="This is tooltip description">
+              <Question size={22} />
+            </Tooltip>
+          </InputAdornment>
+        }
+      />
+    </Box>
+  )
+}`;
+
+export const inputAdorAmount = `import React from "react";
+import InputGroup from "@/components/InputGroup";
+import { InputAdornment } from "@mui/material":
+import { CurrencyDollar } from "phosphor-react";
+
+const App : React.FC = () => {
+  return (
+    <Box>
+      <InputGroup
+        label="Donation Amount"
+        placeholder="Amount"
+        type="number"
+        value={20}
+        disabled
+        startAdornment={
+          <InputAdornment position="start">
+            <CurrencyDollar size={22} />
+          </InputAdornment>
+        }
       />
     </Box>
   )

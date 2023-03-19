@@ -1,6 +1,6 @@
 import CodeSnippet from "@/components/CodeSnippet";
 import InputGroup from "@/components/InputGroup";
-import { Box, Card, Grid, Typography } from "@mui/material";
+import { Card, Grid, Typography } from "@mui/material";
 import React from "react";
 import {
   baseInputAmount,
@@ -9,7 +9,7 @@ import {
   baseInputReadonly,
 } from "./_code/code-snippet";
 
-const BasicInput: React.FC = () => {
+const BasicInputGuide: React.FC = () => {
   return (
     <Card sx={{ mb: 4 }}>
       <Typography variant="subtitle1" fontWeight={"semiBold"}>
@@ -17,40 +17,33 @@ const BasicInput: React.FC = () => {
       </Typography>
       <Grid container spacing={2}>
         <Grid item md={6}>
-          <Box>
-            <InputGroup label="Name" placeholder="Full Name" />
-          </Box>
+          <InputGroup label="Name" placeholder="Full Name" />
           <CodeSnippet code={baseInputName} />
         </Grid>
         <Grid item md={6}>
-          <Box sx={{ width: "100%" }}>
-            <InputGroup
-              label="Amount"
-              placeholder="Donation Amount"
-              type="number"
-            />
-          </Box>
+          <InputGroup
+            required
+            label="Amount"
+            placeholder="Donation Amount"
+            type="number"
+          />
           <CodeSnippet code={baseInputAmount} />
         </Grid>
         <Grid item md={6}>
-          <Box sx={{ width: "100%" }}>
-            <InputGroup
-              label="Disabled Input"
-              placeholder="This is value"
-              type="text"
-              disabled
-            />
-          </Box>
+          <InputGroup
+            label="Disabled Input"
+            placeholder="This is value"
+            type="text"
+            disabled
+          />
           <CodeSnippet code={baseInputDisabled} />
         </Grid>
         <Grid item md={6}>
-          <Box sx={{ width: "100%" }}>
-            <InputGroup
-              label="Readonly input"
-              placeholder="This is value"
-              readOnly
-            />
-          </Box>
+          <InputGroup
+            label="Readonly input"
+            placeholder="This is value"
+            readOnly
+          />
           <CodeSnippet code={baseInputReadonly} />
         </Grid>
       </Grid>
@@ -58,4 +51,4 @@ const BasicInput: React.FC = () => {
   );
 };
 
-export default BasicInput;
+export default BasicInputGuide;
