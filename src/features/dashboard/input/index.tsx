@@ -1,9 +1,9 @@
-import InputGroup from "@/components/InputGroup";
-import { Box, Card, Grid, Stack, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import React from "react";
 import BaseInputGuide from "./BasicInput";
 import InputAdormentGuide from "./InputAdorment";
 import InputHelperTextGuide from "./InputHelperText";
+import InputMultilineGuide from "./InputMultiline";
 
 const InputGuide: React.FC = () => {
   return (
@@ -13,50 +13,7 @@ const InputGuide: React.FC = () => {
       <BaseInputGuide />
       <InputAdormentGuide />
       <InputHelperTextGuide />
-      <Card sx={{ mt: 4 }}>
-        <Stack direction="column" gap={1} mt={4}>
-          <Grid container spacing={2}>
-            <Grid item md={3}>
-              <InputGroup
-                label="Description"
-                placeholder="Description"
-                multiline
-                minRows={4}
-              />
-            </Grid>
-            <Grid item md={3}>
-              <InputGroup
-                label="Description"
-                required
-                placeholder="Description"
-                multiline
-                minRows={4}
-              />
-            </Grid>
-            <Grid item md={3}>
-              <InputGroup
-                label="Description"
-                required
-                placeholder="Description"
-                multiline
-                minRows={4}
-                helperText="This is a hint to help user"
-              />
-            </Grid>
-            <Grid item md={3}>
-              <InputGroup
-                label="Description"
-                required
-                placeholder="Description"
-                multiline
-                error
-                minRows={4}
-                helperText="This is an error message"
-              />
-            </Grid>
-          </Grid>
-        </Stack>
-      </Card>
+      <InputMultilineGuide />
     </Box>
   );
 };

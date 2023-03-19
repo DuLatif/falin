@@ -243,3 +243,45 @@ const App : React.FC = () => {
     </Box>
   )
 }`;
+
+// =============== Input Multiline ================
+export const inputMultiline1 = baseContainer(`<Grid container spacing={2}>
+        <Grid item md={6}>
+          <InputGroup
+            label="Description"
+            placeholder="Description"
+            multiline
+            minRows={4}
+          />
+        </Grid>
+        <Grid item md={6}>
+          <InputGroup
+            label="Description"
+            required
+            placeholder="Description"
+            multiline
+            minRows={4}
+          />
+        </Grid>
+        <Grid item md={6}>
+          <InputGroup
+            label="Description"
+            required
+            placeholder="Description"
+            multiline
+            minRows={4}
+            helperText="This is a hint to help user"
+          />
+        </Grid>
+        <Grid item md={6}>
+          <InputGroup
+            label="Description"
+            required
+            placeholder="Description"
+            multiline
+            error
+            minRows={4}
+            helperText="This is an error message"
+          />
+        </Grid>
+      </Grid>`);
