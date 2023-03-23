@@ -17,6 +17,7 @@ import RadioPage from "./radio";
 import SelectPage from "./select";
 import ShadowPage from "./shadow";
 import SnackbarPage from "./snackbar";
+import TablePage from "./table";
 import TooltipPage from "./tooltip";
 import TypographyPage from "./typography";
 
@@ -50,6 +51,7 @@ const DashboardRoute: React.FC = () => {
           <Route path={"/avatar"} element={<AvatarPage />} />
           <Route path={"/snackbar"} element={<SnackbarPage />} />
           <Route path={"/modal"} element={<ModalPage />} />
+          <Route path={"/table"} element={<TablePage />} />
           <Route path={"*"} element={<Error404 />} />
         </Routes>
       </Content>

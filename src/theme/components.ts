@@ -524,4 +524,79 @@ export const components: Components = {
       },
     },
   },
+  MuiTableHead: {
+    styleOverrides: {
+      root: {
+        "& .MuiTableRow-root .MuiTableCell-root": {
+          color: neutral[700],
+          fontSize: "12px",
+          borderTop: `1px solid ${neutral[200]}`,
+        },
+      },
+    },
+  },
+  MuiTableBody: {
+    styleOverrides: {
+      root: {
+        "& .MuiTableRow-root .MuiTableCell-root": {
+          color: neutral[700],
+        },
+        "& .MuiTableRow-root .MuiTableCell-root svg": {
+          width: "17px",
+        },
+        "&.hoverable .MuiTableRow-root:hover": {
+          backgroundColor: info[50],
+          cursor: "pointer",
+          "& .MuiTableCell-root": {
+            color: neutral[900],
+          },
+        },
+      },
+    },
+  },
+  MuiTableCell: {
+    styleOverrides: {
+      root: {
+        fontWeight: 500,
+        fontSize: "14px",
+        height: "54px",
+        padding: "0px 16px",
+        borderBottom: `1px solid ${neutral[200]}`,
+        "& a": {
+          color: neutral[700],
+        },
+        "& .MuiIconButton-root.MuiButtonBase-root": {
+          width: "28px",
+          height: "28px",
+          padding: "0",
+          borderRadius: "4px",
+          "& svg": {
+            color: neutral[500],
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%) scale(.9)",
+          },
+        },
+        "& .MuiIconButton-root.MuiButtonBase-root:hover": {
+          background: info[100],
+          "& svg": {
+            color: info[500],
+          },
+        },
+      },
+    },
+  },
+  MuiPaginationItem: {
+    styleOverrides: {
+      root: {
+        "&.Mui-selected": {
+          color: primary[500],
+          background: primary[50],
+          fontWeight: 500,
+          pointerEvents: "none",
+        },
+      },
+    },
+  },
 };

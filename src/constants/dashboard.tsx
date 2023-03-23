@@ -118,7 +118,7 @@ export const listComponents: IMenuProps[] = [
   },
   {
     text: "Tabs",
-    path: "/dashboard/tab",
+    path: "/dashboard/tabs",
     icon: <Tabs size={26} weight={"bold"} />,
   },
   {
