@@ -126,4 +126,9 @@ export const listComponents: IMenuProps[] = [
     path: "/dashboard/modal",
     icon: <StackSimple size={26} weight={"bold"} />,
   },
+  {
+    text: "Select",
+    path: "/dashboard/select",
+    icon: <Rows size={26} weight={"bold"} />,
+  },
 ];

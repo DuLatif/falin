@@ -11,6 +11,7 @@ import ColorPage from "./color";
 import HomePage from "./home";
 import InputPage from "./input";
 import RadioPage from "./radio";
+import SelectPage from "./select";
 import ShadowPage from "./shadow";
 import TooltipPage from "./tooltip";
 import TypographyPage from "./typography";
@@ -40,6 +41,7 @@ const DashboardRoute: React.FC = () => {
           <Route path={"/radio"} element={<RadioPage />} />
           <Route path={"/alert"} element={<AlertPage />} />
           <Route path={"/tooltip"} element={<TooltipPage />} />
+          <Route path={"/select"} element={<SelectPage />} />
           <Route path={"*"} element={<Error404 />} />
         </Routes>
       </Content>

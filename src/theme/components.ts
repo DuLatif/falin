@@ -1,6 +1,7 @@
 import { Components } from "@mui/material";
 import { danger, info, neutral, primary, success, warning } from "./colors";
 import { shadows } from "./shadows";
+import { CaretDown } from "phosphor-react";
 
 declare module "@mui/material/Button" {
   interface ButtonPropsSizeOverrides {
@@ -195,6 +196,9 @@ export const components: Components = {
     },
   },
   MuiFormControl: {
+    defaultProps: {
+      fullWidth: true,
+    },
     styleOverrides: {
       root: {
         marginTop: "16px",
@@ -224,28 +228,39 @@ export const components: Components = {
       },
     },
   },
+  MuiFormLabel: {
+    styleOverrides: {
+      root: {
+        fontSize: "14px",
+        marginBottom: "4px",
+        color: "inherit",
+        "& .MuiFormLabel-asterisk": {
+          color: danger[400],
+        },
+      },
+    },
+  },
   MuiInput: {
     defaultProps: {
       disableUnderline: true,
     },
     styleOverrides: {
       root: {
-        "&:not([datatype='select-input'])": {
-          backgroundColor: "#fff",
-          border: `1px solid ${neutral[300]}`,
-          borderRadius: "8px",
-          height: "40px",
-          padding: "8px 12px",
-          width: "100%",
-          transition: ".25s",
-          "& ::placeholder": {
-            color: neutral[500],
-          },
-          "&.Mui-focused": {
-            border: `1px solid ${primary[300]}`,
-            boxShadow: `0px 0px 0px 3px ${primary[100]}`,
-          },
+        backgroundColor: "#fff",
+        border: `1px solid ${neutral[300]}`,
+        borderRadius: "8px",
+        height: "40px",
+        padding: "8px 12px",
+        width: "100%",
+        transition: ".25s",
+        "& ::placeholder": {
+          color: neutral[500],
         },
+        "&.Mui-focused": {
+          border: `1px solid ${primary[300]}`,
+          boxShadow: `0px 0px 0px 3px ${primary[100]}`,
+        },
+        "&:not([datatype='select-input'])": {},
         "&.Mui-error": {
           border: `1px solid ${danger[300]}`,
           "& svg": {
@@ -258,6 +273,22 @@ export const components: Components = {
         },
         "&.MuiInputBase-multiline": {
           height: "auto",
+        },
+        "& svg.MuiSelect-icon": {
+          fontSize: "20px",
+          right: "12px",
+          "& polyline": {
+            strokeWidth: "20px",
+          },
+        },
+      },
+    },
+  },
+  MuiInputBase: {
+    styleOverrides: {
+      root: {
+        "&[datatype='select-input']": {
+          marginTop: "0px",
         },
       },
     },
@@ -331,6 +362,55 @@ export const components: Components = {
       },
       arrow: {
         color: "#fff",
+      },
+    },
+  },
+  MuiSelect: {
+    defaultProps: {
+      variant: "standard",
+      disableUnderline: true,
+      datatype: "select-input",
+      MenuProps: {
+        PaperProps: {
+          className: "select-dropdown",
+        },
+      },
+      IconComponent: CaretDown,
+    },
+    styleOverrides: {
+      standard: {
+        ":focus": {
+          backgroundColor: "#fff",
+        },
+      },
+    },
+  },
+  MuiPaper: {
+    styleOverrides: {
+      root: {
+        "&.select-dropdown": {
+          padding: "4px 10px",
+          border: "1px solid #EAECF0",
+          boxShadow:
+            "0px 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03)",
+          borderRadius: "8px",
+        },
+        "&.select-dropdown ul": {
+          display: "flex",
+          flexDirection: "column",
+          gap: "4px",
+        },
+        "&.select-dropdown li.MuiMenuItem-root": {
+          borderRadius: "6px",
+          height: "44px",
+          padding: "0px 20px",
+          "&:active": {
+            backgroundColor: primary[200],
+          },
+        },
+        "&.select-dropdown li.MuiMenuItem-root[data-value=' ']": {
+          display: "none",
+        },
       },
     },
   },
