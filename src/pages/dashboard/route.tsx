@@ -12,6 +12,7 @@ import CheckboxPage from "./checkbox";
 import ColorPage from "./color";
 import HomePage from "./home";
 import InputPage from "./input";
+import ModalPage from "./modal";
 import RadioPage from "./radio";
 import SelectPage from "./select";
 import ShadowPage from "./shadow";
@@ -48,6 +49,7 @@ const DashboardRoute: React.FC = () => {
           <Route path={"/badge"} element={<BadgePage />} />
           <Route path={"/avatar"} element={<AvatarPage />} />
           <Route path={"/snackbar"} element={<SnackbarPage />} />
+          <Route path={"/modal"} element={<ModalPage />} />
           <Route path={"*"} element={<Error404 />} />
         </Routes>
       </Content>

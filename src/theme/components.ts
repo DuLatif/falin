@@ -499,4 +499,29 @@ export const components: Components = {
       },
     },
   },
+  MuiModal: {
+    styleOverrides: {
+      root: {
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        "& > .MuiBox-root": {
+          position: "relative",
+          background: "#fff",
+          boxShadow: "0px 24px 48px -12px rgba(16, 24, 40, 0.18)",
+          minWidth: "300px",
+          maxWidth: "900px",
+          minHeight: "100px",
+          borderRadius: "12px",
+          outline: "none",
+          padding: "20px",
+        },
+        "& .btn-close": {
+          position: "absolute",
+          right: "12px",
+          top: "12px",
+        },
+      },
+    },
+  },
 };
