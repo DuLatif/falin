@@ -5,6 +5,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Error404 from "../error/404";
 import AlertPage from "./alert";
+import BadgePage from "./badge";
 import ButtonPage from "./button";
 import CheckboxPage from "./checkbox";
 import ColorPage from "./color";
@@ -42,6 +43,7 @@ const DashboardRoute: React.FC = () => {
           <Route path={"/alert"} element={<AlertPage />} />
           <Route path={"/tooltip"} element={<TooltipPage />} />
           <Route path={"/select"} element={<SelectPage />} />
+          <Route path={"/badge"} element={<BadgePage />} />
           <Route path={"*"} element={<Error404 />} />
         </Routes>
       </Content>

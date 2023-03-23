@@ -414,4 +414,73 @@ export const components: Components = {
       },
     },
   },
+  MuiChip: {
+    styleOverrides: {
+      sizeMedium: {
+        padding: "2px 0px",
+        fontSize: "14px",
+        fontWeight: 500,
+      },
+      sizeSmall: {
+        fontSize: "12px",
+      },
+      outlined: {
+        borderWidth: "2px",
+        borderColor: neutral[700],
+        color: neutral[700],
+      },
+      outlinedPrimary: {
+        borderColor: primary[700],
+        color: primary[700],
+      },
+      filled: {
+        background: neutral[100],
+        color: neutral[700],
+      },
+      filledPrimary: {
+        background: primary[50],
+        color: primary[700],
+      },
+      colorError: {
+        "&.MuiChip-filled": {
+          background: danger[50],
+          color: danger[700],
+        },
+        "&.MuiChip-outlined": {
+          borderColor: danger[700],
+          color: danger[700],
+        },
+      },
+      colorSuccess: {
+        "&.MuiChip-filled": {
+          background: success[50],
+          color: success[700],
+        },
+        "&.MuiChip-outlined": {
+          borderColor: success[700],
+          color: success[700],
+        },
+      },
+      colorInfo: {
+        "&.MuiChip-filled": {
+          background: info[50],
+          color: info[700],
+        },
+        "&.MuiChip-outlined": {
+          borderColor: info[700],
+          color: info[700],
+        },
+      },
+      colorWarning: {
+        "&.MuiChip-filled": {
+          background: warning[50],
+          color: warning[700],
+        },
+        "&.MuiChip-outlined": {
+          borderColor: warning[700],
+          color: warning[700],
+        },
+      },
+    },
+  },
 };
