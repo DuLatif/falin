@@ -483,4 +483,20 @@ export const components: Components = {
       },
     },
   },
+  MuiSnackbar: {
+    defaultProps: {
+      anchorOrigin: {
+        vertical: "bottom",
+        horizontal: "right",
+      },
+    },
+    styleOverrides: {
+      root: {
+        "& .MuiPaper-root": {
+          background: "#fff",
+          color: neutral[700],
+        },
+      },
+    },
+  },
 };
