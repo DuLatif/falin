@@ -1,6 +1,6 @@
-import CheckboxGuide from "@/features/dashboard/checkbox";
 import { CircularProgress } from "@mui/material";
-import React, { Suspense } from "react";
+import React, { lazy, Suspense } from "react";
+const CheckboxGuide = lazy(() => import("@/features/dashboard/checkbox"));
 
 const CheckboxPage: React.FC = () => {
   return (

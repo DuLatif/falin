@@ -1,6 +1,6 @@
-import SnackbarGuide from "@/features/dashboard/snackbar";
 import { CircularProgress } from "@mui/material";
-import React, { Suspense } from "react";
+import React, { lazy, Suspense } from "react";
+const SnackbarGuide = lazy(() => import("@/features/dashboard/snackbar"));
 
 const SnackbarPage: React.FC = () => {
   return (

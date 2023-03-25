@@ -1,6 +1,6 @@
-import RadioGuide from "@/features/dashboard/radio";
 import { CircularProgress } from "@mui/material";
-import React, { Suspense } from "react";
+import React, { lazy, Suspense } from "react";
+const RadioGuide = lazy(() => import("@/features/dashboard/radio"));
 
 const RadioPage: React.FC = () => {
   return (

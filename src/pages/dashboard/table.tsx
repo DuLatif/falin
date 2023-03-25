@@ -1,6 +1,6 @@
-import TableGuide from "@/features/dashboard/table";
 import { CircularProgress } from "@mui/material";
-import React, { Suspense } from "react";
+import React, { lazy, Suspense } from "react";
+const TableGuide = lazy(() => import("@/features/dashboard/table"));
 
 const TablePage: React.FC = () => {
   return (

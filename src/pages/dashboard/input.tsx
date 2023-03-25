@@ -1,6 +1,6 @@
-import InputGuide from "@/features/dashboard/input";
 import { CircularProgress } from "@mui/material";
-import React, { Suspense } from "react";
+import React, { lazy, Suspense } from "react";
+const InputGuide = lazy(() => import("@/features/dashboard/input"));
 
 const InputPage: React.FC = () => {
   return (

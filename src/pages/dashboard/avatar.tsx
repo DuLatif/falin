@@ -1,6 +1,6 @@
-import AvatarGuide from "@/features/dashboard/avatar";
 import { CircularProgress } from "@mui/material";
-import React, { Suspense } from "react";
+import React, { lazy, Suspense } from "react";
+const AvatarGuide = lazy(() => import("@/features/dashboard/avatar"));
 
 const AvatarPage: React.FC = () => {
   return (

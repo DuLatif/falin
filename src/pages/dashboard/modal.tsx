@@ -1,6 +1,6 @@
-import ModalGuide from "@/features/dashboard/modal";
 import { CircularProgress } from "@mui/material";
-import React, { Suspense } from "react";
+import React, { lazy, Suspense } from "react";
+const ModalGuide = lazy(() => import("@/features/dashboard/modal"));
 
 const ModalPage: React.FC = () => {
   return (

@@ -1,6 +1,6 @@
-import TypographyList from "@/features/dashboard/typography";
 import { CircularProgress } from "@mui/material";
-import React, { Suspense } from "react";
+import React, { lazy, Suspense } from "react";
+const TypographyList = lazy(() => import("@/features/dashboard/typography"));
 
 const TypographyPage: React.FC = () => {
   return (

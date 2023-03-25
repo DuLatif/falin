@@ -1,11 +1,11 @@
-import Color from "@/features/dashboard/color";
 import { CircularProgress } from "@mui/material";
-import React, { Suspense } from "react";
+import React, { lazy, Suspense } from "react";
+const ColorGuide = lazy(() => import("@/features/dashboard/color"));
 
 const ColorPage: React.FC = () => {
   return (
     <Suspense fallback={<CircularProgress />}>
-      <Color />
+      <ColorGuide />
     </Suspense>
   );
 };

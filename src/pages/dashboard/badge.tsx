@@ -1,6 +1,6 @@
-import BadgeGuide from "@/features/dashboard/badge";
 import { CircularProgress } from "@mui/material";
-import React, { Suspense } from "react";
+import React, { lazy, Suspense } from "react";
+const BadgeGuide = lazy(() => import("@/features/dashboard/badge"));
 
 const BadgePage: React.FC = () => {
   return (

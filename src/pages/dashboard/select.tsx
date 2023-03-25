@@ -1,6 +1,6 @@
-import SelectGuide from "@/features/dashboard/select";
 import { CircularProgress } from "@mui/material";
-import React, { Suspense } from "react";
+import React, { lazy, Suspense } from "react";
+const SelectGuide = lazy(() => import("@/features/dashboard/select"));
 
 const SelectPage: React.FC = () => {
   return (

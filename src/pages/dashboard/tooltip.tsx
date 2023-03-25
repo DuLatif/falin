@@ -1,6 +1,6 @@
-import TooltipGuide from "@/features/dashboard/tooltip";
 import { CircularProgress } from "@mui/material";
-import React, { Suspense } from "react";
+import React, { lazy, Suspense } from "react";
+const TooltipGuide = lazy(() => import("@/features/dashboard/tooltip"));
 
 const TooltipPage: React.FC = () => {
   return (
