@@ -1,6 +1,6 @@
 const baseContainer = (code: string) => {
   return `import React from "react";
-import { Box, Button, Card, Stack, Typography } from "@mui/material";
+import { Box, Button, Stack, Typography } from "@mui/material";
 
 const App : React.FC = () => {
   return (

@@ -5,7 +5,7 @@ import {
   basicContainedButtons,
   basicOutlinedButtons,
   basicTextButtons,
-} from "./_code/basic-input";
+} from "./_code/basic-button";
 
 const BasicButtonsGuide: React.FC = () => {
   return (

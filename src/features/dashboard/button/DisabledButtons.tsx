@@ -1,5 +1,11 @@
+import CodeSnippet from "@/components/CodeSnippet";
 import { Box, Button, Card, Stack, Typography } from "@mui/material";
 import React from "react";
+import {
+  disabledContainedButtons,
+  disabledOutlinedButtons,
+  disabledTextButtons,
+} from "./_code/disabled-buttons";
 
 const DisabledButtonsGuide: React.FC = () => {
   return (
@@ -35,6 +41,7 @@ const DisabledButtonsGuide: React.FC = () => {
               Error
             </Button>
           </Stack>
+          <CodeSnippet code={disabledContainedButtons} />
         </Box>
         <Box>
           <Typography fontWeight={"semiBold"} color="text.secondary" mb={1}>
@@ -63,6 +70,7 @@ const DisabledButtonsGuide: React.FC = () => {
               Error
             </Button>
           </Stack>
+          <CodeSnippet code={disabledTextButtons} />
         </Box>
         <Box>
           <Typography fontWeight={"semiBold"} color="text.secondary" mb={1}>
@@ -91,6 +99,7 @@ const DisabledButtonsGuide: React.FC = () => {
               Error
             </Button>
           </Stack>
+          <CodeSnippet code={disabledOutlinedButtons} />
         </Box>
       </Stack>
     </Card>
