@@ -1,6 +1,6 @@
 import useShowCode from "@/hooks/useShowCode";
 import { neutral } from "@/theme/colors";
-import { Collapse } from "@mui/material";
+import { Box, Collapse } from "@mui/material";
 import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { materialLight } from "react-syntax-highlighter/dist/esm/styles/prism";
@@ -10,7 +10,7 @@ const CodeSnippet: React.FC<{ code: string }> = ({ code }) => {
   const inputState = useShowCode();
 
   return (
-    <>
+    <Box mt={1}>
       <BtnShowCode onClick={inputState.toggle} />
       <Collapse in={inputState.show}>
         <SyntaxHighlighter
@@ -29,7 +29,7 @@ const CodeSnippet: React.FC<{ code: string }> = ({ code }) => {
           {code}
         </SyntaxHighlighter>
       </Collapse>
-    </>
+    </Box>
   );
 };
 
