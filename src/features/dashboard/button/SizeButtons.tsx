@@ -1,5 +1,11 @@
+import CodeSnippet from "@/components/CodeSnippet";
 import { Box, Button, Card, Stack, Typography } from "@mui/material";
 import React from "react";
+import {
+  sizeContainedButtons,
+  sizeOutlinedButtons,
+  sizeTextButtons,
+} from "./_code/button-sizes";
 
 const SizeButtonsGuide: React.FC = () => {
   return (
@@ -19,6 +25,7 @@ const SizeButtonsGuide: React.FC = () => {
             <Button size="xl">Button XL</Button>
             <Button size="2xl">Button 2XL</Button>
           </Stack>
+          <CodeSnippet code={sizeContainedButtons} />
         </Box>
         <Box>
           <Typography fontWeight={"semiBold"} color="text.secondary">
@@ -41,6 +48,7 @@ const SizeButtonsGuide: React.FC = () => {
               Button 2XL
             </Button>
           </Stack>
+          <CodeSnippet code={sizeTextButtons} />
         </Box>
         <Box>
           <Typography fontWeight={"semiBold"} color="text.secondary">
@@ -63,6 +71,7 @@ const SizeButtonsGuide: React.FC = () => {
               Button 2XL
             </Button>
           </Stack>
+          <CodeSnippet code={sizeOutlinedButtons} />
         </Box>
       </Stack>
     </Card>
