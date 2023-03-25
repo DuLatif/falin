@@ -1,6 +1,8 @@
+import CodeSnippet from "@/components/CodeSnippet";
 import { Button, Card, Grid, Stack, Typography } from "@mui/material";
 import { Smiley } from "phosphor-react";
 import React from "react";
+import { buttonWithIconCode, onlyIconButtonCode } from "./_code/icon-buttons";
 
 const IconButtonsGuide: React.FC = () => {
   return (
@@ -71,6 +73,7 @@ const IconButtonsGuide: React.FC = () => {
               </Button>
             </Stack>
           </Stack>
+          <CodeSnippet code={buttonWithIconCode} />
         </Grid>
         <Grid item md={6}>
           <Typography fontWeight={"semiBold"} color="text.secondary" mb={1}>
@@ -147,6 +150,7 @@ const IconButtonsGuide: React.FC = () => {
               </Button>
             </Stack>
           </Stack>
+          <CodeSnippet code={onlyIconButtonCode} />
         </Grid>
       </Grid>
     </Card>
