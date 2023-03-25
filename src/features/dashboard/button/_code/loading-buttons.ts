@@ -1,17 +1,9 @@
-import CodeSnippet from "@/components/CodeSnippet";
-import {
-  Button,
-  Card,
-  CircularProgress,
-  Stack,
-  Typography,
-} from "@mui/material";
-import React from "react";
-import { loadingButtonsCode } from "./_code/loading-buttons";
+export const loadingButtonsCode = `import React from "react";
+import { Box, Button, Stack, Typography } from "@mui/material";
 
-const LoadingButtonsGuide: React.FC = () => {
+const App : React.FC = () => {
   return (
-    <Card>
+    <Box>
       <Typography variant="subtitle1" fontWeight={"semiBold"} mb={1}>
         Loading Button
       </Typography>
@@ -37,9 +29,6 @@ const LoadingButtonsGuide: React.FC = () => {
           <CircularProgress />
         </Button>
       </Stack>
-      <CodeSnippet code={loadingButtonsCode} />
-    </Card>
-  );
-};
-
-export default LoadingButtonsGuide;
+    </Box>
+  )
+}`;
