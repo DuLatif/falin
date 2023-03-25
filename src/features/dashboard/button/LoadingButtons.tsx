@@ -11,7 +11,7 @@ import { loadingButtonsCode } from "./_code/loading-buttons";
 
 const LoadingButtonsGuide: React.FC = () => {
   return (
-    <Card>
+    <Card component="section">
       <Typography variant="subtitle1" fontWeight={"semiBold"} mb={1}>
         Loading Button
       </Typography>

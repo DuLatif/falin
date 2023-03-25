@@ -9,7 +9,7 @@ import {
 
 const SizeButtonsGuide: React.FC = () => {
   return (
-    <Card>
+    <Card component="section">
       <Typography variant="subtitle1" fontWeight={"semiBold"} mb={1}>
         Button Sizes
       </Typography>

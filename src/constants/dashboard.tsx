@@ -45,17 +45,7 @@ export const listCustomization: IMenuProps[] = [
   },
 ];
 
-export const listComponents: IMenuProps[] = [
-  {
-    text: "Button",
-    path: "/dashboard/button",
-    icon: <Rectangle size={26} weight={"bold"} />,
-  },
-  {
-    text: "Badge",
-    path: "/dashboard/badge",
-    icon: <Pill size={26} weight={"bold"} />,
-  },
+export const listMenuForms: IMenuProps[] = [
   {
     text: "Inputs",
     path: "/dashboard/input",
@@ -71,6 +61,25 @@ export const listComponents: IMenuProps[] = [
     path: "/dashboard/radio",
     icon: <RadioButton size={26} weight={"bold"} />,
   },
+  {
+    text: "Select",
+    path: "/dashboard/select",
+    icon: <Rows size={26} weight={"bold"} />,
+  },
+];
+
+export const listComponents: IMenuProps[] = [
+  {
+    text: "Button",
+    path: "/dashboard/button",
+    icon: <Rectangle size={26} weight={"bold"} />,
+  },
+  {
+    text: "Badge",
+    path: "/dashboard/badge",
+    icon: <Pill size={26} weight={"bold"} />,
+  },
+
   {
     text: "Avatars",
     path: "/dashboard/avatar",
@@ -125,10 +134,5 @@ export const listComponents: IMenuProps[] = [
     text: "Modal",
     path: "/dashboard/modal",
     icon: <StackSimple size={26} weight={"bold"} />,
-  },
-  {
-    text: "Select",
-    path: "/dashboard/select",
-    icon: <Rows size={26} weight={"bold"} />,
   },
 ];

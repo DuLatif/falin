@@ -9,7 +9,7 @@ import {
 
 const DisabledButtonsGuide: React.FC = () => {
   return (
-    <Card>
+    <Card component="section">
       <Typography variant="subtitle1" fontWeight={"semiBold"} mb={1}>
         Disabled Buttons
       </Typography>

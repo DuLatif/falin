@@ -9,7 +9,7 @@ import {
 
 const BasicButtonsGuide: React.FC = () => {
   return (
-    <Card>
+    <Card component={"section"}>
       <Typography variant="subtitle1" fontWeight={"semiBold"} mb={1}>
         Basic Button
       </Typography>

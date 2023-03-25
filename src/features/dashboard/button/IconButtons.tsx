@@ -6,7 +6,7 @@ import { buttonWithIconCode, onlyIconButtonCode } from "./_code/icon-buttons";
 
 const IconButtonsGuide: React.FC = () => {
   return (
-    <Card>
+    <Card component="section">
       <Typography variant="subtitle1" fontWeight={"semiBold"} mb={1}>
         Icon Buttons
       </Typography>
