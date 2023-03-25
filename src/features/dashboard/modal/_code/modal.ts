@@ -1,4 +1,5 @@
-import CodeSnippet from "@/components/CodeSnippet";
+const baseContainer = (code: string) => {
+  return `import React from "react";
 import {
   Box,
   Button,
@@ -7,20 +8,21 @@ import {
   Modal,
   Typography,
 } from "@mui/material";
-import { X } from "phosphor-react";
-import React, { useState } from "react";
-import { modalCode } from "./_code/modal";
 
-const ModalGuide: React.FC = () => {
+const App : React.FC = () => {
   const [showModal, setShowModal] = useState(false);
-
+  
   return (
     <Box>
-      <Typography variant="h6">Modal Guide</Typography>
-      <Box mt={4}>
+      ${code}
+    </Box>
+  )
+}`;
+};
+
+export const modalCode = baseContainer(`<Box mt={4}>
         <Card>
           <Button onClick={() => setShowModal(true)}>Open Modal</Button>
-          <CodeSnippet code={modalCode} />
         </Card>
       </Box>
 
@@ -37,9 +39,4 @@ const ModalGuide: React.FC = () => {
             explicabo? Sunt?
           </Typography>
         </Box>
-      </Modal>
-    </Box>
-  );
-};
-
-export default ModalGuide;
+      </Modal>`);
