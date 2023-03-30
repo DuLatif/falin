@@ -2,6 +2,7 @@ import { Box, Typography } from "@mui/material";
 import React from "react";
 import BaseInputGuide from "./BasicInput";
 import InputAdormentGuide from "./InputAdorment";
+import InputDateGuide from "./InputDateGuide";
 import InputHelperTextGuide from "./InputHelperText";
 import InputMultilineGuide from "./InputMultiline";
 
@@ -14,6 +15,7 @@ const InputGuide: React.FC = () => {
       <InputAdormentGuide />
       <InputHelperTextGuide />
       <InputMultilineGuide />
+      <InputDateGuide />
     </Box>
   );
 };

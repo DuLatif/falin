@@ -253,7 +253,7 @@ export const components: Components = {
         padding: "8px 12px",
         width: "100%",
         transition: ".25s",
-        "& ::placeholder": {
+        "&::placeholder": {
           color: neutral[500],
         },
         "&.Mui-focused": {
@@ -595,6 +595,47 @@ export const components: Components = {
           background: primary[50],
           fontWeight: 500,
           pointerEvents: "none",
+        },
+      },
+    },
+  },
+  MuiTextField: {
+    styleOverrides: {
+      root: {
+        // ---- style overrides for input date ----
+        "&.date-picker": {
+          "& .MuiInputBase-root.MuiOutlinedInput-root": {
+            backgroundColor: "#fff",
+            borderRadius: "8px",
+            height: "40px",
+            padding: "8px 12px",
+            width: "100%",
+            transition: ".25s",
+            fontSize: "16px",
+            "&::placeholder": {
+              color: neutral[500],
+            },
+            "& input": {
+              paddingLeft: 0,
+            },
+            "&.Mui-focused": {
+              border: `1px solid ${primary[300]}`,
+              boxShadow: `0px 0px 0px 3px ${primary[100]}`,
+              "& fieldset,&:hover fieldset": {
+                border: "none",
+              },
+            },
+            "&:hover fieldset": {
+              border: `1px solid ${neutral[300]}`,
+            },
+            "& button svg": {
+              fontSize: "20px",
+              marginRight: "6px",
+              "& polyline": {
+                strokeWidth: "20px",
+              },
+            },
+          },
         },
       },
     },

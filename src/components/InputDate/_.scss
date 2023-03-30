@@ -1,0 +1,44 @@
+// --------- styling date picker popup -------
+.date-picker__popper {
+  border: 1px solid #eaecf0;
+  box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08),
+    0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+  border-radius: 8px;
+
+  .MuiPickersArrowSwitcher-root {
+    gap: 6px;
+  }
+
+  button.MuiPickersArrowSwitcher-button.MuiButtonBase-root {
+    border: 1px solid #d0d5dd;
+    border-radius: 8px;
+    width: 36px;
+    height: 36px;
+  }
+
+  button.MuiPickersArrowSwitcher-button.MuiButtonBase-root svg {
+    font-size: 26px;
+  }
+
+  .MuiButtonBase-root.MuiPickersDay-root {
+    border-radius: 8px;
+  }
+  .MuiButtonBase-root.MuiPickersDay-root.Mui-selected {
+    background-color: #2c65f7;
+  }
+  .MuiButtonBase-root.MuiPickersDay-root.MuiPickersDay-today {
+    border: none;
+  }
+  .MuiButtonBase-root.MuiPickersDay-root.MuiPickersDay-today::after {
+    content: " ";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    transform: translateY(10px);
+    background-color: #2c65f7;
+  }
+  .MuiButtonBase-root.MuiPickersDay-root.MuiPickersDay-today.Mui-selected::after {
+    background-color: #fff;
+  }
+}
