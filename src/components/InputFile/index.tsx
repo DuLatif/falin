@@ -105,78 +105,92 @@ const InputFile: React.FC<IInputFile> = ({
     }
   }, [files]);
 
+  const handleChangeInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (e.target.files) {
+      if (!props.multiple) {
+        setFileName(e.target.files[0].name);
+        setFile(e.target.files[0]);
+      } else {
+        setFiles(e.target.files);
+      }
+    }
+  };
+
+  const Placeholder = () => (
+    <FormLabel
+      sx={[
+        ...appendStyle(styles.label),
+        { color: !fileName ? neutral[400] : "inherit" },
+      ]}
+      required={false}
+      error={false}
+    >
+      {props.multiple ? placeholder : fileName || placeholder}
+    </FormLabel>
+  );
+
+  const InputBox = () => (
+    <>
+      <input
+        id={id}
+        {...props}
+        disabled={disabled}
+        ref={inputRef}
+        type="file"
+        hidden
+        onChange={handleChangeInput}
+      />
+      <label htmlFor={id}>
+        <Box
+          sx={[
+            ...appendStyle(styles.root),
+            error && styles.error,
+            disabled && styles.disabled,
+          ]}
+        >
+          <Placeholder />
+          <Button
+            color={color}
+            sx={styles.btn}
+            disabled={disabled}
+            onClick={() => inputRef?.current?.click()}
+          >
+            Browse file
+          </Button>
+        </Box>
+      </label>
+    </>
+  );
+
+  const ListFiles = () => (
+    <Stack
+      direction="row"
+      flexWrap={"wrap"}
+      spacing={1}
+      rowGap={1}
+      sx={{ marginTop: "4px" }}
+    >
+      {Array.from(files).map((item) => (
+        <Chip
+          size="small"
+          label={item.name}
+          onDelete={() =>
+            setFiles(
+              Array.from(files).filter((file) => file.name !== item.name)
+            )
+          }
+        />
+      ))}
+    </Stack>
+  );
+
   return (
     <>
       <FormControl required={required} disabled={disabled} error={error}>
         <InputLabel htmlFor={id}>{label}</InputLabel>
-        <input
-          id={id}
-          {...props}
-          disabled={disabled}
-          ref={inputRef}
-          type="file"
-          hidden
-          onChange={(e) => {
-            if (e.target.files) {
-              if (!props.multiple) {
-                setFileName(e.target.files[0].name);
-                setFile(e.target.files[0]);
-              } else {
-                setFiles(e.target.files);
-              }
-            }
-          }}
-        />
-        <label htmlFor={id}>
-          <Box
-            sx={[
-              ...appendStyle(styles.root),
-              error && styles.error,
-              disabled && styles.disabled,
-            ]}
-          >
-            <FormLabel
-              sx={[
-                ...appendStyle(styles.label),
-                { color: !fileName ? neutral[400] : "inherit" },
-              ]}
-              required={false}
-              error={false}
-            >
-              {props.multiple ? placeholder : fileName || placeholder}
-            </FormLabel>
-            <Button
-              color={color}
-              sx={styles.btn}
-              disabled={disabled}
-              onClick={() => inputRef?.current?.click()}
-            >
-              Browse file
-            </Button>
-          </Box>
-        </label>
+        <InputBox />
         <FormHelperText>{helperText}</FormHelperText>
-        {props.multiple && (
-          <Stack
-            direction="row"
-            flexWrap={"wrap"}
-            spacing={1}
-            rowGap={1}
-            sx={{ marginTop: "4px" }}
-          >
-            {Array.from(files).map((item) => (
-              <Chip
-                size="small"
-                label={item.name}
-                onDelete={() =>
-                  setFiles(
-                    Array.from(files).filter((file) => file.name !== item.name)
-                  )
-                }
-              />
-            ))}
-          </Stack>
-        )}
+        {props.multiple && <ListFiles />}
       </FormControl>
     </>
   );
