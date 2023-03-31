@@ -20,6 +20,7 @@ import SnackbarPage from "./snackbar";
 import TablePage from "./table";
 import TooltipPage from "./tooltip";
 import TypographyPage from "./typography";
+import UploadFilePage from "./upload-file";
 
 const styles: { root: SxProps } = {
   root: {
@@ -51,7 +52,8 @@ const DashboardRoute: React.FC = () => {
           <Route path={"/avatar"} element={<AvatarPage />} />
           <Route path={"/snackbar"} element={<SnackbarPage />} />
           <Route path={"/modal"} element={<ModalPage />} />
-          <Route path={"/table"} element={<TablePage />} />
+          <Route path={"/table"} element={<TablePage />} />\
+          <Route path={"/upload-file"} element={<UploadFilePage />} />
           <Route path={"*"} element={<Error404 />} />
         </Routes>
       </Content>

@@ -19,6 +19,7 @@ import {
   Tabs,
   StackSimple,
   Textbox,
+  CloudArrowUp,
 } from "phosphor-react";
 import { IMenuProps } from "@/components/dashboard/Menu";
 
@@ -65,6 +66,11 @@ export const listMenuForms: IMenuProps[] = [
     text: "Select",
     path: "/dashboard/select",
     icon: <Rows size={26} weight={"bold"} />,
+  },
+  {
+    text: "Upload File",
+    path: "/dashboard/upload-file",
+    icon: <CloudArrowUp size={26} weight={"bold"} />,
   },
 ];
 
