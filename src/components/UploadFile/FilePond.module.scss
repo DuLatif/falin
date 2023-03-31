@@ -1,0 +1,37 @@
+.Container .FilePond {
+  & :global(.filepond--drop-label) {
+    color: $neutral-700;
+    background-color: $neutral-100;
+    border-radius: 8px;
+  }
+
+  & :global(.filepond--drip) {
+    border-radius: 8px;
+    background-color: $neutral-100;
+    border: 1px solid $neutral-300;
+  }
+
+  & :global(.filepond--image-preview) {
+    background-color: $neutral-200;
+  }
+
+  & :global(.filepond--image-preview-overlay-idle) {
+    color: $neutral-300;
+  }
+
+  & :global(.filepond--file-info) {
+    color: $neutral-700;
+  }
+
+  & :global(.filepond--item fieldset.filepond--file-wrapper) {
+    background-color: $neutral-100;
+    border-radius: 6px;
+    box-shadow: $shadow-sm;
+  }
+
+  & :global(.filepond--file-action-button.filepond--action-remove-item) {
+    background-color: $danger-50;
+    color: $danger-500;
+    cursor: pointer;
+  }
+}
