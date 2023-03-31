@@ -1,19 +1,36 @@
-import { FormControl, InputLabel } from "@mui/material";
+import { FormControl, FormHelperText, InputLabel } from "@mui/material";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
-import { DatePicker } from "@mui/x-date-pickers/DatePicker";
+import { DatePicker, DatePickerProps } from "@mui/x-date-pickers/DatePicker";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import { Dayjs } from "dayjs";
 import { CalendarBlank } from "phosphor-react";
-import React from "react";
+import React, { useId } from "react";
 import "./_.scss";
 
-const InputDate: React.FC = () => {
+export interface IInputDateProps extends DatePickerProps<Dayjs> {
+  label: string;
+  helperText?: string;
+  required?: boolean;
+  error?: boolean;
+}
+const InputDate: React.FC<IInputDateProps> = (props) => {
+  const id = useId();
+  const { label, required, error, helperText, ...datePickerProps } = props;
+
   return (
-    <FormControl>
-      <InputLabel>Date of Birth</InputLabel>
+    <FormControl
+      id={id}
+      fullWidth
+      required={required}
+      error={error}
+      disabled={props.disabled}
+    >
+      <InputLabel>{label}</InputLabel>
       <LocalizationProvider dateAdapter={AdapterDayjs}>
         <DatePicker
           format="DD/MM/YYYY"
-          className="date-picker"
+          className={`date-picker ${error && "Mui-error"}`}
+          views={["year", "month", "day"]}
           slots={{
             openPickerIcon: CalendarBlank,
           }}
@@ -22,8 +39,10 @@ const InputDate: React.FC = () => {
               className: "date-picker__popper",
             },
           }}
+          {...datePickerProps}
         />
       </LocalizationProvider>
+      <FormHelperText>{helperText}</FormHelperText>
     </FormControl>
   );
 };

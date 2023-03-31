@@ -207,6 +207,11 @@ export const components: Components = {
           fontSize: "14px",
           marginTop: "6px",
         },
+        "&.Mui-error": {
+          "& fieldset,& fieldset:hover": {
+            border: `1px solid ${danger[300]}`,
+          },
+        },
       },
     },
   },

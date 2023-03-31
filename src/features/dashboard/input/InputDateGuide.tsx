@@ -1,16 +1,30 @@
 import InputDate from "@/components/InputDate";
 import { Card, Grid, Typography } from "@mui/material";
 import React from "react";
+import dayjs from "dayjs";
 
 const InputDateGuide: React.FC = () => {
   return (
     <Card sx={{ mb: 4 }}>
       <Typography variant="subtitle1" fontWeight={"semiBold"}>
-        Input Adornment
+        Input Date
       </Typography>
       <Grid container spacing={2}>
         <Grid item md={6}>
-          <InputDate />
+          <InputDate
+            label="Date of Birth"
+            onChange={(value) => {
+              alert(value?.format("DD-MM-YYYY"));
+            }}
+          />
+        </Grid>
+        <Grid item md={6}>
+          <InputDate
+            label="Date of Birth"
+            required
+            error
+            helperText="This is eror message"
+          />
         </Grid>
       </Grid>
     </Card>

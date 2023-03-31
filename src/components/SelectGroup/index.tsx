@@ -13,8 +13,9 @@ export interface ISelectGroupProps extends SelectProps {
   helperText?: string;
   options: { label: string; value: string | number | " " }[];
 }
-const SelectGroup = (props: ISelectGroupProps) => {
+const SelectGroup: React.FC<ISelectGroupProps> = (props) => {
   const id = useId();
+  const { label, helperText, options, ...selectProps } = props;
 
   return (
     <FormControl
@@ -22,18 +23,18 @@ const SelectGroup = (props: ISelectGroupProps) => {
       error={props.error}
       disabled={props.disabled}
     >
-      <FormLabel htmlFor={id}>{props.label}</FormLabel>
-      <Select {...props} defaultValue={props.defaultValue || " "} id={id}>
+      <FormLabel htmlFor={id}>{label}</FormLabel>
+      <Select {...selectProps} defaultValue={props.defaultValue || " "} id={id}>
         {props.placeholder && (
           <MenuItem value=" ">-- {props.placeholder} ---</MenuItem>
         )}
-        {props.options.map((item, i) => (
+        {options.map((item, i) => (
           <MenuItem key={i} value={item.value}>
             {item.label}
           </MenuItem>
         ))}
       </Select>
-      <FormHelperText>{props.helperText}</FormHelperText>
+      <FormHelperText>{helperText}</FormHelperText>
     </FormControl>
   );
 };
