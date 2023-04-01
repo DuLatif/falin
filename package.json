@@ -11,12 +11,15 @@
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
+    "@fullcalendar/daygrid": "^6.1.5",
+    "@fullcalendar/react": "^6.1.5",
     "@mui/material": "^5.11.10",
     "@mui/x-date-pickers": "^6.0.3",
     "dayjs": "^1.11.7",
     "filepond": "^4.30.4",
     "filepond-plugin-image-exif-orientation": "^1.0.11",
     "filepond-plugin-image-preview": "^4.6.11",
+    "fullcalendar": "^6.1.5",
     "phosphor-react": "^1.4.1",
     "react": "^18.2.0",
     "react-calendar": "^4.1.0",
@@ -26,6 +29,7 @@
     "react-syntax-highlighter": "^15.5.0"
   },
   "devDependencies": {
+    "@types/fullcalendar": "^3.8.0",
     "@types/node": "^18.14.2",
     "@types/react": "^18.0.27",
     "@types/react-calendar": "^3.9.0",
