@@ -8,14 +8,13 @@ const App : React.FC = () => {
       ${code}
     </Box>
   )
-}`;
-};
+}`
+}
 
-export const badgeVariantCode =
-  baseContainer(`<Typography variant="subtitle1" mb={1}>
+export const badgeVariantCode = baseContainer(`<Typography variant="subtitle1" mb={1}>
         Badge Variants
       </Typography>
       <Stack direction="row" spacing={2}>
         <Chip label="Badge Filled" />
         <Chip label="Badge Outlined" variant="outlined" />
-      </Stack>`);
+      </Stack>`)

@@ -8,8 +8,8 @@ const App : React.FC = () => {
       ${code}
     </Box>
   )
-}`;
-};
+}`
+}
 
 export const disabledContainedButtons =
   baseContainer(`<Typography fontWeight={"semiBold"} color="text.secondary" mb={1}>
@@ -37,10 +37,9 @@ export const disabledContainedButtons =
         <Button disabled color="error">
           Error
         </Button>
-      </Stack>`);
+      </Stack>`)
 
-export const disabledTextButtons =
-  baseContainer(`<Typography fontWeight={"semiBold"} color="text.secondary" mb={1}>
+export const disabledTextButtons = baseContainer(`<Typography fontWeight={"semiBold"} color="text.secondary" mb={1}>
         Text Buttons
       </Typography>
       <Stack direction="row" spacing={1}>
@@ -65,10 +64,9 @@ export const disabledTextButtons =
         <Button disabled variant="text" color="error">
           Error
         </Button>
-      </Stack>`);
+      </Stack>`)
 
-export const disabledOutlinedButtons =
-  baseContainer(`<Typography fontWeight={"semiBold"} color="text.secondary" mb={1}>
+export const disabledOutlinedButtons = baseContainer(`<Typography fontWeight={"semiBold"} color="text.secondary" mb={1}>
         Outlined Buttons
       </Typography>
       <Stack direction="row" spacing={1}>
@@ -93,4 +91,4 @@ export const disabledOutlinedButtons =
         <Button disabled variant="outlined" color="error">
           Error
         </Button>
-      </Stack>`);
+      </Stack>`)

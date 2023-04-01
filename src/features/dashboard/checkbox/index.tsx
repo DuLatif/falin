@@ -1,8 +1,8 @@
-import Checkbox from "@/components/Checkbox";
-import CodeSnippet from "@/components/CodeSnippet";
-import { Box, Card, Typography } from "@mui/material";
-import React from "react";
-import { checkboxCode } from "./_code/checkbox-code";
+import Checkbox from "@/components/Checkbox"
+import CodeSnippet from "@/components/CodeSnippet"
+import { Box, Card, Typography } from "@mui/material"
+import React from "react"
+import { checkboxCode } from "./_code/checkbox-code"
 
 const CheckboxGuide: React.FC = () => {
   return (
@@ -19,7 +19,7 @@ const CheckboxGuide: React.FC = () => {
         <CodeSnippet code={checkboxCode} />
       </Card>
     </Box>
-  );
-};
+  )
+}
 
-export default CheckboxGuide;
+export default CheckboxGuide

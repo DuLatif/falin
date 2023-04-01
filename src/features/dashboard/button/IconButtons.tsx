@@ -1,8 +1,8 @@
-import CodeSnippet from "@/components/CodeSnippet";
-import { Button, Card, Grid, Stack, Typography } from "@mui/material";
-import { Smiley } from "phosphor-react";
-import React from "react";
-import { buttonWithIconCode, onlyIconButtonCode } from "./_code/icon-buttons";
+import CodeSnippet from "@/components/CodeSnippet"
+import { Button, Card, Grid, Stack, Typography } from "@mui/material"
+import { Smiley } from "phosphor-react"
+import React from "react"
+import { buttonWithIconCode, onlyIconButtonCode } from "./_code/icon-buttons"
 
 const IconButtonsGuide: React.FC = () => {
   return (
@@ -17,30 +17,17 @@ const IconButtonsGuide: React.FC = () => {
           </Typography>
           <Stack direction="column" spacing={2}>
             <Stack direction="row" spacing={2}>
-              <Button startIcon={<Smiley size={22} weight="bold" />}>
-                Button
-              </Button>
-              <Button endIcon={<Smiley size={22} weight="bold" />}>
-                Button
-              </Button>
-              <Button
-                startIcon={<Smiley size={22} weight="bold" />}
-                endIcon={<Smiley size={22} weight="bold" />}
-              >
+              <Button startIcon={<Smiley size={22} weight="bold" />}>Button</Button>
+              <Button endIcon={<Smiley size={22} weight="bold" />}>Button</Button>
+              <Button startIcon={<Smiley size={22} weight="bold" />} endIcon={<Smiley size={22} weight="bold" />}>
                 Button
               </Button>
             </Stack>
             <Stack direction="row" spacing={2}>
-              <Button
-                variant="text"
-                startIcon={<Smiley size={22} weight="bold" />}
-              >
+              <Button variant="text" startIcon={<Smiley size={22} weight="bold" />}>
                 Button
               </Button>
-              <Button
-                variant="text"
-                endIcon={<Smiley size={22} weight="bold" />}
-              >
+              <Button variant="text" endIcon={<Smiley size={22} weight="bold" />}>
                 Button
               </Button>
               <Button
@@ -52,16 +39,10 @@ const IconButtonsGuide: React.FC = () => {
               </Button>
             </Stack>
             <Stack direction="row" spacing={2}>
-              <Button
-                variant="outlined"
-                startIcon={<Smiley size={22} weight="bold" />}
-              >
+              <Button variant="outlined" startIcon={<Smiley size={22} weight="bold" />}>
                 Button
               </Button>
-              <Button
-                variant="outlined"
-                endIcon={<Smiley size={22} weight="bold" />}
-              >
+              <Button variant="outlined" endIcon={<Smiley size={22} weight="bold" />}>
                 Button
               </Button>
               <Button
@@ -154,7 +135,7 @@ const IconButtonsGuide: React.FC = () => {
         </Grid>
       </Grid>
     </Card>
-  );
-};
+  )
+}
 
-export default IconButtonsGuide;
+export default IconButtonsGuide

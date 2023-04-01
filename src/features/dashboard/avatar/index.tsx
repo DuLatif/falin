@@ -1,14 +1,7 @@
-import { primary, success } from "@/theme/colors";
-import {
-  Avatar,
-  AvatarGroup,
-  Box,
-  Card,
-  Stack,
-  Typography,
-} from "@mui/material";
-import { User, UserCircle, Users } from "phosphor-react";
-import React from "react";
+import { primary, success } from "@/theme/colors"
+import { Avatar, AvatarGroup, Box, Card, Stack, Typography } from "@mui/material"
+import { User, UserCircle, Users } from "phosphor-react"
+import React from "react"
 
 const AvatarGuide: React.FC = () => {
   return (
@@ -108,7 +101,7 @@ const AvatarGuide: React.FC = () => {
         </Card>
       </Box>
     </Box>
-  );
-};
+  )
+}
 
-export default AvatarGuide;
+export default AvatarGuide

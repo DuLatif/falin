@@ -1,5 +1,5 @@
-import { PaletteOptions } from "@mui/material/styles";
-import { neutral, primary, danger, warning, success, info } from "./colors";
+import { PaletteOptions } from "@mui/material/styles"
+import { neutral, primary, danger, warning, success, info } from "./colors"
 
 export const palette: PaletteOptions = {
   primary: {
@@ -42,4 +42,4 @@ export const palette: PaletteOptions = {
     primary: neutral[700],
     secondary: neutral[500],
   },
-};
+}

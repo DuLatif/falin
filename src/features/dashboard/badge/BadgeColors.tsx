@@ -1,7 +1,7 @@
-import CodeSnippet from "@/components/CodeSnippet";
-import { Card, Chip, Stack, Typography } from "@mui/material";
-import React from "react";
-import { badgeColorCode } from "./_code/badge-color";
+import CodeSnippet from "@/components/CodeSnippet"
+import { Card, Chip, Stack, Typography } from "@mui/material"
+import React from "react"
+import { badgeColorCode } from "./_code/badge-color"
 
 const BadgeColorsGuide: React.FC = () => {
   return (
@@ -26,46 +26,16 @@ const BadgeColorsGuide: React.FC = () => {
         <Chip label="Warning" variant="outlined" color="warning" />
       </Stack>
       <Stack direction="row" spacing={2} sx={{ my: 2 }}>
-        <Chip
-          label="Default"
-          onDelete={() => alert("deleted!")}
-          variant="outlined"
-          color="default"
-        />
-        <Chip
-          label="Primary"
-          onDelete={() => alert("deleted!")}
-          variant="outlined"
-          color="primary"
-        />
-        <Chip
-          label="Error"
-          onDelete={() => alert("deleted!")}
-          variant="outlined"
-          color="error"
-        />
-        <Chip
-          label="Success"
-          onDelete={() => alert("deleted!")}
-          variant="outlined"
-          color="success"
-        />
-        <Chip
-          label="Info"
-          onDelete={() => alert("deleted!")}
-          variant="outlined"
-          color="info"
-        />
-        <Chip
-          label="Warning"
-          onDelete={() => alert("deleted!")}
-          variant="outlined"
-          color="warning"
-        />
+        <Chip label="Default" onDelete={() => alert("deleted!")} variant="outlined" color="default" />
+        <Chip label="Primary" onDelete={() => alert("deleted!")} variant="outlined" color="primary" />
+        <Chip label="Error" onDelete={() => alert("deleted!")} variant="outlined" color="error" />
+        <Chip label="Success" onDelete={() => alert("deleted!")} variant="outlined" color="success" />
+        <Chip label="Info" onDelete={() => alert("deleted!")} variant="outlined" color="info" />
+        <Chip label="Warning" onDelete={() => alert("deleted!")} variant="outlined" color="warning" />
       </Stack>
       <CodeSnippet code={badgeColorCode} />
     </Card>
-  );
-};
+  )
+}
 
-export default BadgeColorsGuide;
+export default BadgeColorsGuide

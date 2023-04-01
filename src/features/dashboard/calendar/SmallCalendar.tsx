@@ -1,6 +1,6 @@
-import Calendar from "@/components/Calendar";
-import { Card, Grid, Typography } from "@mui/material";
-import React from "react";
+import Calendar from "@/components/Calendar"
+import { Card, Grid, Typography } from "@mui/material"
+import React from "react"
 
 const SmallCalendarGuide: React.FC = () => {
   return (
@@ -20,7 +20,7 @@ const SmallCalendarGuide: React.FC = () => {
         </Grid>
       </Grid>
     </Card>
-  );
-};
+  )
+}
 
-export default SmallCalendarGuide;
+export default SmallCalendarGuide

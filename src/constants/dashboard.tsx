@@ -21,8 +21,8 @@ import {
   Textbox,
   CloudArrowUp,
   Calendar,
-} from "phosphor-react";
-import { IMenuProps } from "@/components/dashboard/Menu";
+} from "phosphor-react"
+import { IMenuProps } from "@/components/dashboard/Menu"
 
 export const listCustomization: IMenuProps[] = [
   {
@@ -45,7 +45,7 @@ export const listCustomization: IMenuProps[] = [
     path: "/dashboard/icon",
     icon: <Smiley size={26} weight={"bold"} />,
   },
-];
+]
 
 export const listMenuForms: IMenuProps[] = [
   {
@@ -73,7 +73,7 @@ export const listMenuForms: IMenuProps[] = [
     path: "/dashboard/upload-file",
     icon: <CloudArrowUp size={26} weight={"bold"} />,
   },
-];
+]
 
 export const listComponents: IMenuProps[] = [
   {
@@ -147,4 +147,4 @@ export const listComponents: IMenuProps[] = [
     path: "/dashboard/calendar",
     icon: <Calendar size={26} weight={"bold"} />,
   },
-];
+]

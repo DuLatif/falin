@@ -1,8 +1,8 @@
-import { Box, Card, RadioGroup, Typography } from "@mui/material";
-import React from "react";
-import Radio from "@/components/Radio";
-import CodeSnippet from "@/components/CodeSnippet";
-import { radioCode } from "./_code";
+import { Box, Card, RadioGroup, Typography } from "@mui/material"
+import React from "react"
+import Radio from "@/components/Radio"
+import CodeSnippet from "@/components/CodeSnippet"
+import { radioCode } from "./_code"
 
 const RadioGuide: React.FC = () => {
   return (
@@ -23,7 +23,7 @@ const RadioGuide: React.FC = () => {
         <CodeSnippet code={radioCode} />
       </Card>
     </Box>
-  );
-};
+  )
+}
 
-export default RadioGuide;
+export default RadioGuide

@@ -9,31 +9,29 @@ const App : React.FC = () => {
       ${code}
     </Box>
   )
-}`;
-};
-export const baseInputName = baseContainer(
-  `<InputGroup label="Name" placeholder="Full Name" />`
-);
+}`
+}
+export const baseInputName = baseContainer("<InputGroup label=\"Name\" placeholder=\"Full Name\" />")
 
 export const baseInputAmount = baseContainer(`<InputGroup
         required
         label="Amount"
         placeholder="Donation Amount"
         type="number"
-      />`);
+      />`)
 
 export const baseInputDisabled = baseContainer(`<InputGroup
         label="Disabled Input"
         placeholder="This is value"
         type="text"
         disabled
-      />`);
+      />`)
 
 export const baseInputReadonly = baseContainer(`<InputGroup
         label="Readonly input"
         placeholder="This is value"
         readOnly
-      />`);
+      />`)
 
 // =============== Input Adornment ================
 
@@ -56,7 +54,7 @@ const App : React.FC = () => {
       />
     </Box>
   )
-}`;
+}`
 
 export const inputAdorEmail = `import React from "react";
 import InputGroup from "@/components/InputGroup";
@@ -78,7 +76,7 @@ const App : React.FC = () => {
       />
     </Box>
   )
-}`;
+}`
 
 export const inputAdorAddress = `import React from "react";
 import InputGroup from "@/components/InputGroup";
@@ -104,7 +102,7 @@ const App : React.FC = () => {
       />
     </Box>
   )
-}`;
+}`
 
 export const inputAdorAmount = `import React from "react";
 import InputGroup from "@/components/InputGroup";
@@ -128,7 +126,7 @@ const App : React.FC = () => {
       />
     </Box>
   )
-}`;
+}`
 
 // =============== Input Helper Text ================
 export const inputHelperName = `import React from "react";
@@ -144,7 +142,7 @@ const App : React.FC = () => {
       />
     </Box>
   )
-}`;
+}`
 
 export const inputHelperEmail = `import React from "react";
 import InputGroup from "@/components/InputGroup";
@@ -167,7 +165,7 @@ const App : React.FC = () => {
       />
     </Box>
   )
-}`;
+}`
 
 export const inputHelperReadonly = `import React from "react";
 import InputGroup from "@/components/InputGroup";
@@ -183,7 +181,7 @@ const App : React.FC = () => {
       />
     </Box>
   )
-}`;
+}`
 
 export const inputHelperDisabled = `import React from "react";
 import InputGroup from "@/components/InputGroup";
@@ -200,7 +198,7 @@ const App : React.FC = () => {
       />
     </Box>
   )
-}`;
+}`
 
 export const inputHelperAddress = `import React from "react";
 import InputGroup from "@/components/InputGroup";
@@ -217,7 +215,7 @@ const App : React.FC = () => {
       />
     </Box>
   )
-}`;
+}`
 
 export const inputHelperSale = `import React from "react";
 import InputGroup from "@/components/InputGroup";
@@ -242,7 +240,7 @@ const App : React.FC = () => {
       />
     </Box>
   )
-}`;
+}`
 
 // =============== Input Multiline ================
 export const inputMultiline1 = baseContainer(`<Grid container spacing={2}>
@@ -284,4 +282,4 @@ export const inputMultiline1 = baseContainer(`<Grid container spacing={2}>
             helperText="This is an error message"
           />
         </Grid>
-      </Grid>`);
+      </Grid>`)

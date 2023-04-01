@@ -1,13 +1,7 @@
-import CodeSnippet from "@/components/CodeSnippet";
-import {
-  Button,
-  Card,
-  CircularProgress,
-  Stack,
-  Typography,
-} from "@mui/material";
-import React from "react";
-import { loadingButtonsCode } from "./_code/loading-buttons";
+import CodeSnippet from "@/components/CodeSnippet"
+import { Button, Card, CircularProgress, Stack, Typography } from "@mui/material"
+import React from "react"
+import { loadingButtonsCode } from "./_code/loading-buttons"
 
 const LoadingButtonsGuide: React.FC = () => {
   return (
@@ -39,7 +33,7 @@ const LoadingButtonsGuide: React.FC = () => {
       </Stack>
       <CodeSnippet code={loadingButtonsCode} />
     </Card>
-  );
-};
+  )
+}
 
-export default LoadingButtonsGuide;
+export default LoadingButtonsGuide

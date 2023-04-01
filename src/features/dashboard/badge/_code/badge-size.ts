@@ -8,11 +8,10 @@ const App : React.FC = () => {
       ${code}
     </Box>
   )
-}`;
-};
+}`
+}
 
-export const badgeSizesCode =
-  baseContainer(`<Typography variant="subtitle1" mb={1}>
+export const badgeSizesCode = baseContainer(`<Typography variant="subtitle1" mb={1}>
         Badge Sizes
       </Typography>
       <Stack direction="row" spacing={2}>
@@ -20,4 +19,4 @@ export const badgeSizesCode =
         <Chip label="Badge Medium" size="medium" variant="outlined" />
         <Chip label="Badge Small" size="small" />
         <Chip label="Badge Small" size="small" variant="outlined" />
-      </Stack>`);
+      </Stack>`)

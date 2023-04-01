@@ -8,8 +8,8 @@ const App : React.FC = () => {
       ${code}
     </Box>
   )
-}`;
-};
+}`
+}
 
 export const badgeActionClickableCode =
   baseContainer(`<Typography fontWeight={"semiBold"} color={"text.secondary"} mb={1}>
@@ -22,7 +22,7 @@ export const badgeActionClickableCode =
           variant="outlined"
           onClick={() => alert("clicked")}
         />
-      </Stack>`);
+      </Stack>`)
 
 export const badgeActionDeleteableCode =
   baseContainer(`<Typography fontWeight={"semiBold"} color={"text.secondary"} mb={1}>
@@ -41,4 +41,4 @@ export const badgeActionDeleteableCode =
           onDelete={() => alert("deleted!")}
           deleteIcon={<X weight="bold" size={18} />}
         />
-      </Stack>`);
+      </Stack>`)

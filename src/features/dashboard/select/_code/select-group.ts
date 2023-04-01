@@ -16,22 +16,20 @@ const App : React.FC = () => {
       ${code}
     </Box>
   )
-}`;
-};
+}`
+}
 
-export const selectGroupBasicCode = baseContainer(
-  `<SelectGroup label="Basic Select" options={listOptions} />`
-);
+export const selectGroupBasicCode = baseContainer("<SelectGroup label=\"Basic Select\" options={listOptions} />")
 
 export const selectGroupWithPlaceholderCode = baseContainer(`<SelectGroup
         label="Select with placeholder"
         options={listOptions}
         helperText={"This is a helper text"}
-      />`);
+      />`)
 
 export const selectGroupRequiredCode = baseContainer(
-  `<SelectGroup label="Required Select" options={listOptions} required />`
-);
+  "<SelectGroup label=\"Required Select\" options={listOptions} required />"
+)
 
 export const selectGroupErrorCode = baseContainer(`<SelectGroup
         label="Select Error"
@@ -39,7 +37,7 @@ export const selectGroupErrorCode = baseContainer(`<SelectGroup
         required
         error
         helperText="This is a error message"
-      />`);
+      />`)
 
 export const selectGroupDisabled = baseContainer(`<SelectGroup
         label="Disabled Select"
@@ -47,4 +45,4 @@ export const selectGroupDisabled = baseContainer(`<SelectGroup
         required
         disabled
         helperText="This is a error message"
-      />`);
+      />`)

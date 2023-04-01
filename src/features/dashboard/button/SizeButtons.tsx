@@ -1,11 +1,7 @@
-import CodeSnippet from "@/components/CodeSnippet";
-import { Box, Button, Card, Stack, Typography } from "@mui/material";
-import React from "react";
-import {
-  sizeContainedButtons,
-  sizeOutlinedButtons,
-  sizeTextButtons,
-} from "./_code/button-sizes";
+import CodeSnippet from "@/components/CodeSnippet"
+import { Box, Button, Card, Stack, Typography } from "@mui/material"
+import React from "react"
+import { sizeContainedButtons, sizeOutlinedButtons, sizeTextButtons } from "./_code/button-sizes"
 
 const SizeButtonsGuide: React.FC = () => {
   return (
@@ -75,7 +71,7 @@ const SizeButtonsGuide: React.FC = () => {
         </Box>
       </Stack>
     </Card>
-  );
-};
+  )
+}
 
-export default SizeButtonsGuide;
+export default SizeButtonsGuide

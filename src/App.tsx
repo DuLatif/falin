@@ -1,6 +1,6 @@
-import { Routes, Route } from "react-router-dom";
-import DashboardRoute from "@/pages/dashboard/route";
-import Error404 from "./pages/error/404";
+import { Routes, Route } from "react-router-dom"
+import DashboardRoute from "@/pages/dashboard/route"
+import Error404 from "./pages/error/404"
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
         <Route path={"*"} element={<Error404 />} />
       </Routes>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

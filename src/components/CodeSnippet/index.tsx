@@ -1,13 +1,13 @@
-import useShowCode from "@/hooks/useShowCode";
-import { neutral } from "@/theme/colors";
-import { Box, Collapse } from "@mui/material";
-import React from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { materialLight } from "react-syntax-highlighter/dist/esm/styles/prism";
-import BtnShowCode from "../BtnShowCode";
+import useShowCode from "@/hooks/useShowCode"
+import { neutral } from "@/theme/colors"
+import { Box, Collapse } from "@mui/material"
+import React from "react"
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter"
+import { materialLight } from "react-syntax-highlighter/dist/esm/styles/prism"
+import BtnShowCode from "../BtnShowCode"
 
 const CodeSnippet: React.FC<{ code: string }> = ({ code }) => {
-  const inputState = useShowCode();
+  const inputState = useShowCode()
 
   return (
     <Box mt={1}>
@@ -30,7 +30,7 @@ const CodeSnippet: React.FC<{ code: string }> = ({ code }) => {
         </SyntaxHighlighter>
       </Collapse>
     </Box>
-  );
-};
+  )
+}
 
-export default CodeSnippet;
+export default CodeSnippet

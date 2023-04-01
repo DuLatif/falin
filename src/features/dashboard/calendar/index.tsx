@@ -1,7 +1,7 @@
-import { Box, Typography } from "@mui/material";
-import React from "react";
-import SmallCalendarGuide from "./SmallCalendar";
-import BigCalendarGuide from "./BigCalendarGuide";
+import { Box, Typography } from "@mui/material"
+import React from "react"
+import SmallCalendarGuide from "./SmallCalendar"
+import BigCalendarGuide from "./BigCalendarGuide"
 
 const CalendarGuide: React.FC = () => {
   return (
@@ -12,7 +12,7 @@ const CalendarGuide: React.FC = () => {
         <BigCalendarGuide />
       </Box>
     </Box>
-  );
-};
+  )
+}
 
-export default CalendarGuide;
+export default CalendarGuide

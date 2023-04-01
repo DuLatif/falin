@@ -31,4 +31,4 @@ const App : React.FC = () => {
       </Stack>
     </Box>
   )
-}`;
+}`

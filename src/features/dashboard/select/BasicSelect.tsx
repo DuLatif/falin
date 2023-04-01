@@ -1,22 +1,13 @@
-import CodeSnippet from "@/components/CodeSnippet";
-import {
-  Card,
-  FormControl,
-  FormHelperText,
-  FormLabel,
-  Grid,
-  MenuItem,
-  Select,
-  Typography,
-} from "@mui/material";
-import React from "react";
+import CodeSnippet from "@/components/CodeSnippet"
+import { Card, FormControl, FormHelperText, FormLabel, Grid, MenuItem, Select, Typography } from "@mui/material"
+import React from "react"
 import {
   basicDisabledSelectCode,
   basicRequiredSelectCode,
   basicSelectCode,
   basicSelectErrorCode,
   basicSelectPlaceholderCode,
-} from "./_code/basic-select";
+} from "./_code/basic-select"
 
 const BasicSelectGuide: React.FC = () => {
   return (
@@ -93,7 +84,7 @@ const BasicSelectGuide: React.FC = () => {
         </Grid>
       </Grid>
     </Card>
-  );
-};
+  )
+}
 
-export default BasicSelectGuide;
+export default BasicSelectGuide

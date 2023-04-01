@@ -1,30 +1,30 @@
-import { Components } from "@mui/material";
-import { danger, info, neutral, primary, success, warning } from "./colors";
-import { shadows } from "./shadows";
-import { CaretDown } from "phosphor-react";
+import { Components } from "@mui/material"
+import { danger, info, neutral, primary, success, warning } from "./colors"
+import { shadows } from "./shadows"
+import { CaretDown } from "phosphor-react"
 
 declare module "@mui/material/Button" {
   interface ButtonPropsSizeOverrides {
-    small: false;
-    medium: false;
-    large: false;
-    sm: true;
-    md: true;
-    lg: true;
-    xl: true;
-    "2xl": true;
+    small: false
+    medium: false
+    large: false
+    sm: true
+    md: true
+    lg: true
+    xl: true
+    "2xl": true
   }
 }
 declare module "@mui/material/IconButton" {
   interface IconButtonPropsSizeOverrides {
-    small: false;
-    medium: false;
-    large: false;
-    sm: true;
-    md: true;
-    lg: true;
-    xl: true;
-    "2xl": true;
+    small: false
+    medium: false
+    large: false
+    sm: true
+    md: true
+    lg: true
+    xl: true
+    "2xl": true
   }
 }
 
@@ -35,7 +35,7 @@ const objColor = {
   info: info,
   warning: warning,
   danger: danger,
-};
+}
 
 const fnBtnColorStyle = (
   color: "primary" | "neutral" | "success" | "info" | "warning" | "danger",
@@ -55,7 +55,7 @@ const fnBtnColorStyle = (
         background: objColor[color][200],
         color: "#fff",
       },
-    };
+    }
   if (variant === "text")
     return {
       background: objColor[color][50],
@@ -70,8 +70,8 @@ const fnBtnColorStyle = (
         background: "none",
         color: objColor[color][300],
       },
-    };
-};
+    }
+}
 
 export const components: Components = {
   MuiButton: {
@@ -396,8 +396,7 @@ export const components: Components = {
         "&.select-dropdown": {
           padding: "4px 10px",
           border: "1px solid #EAECF0",
-          boxShadow:
-            "0px 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03)",
+          boxShadow: "0px 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03)",
           borderRadius: "8px",
         },
         "&.select-dropdown ul": {
@@ -645,4 +644,4 @@ export const components: Components = {
       },
     },
   },
-};
+}

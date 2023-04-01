@@ -8,11 +8,10 @@ const App : React.FC = () => {
       ${code}
     </Box>
   )
-}`;
-};
+}`
+}
 
-export const badgeColorCode =
-  baseContainer(`<Typography variant="subtitle1" mb={1}>
+export const badgeColorCode = baseContainer(`<Typography variant="subtitle1" mb={1}>
         Badge Colors
       </Typography>
       <Stack direction="row" spacing={2}>
@@ -22,4 +21,4 @@ export const badgeColorCode =
         <Chip label="Success" color="success" />
         <Chip label="Info" color="info" />
         <Chip label="Warning" color="warning" />
-      </Stack>`);
+      </Stack>`)

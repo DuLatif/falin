@@ -1,46 +1,24 @@
-import { Box, Button, Card, Chip, Stack, Typography } from "@mui/material";
-import React from "react";
-import Table from "@mui/material/Table";
-import TableBody from "@mui/material/TableBody";
-import TableCell from "@mui/material/TableCell";
-import TableContainer from "@mui/material/TableContainer";
-import TableHead from "@mui/material/TableHead";
-import TableRow from "@mui/material/TableRow";
-import Paper from "@mui/material/Paper";
-import { NotePencil, Trash } from "phosphor-react";
+import { Box, Button, Chip, Stack, Typography } from "@mui/material"
+import Paper from "@mui/material/Paper"
+import Table from "@mui/material/Table"
+import TableBody from "@mui/material/TableBody"
+import TableCell from "@mui/material/TableCell"
+import TableContainer from "@mui/material/TableContainer"
+import TableHead from "@mui/material/TableHead"
+import TableRow from "@mui/material/TableRow"
+import { NotePencil, Trash } from "phosphor-react"
+import React from "react"
 
-function createData(
-  name: string,
-  status: boolean,
-  role: string,
-  email: string,
-  teams: string[]
-) {
-  return { name, status, role, email, teams };
+function createData(name: string, status: boolean, role: string, email: string, teams: string[]) {
+  return { name, status, role, email, teams }
 }
 
 const rows = [
-  createData("Olivia Rhye", true, "Product Designer", "olivia@untitledui.com", [
-    "Design",
-    "Product",
-    "Marketing",
-  ]),
-  createData("Olivia Rhye", true, "Product Designer", "olivia@untitledui.com", [
-    "Design",
-    "Product",
-    "Marketing",
-  ]),
-  createData("Olivia Rhye", true, "Product Designer", "olivia@untitledui.com", [
-    "Design",
-    "Product",
-    "Marketing",
-  ]),
-  createData("Olivia Rhye", true, "Product Designer", "olivia@untitledui.com", [
-    "Design",
-    "Product",
-    "Marketing",
-  ]),
-];
+  createData("Olivia Rhye", true, "Product Designer", "olivia@untitledui.com", ["Design", "Product", "Marketing"]),
+  createData("Olivia Rhye", true, "Product Designer", "olivia@untitledui.com", ["Design", "Product", "Marketing"]),
+  createData("Olivia Rhye", true, "Product Designer", "olivia@untitledui.com", ["Design", "Product", "Marketing"]),
+  createData("Olivia Rhye", true, "Product Designer", "olivia@untitledui.com", ["Design", "Product", "Marketing"]),
+]
 
 const TableGuide: React.FC = () => {
   return (
@@ -72,7 +50,7 @@ const TableGuide: React.FC = () => {
                   <TableCell>{row.email}</TableCell>
                   <TableCell>
                     {row.teams.map((team) => (
-                      <Chip size="small" color="primary" label={team} />
+                      <Chip size="small" key={team} color="primary" label={team} />
                     ))}
                   </TableCell>
                   <TableCell>
@@ -92,7 +70,7 @@ const TableGuide: React.FC = () => {
         </TableContainer>
       </Box>
     </Box>
-  );
-};
+  )
+}
 
-export default TableGuide;
+export default TableGuide

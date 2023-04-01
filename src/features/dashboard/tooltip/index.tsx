@@ -1,6 +1,6 @@
-import { neutral } from "@/theme/colors";
-import { Box, Card, Stack, Tooltip, Typography } from "@mui/material";
-import React from "react";
+import { neutral } from "@/theme/colors"
+import { Box, Card, Stack, Tooltip, Typography } from "@mui/material"
+import React from "react"
 
 const TooltipGuide: React.FC = () => {
   return (
@@ -25,18 +25,12 @@ const TooltipGuide: React.FC = () => {
           <Tooltip
             title={
               <>
-                <Typography
-                  variant="body2"
-                  fontWeight={"semiBold"}
-                  color={neutral[700]}
-                  sx={{ marginBottom: "4px" }}
-                >
+                <Typography variant="body2" fontWeight={"semiBold"} color={neutral[700]} sx={{ marginBottom: "4px" }}>
                   This is a tooltip
                 </Typography>
                 <Typography variant="body2" textAlign="justify">
-                  Tooltips are used to describe or identify an element. In most
-                  scenarios, tooltips help the user understand meaning, function
-                  or alt-text.
+                  Tooltips are used to describe or identify an element. In most scenarios, tooltips help the user
+                  understand meaning, function or alt-text.
                 </Typography>
               </>
             }
@@ -46,18 +40,12 @@ const TooltipGuide: React.FC = () => {
           <Tooltip
             title={
               <>
-                <Typography
-                  variant="body2"
-                  fontWeight={"semiBold"}
-                  color={neutral[700]}
-                  sx={{ marginBottom: "4px" }}
-                >
+                <Typography variant="body2" fontWeight={"semiBold"} color={neutral[700]} sx={{ marginBottom: "4px" }}>
                   This is a tooltip
                 </Typography>
                 <Typography variant="body2" textAlign="justify">
-                  Tooltips are used to describe or identify an element. In most
-                  scenarios, tooltips help the user understand meaning, function
-                  or alt-text.
+                  Tooltips are used to describe or identify an element. In most scenarios, tooltips help the user
+                  understand meaning, function or alt-text.
                 </Typography>
               </>
             }
@@ -68,18 +56,12 @@ const TooltipGuide: React.FC = () => {
           <Tooltip
             title={
               <>
-                <Typography
-                  variant="body2"
-                  fontWeight={"semiBold"}
-                  color={neutral[700]}
-                  sx={{ marginBottom: "4px" }}
-                >
+                <Typography variant="body2" fontWeight={"semiBold"} color={neutral[700]} sx={{ marginBottom: "4px" }}>
                   This is a tooltip
                 </Typography>
                 <Typography variant="body2" textAlign="justify">
-                  Tooltips are used to describe or identify an element. In most
-                  scenarios, tooltips help the user understand meaning, function
-                  or alt-text.
+                  Tooltips are used to describe or identify an element. In most scenarios, tooltips help the user
+                  understand meaning, function or alt-text.
                 </Typography>
               </>
             }
@@ -90,18 +72,12 @@ const TooltipGuide: React.FC = () => {
           <Tooltip
             title={
               <>
-                <Typography
-                  variant="body2"
-                  fontWeight={"semiBold"}
-                  color={neutral[700]}
-                  sx={{ marginBottom: "4px" }}
-                >
+                <Typography variant="body2" fontWeight={"semiBold"} color={neutral[700]} sx={{ marginBottom: "4px" }}>
                   This is a tooltip
                 </Typography>
                 <Typography variant="body2" textAlign="justify">
-                  Tooltips are used to describe or identify an element. In most
-                  scenarios, tooltips help the user understand meaning, function
-                  or alt-text.
+                  Tooltips are used to describe or identify an element. In most scenarios, tooltips help the user
+                  understand meaning, function or alt-text.
                 </Typography>
               </>
             }
@@ -112,7 +88,7 @@ const TooltipGuide: React.FC = () => {
         </Stack>
       </Card>
     </Box>
-  );
-};
+  )
+}
 
-export default TooltipGuide;
+export default TooltipGuide

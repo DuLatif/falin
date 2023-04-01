@@ -1,18 +1,11 @@
-import CodeSnippet from "@/components/CodeSnippet";
-import {
-  Box,
-  Button,
-  Card,
-  IconButton,
-  Modal,
-  Typography,
-} from "@mui/material";
-import { X } from "phosphor-react";
-import React, { useState } from "react";
-import { modalCode } from "./_code/modal";
+import CodeSnippet from "@/components/CodeSnippet"
+import { Box, Button, Card, IconButton, Modal, Typography } from "@mui/material"
+import { X } from "phosphor-react"
+import React, { useState } from "react"
+import { modalCode } from "./_code/modal"
 
 const ModalGuide: React.FC = () => {
-  const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(false)
 
   return (
     <Box>
@@ -31,15 +24,13 @@ const ModalGuide: React.FC = () => {
           </IconButton>
           <Typography>Modal Box</Typography>
           <Typography>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-            sed, autem incidunt tempora iure amet odit quia? Nobis incidunt aut
-            accusantium magni. Error, neque necessitatibus modi beatae porro
-            explicabo? Sunt?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sed, autem incidunt tempora iure amet odit
+            quia? Nobis incidunt aut accusantium magni. Error, neque necessitatibus modi beatae porro explicabo? Sunt?
           </Typography>
         </Box>
       </Modal>
     </Box>
-  );
-};
+  )
+}
 
-export default ModalGuide;
+export default ModalGuide

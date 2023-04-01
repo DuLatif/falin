@@ -1,9 +1,9 @@
-import { Box, Grid, Typography } from "@mui/material";
-import React from "react";
-import BadgeActionsGuide from "./BadgeActions";
-import BadgeColorsGuide from "./BadgeColors";
-import BadgeSizesGuide from "./BadgeSizes";
-import BadgeVariantsGuide from "./BadgeVariants";
+import { Box, Grid, Typography } from "@mui/material"
+import React from "react"
+import BadgeActionsGuide from "./BadgeActions"
+import BadgeColorsGuide from "./BadgeColors"
+import BadgeSizesGuide from "./BadgeSizes"
+import BadgeVariantsGuide from "./BadgeVariants"
 
 const BadgeGuide: React.FC = () => {
   return (
@@ -22,7 +22,7 @@ const BadgeGuide: React.FC = () => {
         </Grid>
       </Box>
     </Box>
-  );
-};
+  )
+}
 
-export default BadgeGuide;
+export default BadgeGuide

@@ -1,17 +1,11 @@
-import React from "react";
-import { Container, Typography, Stack, Box } from "@mui/material";
+import React from "react"
+import { Container, Typography, Stack, Box } from "@mui/material"
 
 const Error404: React.FC = () => {
   return (
     <>
       <Container maxWidth="xl">
-        <Stack
-          direction={"row"}
-          justifyContent={"center"}
-          alignItems={"center"}
-          sx={{ height: "100vh" }}
-          spacing={5}
-        >
+        <Stack direction={"row"} justifyContent={"center"} alignItems={"center"} sx={{ height: "100vh" }} spacing={5}>
           <Typography variant="h3" fontWeight={"bold"}>
             404
           </Typography>
@@ -20,7 +14,7 @@ const Error404: React.FC = () => {
         </Stack>
       </Container>
     </>
-  );
-};
+  )
+}
 
-export default Error404;
+export default Error404

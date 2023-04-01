@@ -1,17 +1,14 @@
-import { info, neutral, primary } from "@/theme/colors";
-import { Box, Button, Stack, SxProps, Typography } from "@mui/material";
-import { CloudArrowUp, Trash } from "phosphor-react";
-import React from "react";
-import useLogic from "./useLogic";
+import { info, neutral, primary } from "@/theme/colors"
+import { Box, Button, Stack, SxProps, Typography } from "@mui/material"
+import { CloudArrowUp, Trash } from "phosphor-react"
+import React from "react"
+import useLogic from "./useLogic"
 
 export interface IUploadFileProps {
-  disabled?: boolean;
-  onChange?: (file: File | null) => void;
+  disabled?: boolean
+  onChange?: (file: File | null) => void
 }
-const UploadFile: React.FC<IUploadFileProps> = ({
-  disabled = false,
-  onChange,
-}) => {
+const UploadFile: React.FC<IUploadFileProps> = ({ disabled = false, onChange }) => {
   const {
     fileInput,
     imgSources,
@@ -24,27 +21,21 @@ const UploadFile: React.FC<IUploadFileProps> = ({
     handleChangeInput,
     handleUpload,
     removeFile,
-  } = useLogic(onChange);
+  } = useLogic(onChange)
 
   const styles: {
-    root: SxProps;
-    boxIconCloud: SxProps;
-    label: SxProps;
-    fileName: SxProps;
-    stackBtn: SxProps;
+    root: SxProps
+    boxIconCloud: SxProps
+    label: SxProps
+    fileName: SxProps
+    stackBtn: SxProps
   } = {
     root: {
       border: `1px solid ${neutral[300]}`,
       height: "185px",
       borderRadius: "8px",
       overflow: "hidden",
-      backgroundColor: disabled
-        ? neutral[100]
-        : onDropZone
-        ? primary[100]
-        : file && !isImage
-        ? "#f3f3f3"
-        : "#fff",
+      backgroundColor: disabled ? neutral[100] : onDropZone ? primary[100] : file && !isImage ? "#f3f3f3" : "#fff",
       backgroundImage: `url(${imgSources})`,
       backgroundSize: "cover",
       backgroundPosition: "center",
@@ -74,7 +65,7 @@ const UploadFile: React.FC<IUploadFileProps> = ({
     stackBtn: {
       transform: isImage ? "translateY(0px)" : "translateY(-10px)",
     },
-  };
+  }
 
   const BoxImageEmpty = () => (
     <>
@@ -90,7 +81,7 @@ const UploadFile: React.FC<IUploadFileProps> = ({
         </Typography>
       </Box>
     </>
-  );
+  )
 
   const BoxImageExists = () => (
     <>
@@ -108,7 +99,7 @@ const UploadFile: React.FC<IUploadFileProps> = ({
         </Button>
       </Stack>
     </>
-  );
+  )
 
   return (
     <Box
@@ -118,24 +109,12 @@ const UploadFile: React.FC<IUploadFileProps> = ({
       onDragEnter={() => setOnDropZone(true)}
       onDragLeave={() => setOnDropZone(false)}
     >
-      <input
-        disabled={disabled}
-        type="file"
-        ref={fileInput}
-        style={{ display: "none" }}
-        onChange={handleChangeInput}
-      />
-      <Stack
-        direction="column"
-        sx={{ height: "100%" }}
-        justifyContent={"center"}
-        alignItems={"center"}
-        spacing={3}
-      >
+      <input disabled={disabled} type="file" ref={fileInput} style={{ display: "none" }} onChange={handleChangeInput} />
+      <Stack direction="column" sx={{ height: "100%" }} justifyContent={"center"} alignItems={"center"} spacing={3}>
         {!imgSources ? <BoxImageEmpty /> : <BoxImageExists />}
       </Stack>
     </Box>
-  );
-};
+  )
+}
 
-export default UploadFile;
+export default UploadFile

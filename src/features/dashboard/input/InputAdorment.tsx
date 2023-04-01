@@ -1,14 +1,9 @@
-import CodeSnippet from "@/components/CodeSnippet";
-import InputGroup from "@/components/InputGroup";
-import { Card, Grid, InputAdornment, Tooltip, Typography } from "@mui/material";
-import { CurrencyDollar, EnvelopeSimple, Question, User } from "phosphor-react";
-import React from "react";
-import {
-  inputAdorAddress,
-  inputAdorAmount,
-  inputAdorEmail,
-  inputAdorName,
-} from "./_code/code-snippet";
+import CodeSnippet from "@/components/CodeSnippet"
+import InputGroup from "@/components/InputGroup"
+import { Card, Grid, InputAdornment, Tooltip, Typography } from "@mui/material"
+import { CurrencyDollar, EnvelopeSimple, Question, User } from "phosphor-react"
+import React from "react"
+import { inputAdorAddress, inputAdorAmount, inputAdorEmail, inputAdorName } from "./_code/code-snippet"
 
 const InputAdormentGuide: React.FC = () => {
   return (
@@ -76,7 +71,7 @@ const InputAdormentGuide: React.FC = () => {
         </Grid>
       </Grid>
     </Card>
-  );
-};
+  )
+}
 
-export default InputAdormentGuide;
+export default InputAdormentGuide

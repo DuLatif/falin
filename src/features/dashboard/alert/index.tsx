@@ -1,14 +1,6 @@
-import {
-  Box,
-  Card,
-  Typography,
-  Alert,
-  Stack,
-  IconButton,
-  AlertTitle,
-} from "@mui/material";
-import React from "react";
-import { XCircle } from "phosphor-react";
+import { Box, Card, Typography, Alert, Stack, IconButton, AlertTitle } from "@mui/material"
+import React from "react"
+import { XCircle } from "phosphor-react"
 
 const AlertGuide: React.FC = () => {
   return (
@@ -57,8 +49,7 @@ const AlertGuide: React.FC = () => {
             }
           >
             <AlertTitle>There was a problem with that action</AlertTitle>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-            pariatur, ipsum similique veniam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam.
           </Alert>
           <Alert
             variant="outlined"
@@ -69,11 +60,8 @@ const AlertGuide: React.FC = () => {
               </IconButton>
             }
           >
-            <AlertTitle>
-              Just to let you know this might be a problem
-            </AlertTitle>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-            pariatur, ipsum similique veniam.
+            <AlertTitle>Just to let you know this might be a problem</AlertTitle>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam.
           </Alert>
           <Alert
             variant="outlined"
@@ -84,9 +72,8 @@ const AlertGuide: React.FC = () => {
               </IconButton>
             }
           >
-            <AlertTitle>We've just released a new feature</AlertTitle>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-            pariatur, ipsum similique veniam.
+            <AlertTitle>We&apos;ve just released a new feature</AlertTitle>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam.
           </Alert>
           <Alert
             variant="outlined"
@@ -98,13 +85,12 @@ const AlertGuide: React.FC = () => {
             }
           >
             <AlertTitle>Successfully updated profile</AlertTitle>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-            pariatur, ipsum similique veniam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam.
           </Alert>
         </Stack>
       </Card>
     </Box>
-  );
-};
+  )
+}
 
-export default AlertGuide;
+export default AlertGuide

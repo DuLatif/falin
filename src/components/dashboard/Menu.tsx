@@ -1,20 +1,20 @@
-import { ListItemIcon, MenuItem, Typography } from "@mui/material";
-import React, { useEffect, useState } from "react";
-import styles from "./_.module.scss";
-import { Link, useLocation } from "react-router-dom";
+import { ListItemIcon, MenuItem, Typography } from "@mui/material"
+import React, { useEffect, useState } from "react"
+import styles from "./_.module.scss"
+import { Link, useLocation } from "react-router-dom"
 
 export interface IMenuProps {
-  icon: React.ReactNode;
-  text: string;
-  path: string;
+  icon: React.ReactNode
+  text: string
+  path: string
 }
 const Menu: React.FC<IMenuProps> = (props) => {
-  const location = useLocation();
-  const [isActive, setIsActive] = useState(false);
+  const location = useLocation()
+  const [isActive, setIsActive] = useState(false)
 
   useEffect(() => {
-    setIsActive(location.pathname.includes(props.path));
-  }, [location.pathname]);
+    setIsActive(location.pathname.includes(props.path))
+  }, [location.pathname])
 
   return (
     <Link to={props.path}>
@@ -25,7 +25,7 @@ const Menu: React.FC<IMenuProps> = (props) => {
         </Typography>
       </MenuItem>
     </Link>
-  );
-};
+  )
+}
 
-export default Menu;
+export default Menu

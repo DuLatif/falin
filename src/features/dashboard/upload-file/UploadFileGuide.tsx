@@ -1,6 +1,6 @@
-import UploadFile from "@/components/UploadFile";
-import { Card, Typography } from "@mui/material";
-import React from "react";
+import UploadFile from "@/components/UploadFile"
+import { Card, Typography } from "@mui/material"
+import React from "react"
 
 const UploadFileGuide: React.FC = () => {
   return (
@@ -10,7 +10,7 @@ const UploadFileGuide: React.FC = () => {
       </Typography>
       <UploadFile />
     </Card>
-  );
-};
+  )
+}
 
-export default UploadFileGuide;
+export default UploadFileGuide

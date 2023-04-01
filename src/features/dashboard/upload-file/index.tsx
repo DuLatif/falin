@@ -1,8 +1,8 @@
-import { Box, Typography } from "@mui/material";
-import React from "react";
-import InputFileGuide from "./InputFileGuide";
-import UploadFileGuide from "./UploadFileGuide";
-import UploadFilePondGuide from "./UploadFilePondGuide";
+import { Box, Typography } from "@mui/material"
+import React from "react"
+import InputFileGuide from "./InputFileGuide"
+import UploadFileGuide from "./UploadFileGuide"
+import UploadFilePondGuide from "./UploadFilePondGuide"
 
 const UploadFileGuidePage: React.FC = () => {
   return (
@@ -14,7 +14,7 @@ const UploadFileGuidePage: React.FC = () => {
         <UploadFilePondGuide />
       </Box>
     </Box>
-  );
-};
+  )
+}
 
-export default UploadFileGuidePage;
+export default UploadFileGuidePage

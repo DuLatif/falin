@@ -1,15 +1,8 @@
-import {
-  danger,
-  info,
-  neutral,
-  primary,
-  success,
-  warning,
-} from "@/theme/colors";
-import { Box, Card, Grid, Stack, Typography, useTheme } from "@mui/material";
-import React from "react";
+import { danger, info, neutral, primary, success, warning } from "@/theme/colors"
+import { Box, Card, Grid, Stack, Typography, useTheme } from "@mui/material"
+import React from "react"
 
-const levelColor = [25, 50, 100, 200, 300, 400, 500, 600, 700, 800, 900];
+const levelColor = [25, 50, 100, 200, 300, 400, 500, 600, 700, 800, 900]
 
 const listColor = [
   {
@@ -36,10 +29,10 @@ const listColor = [
     color: danger,
     label: "Danger",
   },
-];
+]
 
 const Color: React.FC = () => {
-  const theme = useTheme();
+  const theme = useTheme()
 
   return (
     <Box>
@@ -75,7 +68,7 @@ const Color: React.FC = () => {
         </Stack>
       </Card>
     </Box>
-  );
-};
+  )
+}
 
-export default Color;
+export default Color

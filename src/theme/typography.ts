@@ -1,18 +1,18 @@
-import { TypographyOptions } from "@mui/material/styles/createTypography";
+import { TypographyOptions } from "@mui/material/styles/createTypography"
 
 declare module "@mui/material/styles" {
   interface TypographyOptions {
-    fontWeightSemiBold: React.CSSProperties["fontWeight"];
+    fontWeightSemiBold: React.CSSProperties["fontWeight"]
   }
 
   interface TypographyVariantsOptions {
-    fontWeightSemiBold?: React.CSSProperties["fontWeight"];
+    fontWeightSemiBold?: React.CSSProperties["fontWeight"]
   }
 }
 
 declare module "@mui/material/Typography" {
   interface TypographyPropsFontWeightOverrides {
-    semiBold: true;
+    semiBold: true
   }
 }
 
@@ -75,4 +75,4 @@ export const typography: TypographyOptions = {
     fontSize: "0.625rem",
     lineHeight: "1rem",
   },
-};
+}

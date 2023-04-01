@@ -10,7 +10,7 @@ export const neutral = {
   700: "#344054",
   800: "#1D2939",
   900: "#101828",
-};
+}
 
 export const primary = {
   25: "#f5f8ff",
@@ -24,7 +24,7 @@ export const primary = {
   700: "#004eeb",
   800: "#0040c1",
   900: "#00359e",
-};
+}
 
 export const success = {
   25: "#f6fef9",
@@ -38,7 +38,7 @@ export const success = {
   700: "#027a48",
   800: "#05603a",
   900: "#054f31",
-};
+}
 
 export const info = {
   25: "#fafeff",
@@ -52,7 +52,7 @@ export const info = {
   700: "#086bab",
   800: "#044b85",
   900: "#044b85",
-};
+}
 
 export const warning = {
   25: "#fffcf5",
@@ -66,7 +66,7 @@ export const warning = {
   700: "#b54708",
   800: "#93370d",
   900: "#7a2e0e",
-};
+}
 
 export const danger = {
   25: "#fffbfa",
@@ -80,4 +80,4 @@ export const danger = {
   700: "#b42318",
   800: "#912018",
   900: "#7a271a",
-};
+}

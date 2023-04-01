@@ -1,7 +1,7 @@
-import { Box, Grid, Typography } from "@mui/material";
-import React from "react";
-import BasicSelectGuide from "./BasicSelect";
-import SelectGroupGuide from "./SelectGroup";
+import { Box, Grid, Typography } from "@mui/material"
+import React from "react"
+import BasicSelectGuide from "./BasicSelect"
+import SelectGroupGuide from "./SelectGroup"
 
 const SelectGuide: React.FC = () => {
   return (
@@ -18,7 +18,7 @@ const SelectGuide: React.FC = () => {
         </Grid>
       </Box>
     </Box>
-  );
-};
+  )
+}
 
-export default SelectGuide;
+export default SelectGuide

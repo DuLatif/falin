@@ -1,11 +1,7 @@
-import CodeSnippet from "@/components/CodeSnippet";
-import { Box, Button, Card, Stack, Typography } from "@mui/material";
-import React from "react";
-import {
-  basicContainedButtons,
-  basicOutlinedButtons,
-  basicTextButtons,
-} from "./_code/basic-button";
+import CodeSnippet from "@/components/CodeSnippet"
+import { Box, Button, Card, Stack, Typography } from "@mui/material"
+import React from "react"
+import { basicContainedButtons, basicOutlinedButtons, basicTextButtons } from "./_code/basic-button"
 
 const BasicButtonsGuide: React.FC = () => {
   return (
@@ -89,7 +85,7 @@ const BasicButtonsGuide: React.FC = () => {
         </Box>
       </Stack>
     </Card>
-  );
-};
+  )
+}
 
-export default BasicButtonsGuide;
+export default BasicButtonsGuide

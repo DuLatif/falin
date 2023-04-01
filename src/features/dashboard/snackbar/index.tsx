@@ -1,18 +1,10 @@
-import {
-  Alert,
-  Box,
-  Button,
-  Card,
-  Snackbar,
-  Stack,
-  Typography,
-} from "@mui/material";
-import React, { useState } from "react";
+import { Alert, Box, Button, Card, Snackbar, Stack, Typography } from "@mui/material"
+import React, { useState } from "react"
 
 const SnackbarGuide: React.FC = () => {
-  const [simpleSnackbar, setSimpleSnackbar] = useState(false);
-  const [successSnackbar, setSuccessSnackbar] = useState(false);
-  const [errorSnackbar, setErrorSnackbar] = useState(false);
+  const [simpleSnackbar, setSimpleSnackbar] = useState(false)
+  const [successSnackbar, setSuccessSnackbar] = useState(false)
+  const [errorSnackbar, setErrorSnackbar] = useState(false)
 
   return (
     <Box>
@@ -35,36 +27,19 @@ const SnackbarGuide: React.FC = () => {
             <Box>
               <Typography variant="subtitle1">Customization</Typography>
               <Stack direction="row" spacing={1}>
-                <Button
-                  variant="text"
-                  color="error"
-                  onClick={() => setErrorSnackbar(true)}
-                >
+                <Button variant="text" color="error" onClick={() => setErrorSnackbar(true)}>
                   Open Error Snackbar
                 </Button>
-                <Button
-                  variant="text"
-                  color="success"
-                  onClick={() => setSuccessSnackbar(true)}
-                >
+                <Button variant="text" color="success" onClick={() => setSuccessSnackbar(true)}>
                   Open Success Snackbar
                 </Button>
               </Stack>
-              <Snackbar
-                open={successSnackbar}
-                onClose={() => setSuccessSnackbar(false)}
-              >
-                <Alert
-                  severity="success"
-                  onClose={() => setSuccessSnackbar(false)}
-                >
+              <Snackbar open={successSnackbar} onClose={() => setSuccessSnackbar(false)}>
+                <Alert severity="success" onClose={() => setSuccessSnackbar(false)}>
                   This is a success message!
                 </Alert>
               </Snackbar>
-              <Snackbar
-                open={errorSnackbar}
-                onClose={() => setErrorSnackbar(false)}
-              >
+              <Snackbar open={errorSnackbar} onClose={() => setErrorSnackbar(false)}>
                 <Alert severity="error" onClose={() => setErrorSnackbar(false)}>
                   This is a error message!
                 </Alert>
@@ -74,7 +49,7 @@ const SnackbarGuide: React.FC = () => {
         </Card>
       </Box>
     </Box>
-  );
-};
+  )
+}
 
-export default SnackbarGuide;
+export default SnackbarGuide

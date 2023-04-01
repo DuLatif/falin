@@ -1,14 +1,8 @@
-import React, { useId, useState } from "react";
-import CheckedIcon from "@/assets/forms/checkbox-checked.svg";
-import HoverIcon from "@/assets/forms/checkbox-hover.svg";
-import UncheckIcon from "@/assets/forms/checkbox-uncheck.svg";
-import {
-  Box,
-  FormControlLabel,
-  Checkbox as MuiCheckbox,
-  SxProps,
-  FormControlLabelProps,
-} from "@mui/material";
+import React, { useId, useState } from "react"
+import CheckedIcon from "@/assets/forms/checkbox-checked.svg"
+import HoverIcon from "@/assets/forms/checkbox-hover.svg"
+import UncheckIcon from "@/assets/forms/checkbox-uncheck.svg"
+import { Box, FormControlLabel, Checkbox as MuiCheckbox, SxProps, FormControlLabelProps } from "@mui/material"
 
 const styles: { box: SxProps; label: SxProps; checkbox: SxProps } = {
   box: { marginLeft: "7px" },
@@ -27,15 +21,14 @@ const styles: { box: SxProps; label: SxProps; checkbox: SxProps } = {
       pointerEvents: "none",
     },
   },
-};
+}
 
-export interface ICheckboxProps
-  extends Omit<FormControlLabelProps, keyof { control: any }> {
-  align?: "center" | "top";
+export interface ICheckboxProps extends Omit<FormControlLabelProps, keyof { control: any }> {
+  align?: "center" | "top"
 }
 const Checkbox: React.FC<ICheckboxProps> = ({ align, ...props }) => {
-  const id = useId();
-  const [icon, setIcon] = useState(UncheckIcon);
+  const id = useId()
+  const [icon, setIcon] = useState(UncheckIcon)
 
   const controlLabelSx = {
     alignItems: align === "center" ? "center" : "flex-start",
@@ -43,7 +36,7 @@ const Checkbox: React.FC<ICheckboxProps> = ({ align, ...props }) => {
       marginTop: align === "center" ? "0px" : "4px",
     },
     ...styles.label,
-  };
+  }
 
   return (
     <Box data-testid="checkbox-label" id={id} sx={styles.box}>
@@ -56,14 +49,12 @@ const Checkbox: React.FC<ICheckboxProps> = ({ align, ...props }) => {
           <MuiCheckbox
             sx={styles.checkbox}
             icon={<img style={{ position: "absolute" }} src={icon} />}
-            checkedIcon={
-              <img style={{ position: "absolute" }} src={CheckedIcon} />
-            }
+            checkedIcon={<img style={{ position: "absolute" }} src={CheckedIcon} />}
           />
         }
       />
     </Box>
-  );
-};
+  )
+}
 
-export default Checkbox;
+export default Checkbox

@@ -1,4 +1,4 @@
-import { Shadows } from "@mui/material";
+import { Shadows } from "@mui/material"
 
 export const shadows = {
   xs: "0px 1px 2px rgba(16, 24, 40, 0.05)",
@@ -8,7 +8,7 @@ export const shadows = {
   xl: "0px 20px 24px -4px rgba(16, 24, 40, 0.08), 0px 8px 8px -4px rgba(16, 24, 40, 0.03)",
   "2xl": "0px 24px 48px -12px rgba(16, 24, 40, 0.18)",
   "3xl": "0px 32px 64px -12px rgba(16, 24, 40, 0.14)",
-};
+}
 
 export const shadowsArray: Shadows = [
   "none",
@@ -36,4 +36,4 @@ export const shadowsArray: Shadows = [
   "none",
   "none",
   "none",
-];
+]

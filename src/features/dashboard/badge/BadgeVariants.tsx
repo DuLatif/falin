@@ -1,7 +1,7 @@
-import CodeSnippet from "@/components/CodeSnippet";
-import { Card, Chip, Stack, Typography } from "@mui/material";
-import React from "react";
-import { badgeVariantCode } from "./_code/badge-variant";
+import CodeSnippet from "@/components/CodeSnippet"
+import { Card, Chip, Stack, Typography } from "@mui/material"
+import React from "react"
+import { badgeVariantCode } from "./_code/badge-variant"
 
 const BadgeVariantsGuide: React.FC = () => {
   return (
@@ -15,7 +15,7 @@ const BadgeVariantsGuide: React.FC = () => {
       </Stack>
       <CodeSnippet code={badgeVariantCode} />
     </Card>
-  );
-};
+  )
+}
 
-export default BadgeVariantsGuide;
+export default BadgeVariantsGuide

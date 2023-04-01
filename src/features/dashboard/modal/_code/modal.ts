@@ -17,8 +17,8 @@ const App : React.FC = () => {
       ${code}
     </Box>
   )
-}`;
-};
+}`
+}
 
 export const modalCode = baseContainer(`<Box mt={4}>
         <Card>
@@ -39,4 +39,4 @@ export const modalCode = baseContainer(`<Box mt={4}>
             explicabo? Sunt?
           </Typography>
         </Box>
-      </Modal>`);
+      </Modal>`)

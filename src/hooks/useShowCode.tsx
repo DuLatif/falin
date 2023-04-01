@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useState } from "react"
 
 const useShowCode = () => {
-  const [showCode, setShowCode] = useState(false);
+  const [showCode, setShowCode] = useState(false)
 
-  const toggle = () => setShowCode(!showCode);
+  const toggle = () => setShowCode(!showCode)
 
-  return { show: showCode, toggle: toggle };
-};
+  return { show: showCode, toggle: toggle }
+}
 
-export default useShowCode;
+export default useShowCode

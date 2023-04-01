@@ -1,9 +1,9 @@
-import UploadFilePond from "@/components/UploadFile/UploadFilePond";
-import { Card, Grid, Typography } from "@mui/material";
-import React, { useState } from "react";
+import UploadFilePond from "@/components/UploadFile/UploadFilePond"
+import { Card, Grid, Typography } from "@mui/material"
+import React, { useState } from "react"
 
 const UploadFilePondGuide: React.FC = () => {
-  const [files, setFiles] = useState<any[]>([]);
+  const [files, setFiles] = useState<any[]>([])
 
   return (
     <Card sx={{ mb: 4 }}>
@@ -34,7 +34,7 @@ const UploadFilePondGuide: React.FC = () => {
         </Grid>
       </Grid>
     </Card>
-  );
-};
+  )
+}
 
-export default UploadFilePondGuide;
+export default UploadFilePondGuide

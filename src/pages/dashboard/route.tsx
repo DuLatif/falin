@@ -1,27 +1,27 @@
-import Content from "@/components/dashboard/Content";
-import Sidebar from "@/components/dashboard/Sidebar";
-import { Box, SxProps } from "@mui/material";
-import React from "react";
-import { Routes, Route } from "react-router-dom";
-import Error404 from "../error/404";
-import AlertPage from "./alert";
-import AvatarPage from "./avatar";
-import BadgePage from "./badge";
-import ButtonPage from "./button";
-import CheckboxPage from "./checkbox";
-import ColorPage from "./color";
-import HomePage from "./home";
-import InputPage from "./input";
-import ModalPage from "./modal";
-import RadioPage from "./radio";
-import SelectPage from "./select";
-import ShadowPage from "./shadow";
-import SnackbarPage from "./snackbar";
-import TablePage from "./table";
-import TooltipPage from "./tooltip";
-import TypographyPage from "./typography";
-import UploadFilePage from "./upload-file";
-import CalendarPage from "./calendar";
+import Content from "@/components/dashboard/Content"
+import Sidebar from "@/components/dashboard/Sidebar"
+import { Box, SxProps } from "@mui/material"
+import React from "react"
+import { Routes, Route } from "react-router-dom"
+import Error404 from "../error/404"
+import AlertPage from "./alert"
+import AvatarPage from "./avatar"
+import BadgePage from "./badge"
+import ButtonPage from "./button"
+import CheckboxPage from "./checkbox"
+import ColorPage from "./color"
+import HomePage from "./home"
+import InputPage from "./input"
+import ModalPage from "./modal"
+import RadioPage from "./radio"
+import SelectPage from "./select"
+import ShadowPage from "./shadow"
+import SnackbarPage from "./snackbar"
+import TablePage from "./table"
+import TooltipPage from "./tooltip"
+import TypographyPage from "./typography"
+import UploadFilePage from "./upload-file"
+import CalendarPage from "./calendar"
 
 const styles: { root: SxProps } = {
   root: {
@@ -30,7 +30,7 @@ const styles: { root: SxProps } = {
     position: "fixed",
     width: "100vw",
   },
-};
+}
 
 const DashboardRoute: React.FC = () => {
   return (
@@ -60,7 +60,7 @@ const DashboardRoute: React.FC = () => {
         </Routes>
       </Content>
     </Box>
-  );
-};
+  )
+}
 
-export default DashboardRoute;
+export default DashboardRoute

@@ -15,8 +15,8 @@ const App : React.FC = () => {
       ${code}
     </Box>
   )
-}`;
-};
+}`
+}
 
 export const basicSelectCode = baseContainer(`<FormControl>
         <FormLabel htmlFor="religion">Basic Select</FormLabel>
@@ -27,7 +27,7 @@ export const basicSelectCode = baseContainer(`<FormControl>
           <MenuItem value="Budha">Budha</MenuItem>
           <MenuItem value="Hindu">Hindu</MenuItem>
         </Select>
-      </FormControl>`);
+      </FormControl>`)
 
 export const basicSelectPlaceholderCode = baseContainer(`<FormControl>
         <FormLabel htmlFor="religion">Select with placeholder</FormLabel>
@@ -40,7 +40,7 @@ export const basicSelectPlaceholderCode = baseContainer(`<FormControl>
           <MenuItem value="Hindu">Hindu</MenuItem>
         </Select>
         <FormHelperText>This is a helper text</FormHelperText>
-      </FormControl>`);
+      </FormControl>`)
 
 export const basicRequiredSelectCode = baseContainer(`<FormControl required>
         <FormLabel htmlFor="religion">Required Select</FormLabel>
@@ -51,7 +51,7 @@ export const basicRequiredSelectCode = baseContainer(`<FormControl required>
           <MenuItem value="Budha">Budha</MenuItem>
           <MenuItem value="Hindu">Hindu</MenuItem>
         </Select>
-      </FormControl>`);
+      </FormControl>`)
 
 export const basicSelectErrorCode = baseContainer(`<FormControl required error>
         <FormLabel htmlFor="religion">Select Error</FormLabel>
@@ -63,10 +63,9 @@ export const basicSelectErrorCode = baseContainer(`<FormControl required error>
           <MenuItem value="Hindu">Hindu</MenuItem>
         </Select>
         <FormHelperText>This is a error message</FormHelperText>
-      </FormControl>`);
+      </FormControl>`)
 
-export const basicDisabledSelectCode =
-  baseContainer(`<FormControl required disabled>
+export const basicDisabledSelectCode = baseContainer(`<FormControl required disabled>
         <FormLabel htmlFor="religion">Disabled Select</FormLabel>
         <Select defaultValue={"Islam"} id="religion">
           <MenuItem value="Islam">Islam</MenuItem>
@@ -75,4 +74,4 @@ export const basicDisabledSelectCode =
           <MenuItem value="Budha">Budha</MenuItem>
           <MenuItem value="Hindu">Hindu</MenuItem>
         </Select>
-      </FormControl>`);
+      </FormControl>`)

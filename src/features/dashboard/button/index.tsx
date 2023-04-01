@@ -1,10 +1,10 @@
-import { Box, Grid, Typography } from "@mui/material";
-import React from "react";
-import BasicButtons from "./BasicButtons";
-import DisabledButtonsGuide from "./DisabledButtons";
-import IconButtonsGuide from "./IconButtons";
-import LoadingButtonsGuide from "./LoadingButtons";
-import SizeButtonsGuide from "./SizeButtons";
+import { Box, Grid, Typography } from "@mui/material"
+import React from "react"
+import BasicButtons from "./BasicButtons"
+import DisabledButtonsGuide from "./DisabledButtons"
+import IconButtonsGuide from "./IconButtons"
+import LoadingButtonsGuide from "./LoadingButtons"
+import SizeButtonsGuide from "./SizeButtons"
 
 const ButtonGuide: React.FC = () => {
   return (
@@ -29,7 +29,7 @@ const ButtonGuide: React.FC = () => {
         </Grid>
       </Grid>
     </Box>
-  );
-};
+  )
+}
 
-export default ButtonGuide;
+export default ButtonGuide

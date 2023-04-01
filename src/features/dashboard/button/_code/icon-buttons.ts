@@ -9,11 +9,10 @@ const App : React.FC = () => {
       ${code}
     </Box>
   )
-}`;
-};
+}`
+}
 
-export const buttonWithIconCode =
-  baseContainer(`<Stack direction="row" spacing={2}>
+export const buttonWithIconCode = baseContainer(`<Stack direction="row" spacing={2}>
           <Button startIcon={<Smiley size={22} weight="bold" />}>
             Button
           </Button>
@@ -26,10 +25,9 @@ export const buttonWithIconCode =
           >
             Button
           </Button>
-        </Stack>`);
+        </Stack>`)
 
-export const onlyIconButtonCode =
-  baseContainer(`<Stack direction="row" spacing={2}>
+export const onlyIconButtonCode = baseContainer(`<Stack direction="row" spacing={2}>
           <Button variant="text" data-shape="icon" color="inherit">
             <Smiley size={22} weight="bold" />
           </Button>
@@ -51,4 +49,4 @@ export const onlyIconButtonCode =
           <Button variant="text" data-shape="icon" color="error">
             <Smiley size={22} weight="bold" />
           </Button>
-        </Stack>`);
+        </Stack>`)

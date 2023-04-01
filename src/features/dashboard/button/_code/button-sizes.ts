@@ -8,11 +8,10 @@ const App : React.FC = () => {
       ${code}
     </Box>
   )
-}`;
-};
+}`
+}
 
-export const sizeContainedButtons =
-  baseContainer(`<Typography fontWeight={"semiBold"} color="text.secondary">
+export const sizeContainedButtons = baseContainer(`<Typography fontWeight={"semiBold"} color="text.secondary">
         Contained Buttons
       </Typography>
       <Stack direction="row" spacing={2} alignItems="center">
@@ -21,10 +20,9 @@ export const sizeContainedButtons =
         <Button size="lg">Button LG</Button>
         <Button size="xl">Button XL</Button>
         <Button size="2xl">Button 2XL</Button>
-      </Stack>`);
+      </Stack>`)
 
-export const sizeTextButtons =
-  baseContainer(`<Typography fontWeight={"semiBold"} color="text.secondary">
+export const sizeTextButtons = baseContainer(`<Typography fontWeight={"semiBold"} color="text.secondary">
         Text Buttons
       </Typography>
       <Stack direction="row" spacing={2} alignItems="center">
@@ -43,10 +41,9 @@ export const sizeTextButtons =
         <Button variant="text" size="2xl">
           Button 2XL
         </Button>
-      </Stack>`);
+      </Stack>`)
 
-export const sizeOutlinedButtons =
-  baseContainer(`<Typography fontWeight={"semiBold"} color="text.secondary">
+export const sizeOutlinedButtons = baseContainer(`<Typography fontWeight={"semiBold"} color="text.secondary">
         Outlined Buttons
       </Typography>
       <Stack direction="row" spacing={2} alignItems="center">
@@ -65,4 +62,4 @@ export const sizeOutlinedButtons =
         <Button variant="outlined" size="2xl">
           Button 2XL
         </Button>
-      </Stack>`);
+      </Stack>`)

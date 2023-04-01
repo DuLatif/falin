@@ -1,6 +1,6 @@
-import InputFile from "@/components/InputFile";
-import { Card, Grid, Typography } from "@mui/material";
-import React from "react";
+import InputFile from "@/components/InputFile"
+import { Card, Grid, Typography } from "@mui/material"
+import React from "react"
 
 const InputFileGuide: React.FC = () => {
   return (
@@ -10,11 +10,7 @@ const InputFileGuide: React.FC = () => {
       </Typography>
       <Grid container spacing={2}>
         <Grid item md={6}>
-          <InputFile
-            label="Documents"
-            required
-            accept="image/*,application/pdf"
-          />
+          <InputFile label="Documents" required accept="image/*,application/pdf" />
         </Grid>
         <Grid item md={6}>
           <InputFile
@@ -63,7 +59,7 @@ const InputFileGuide: React.FC = () => {
         </Grid>
       </Grid>
     </Card>
-  );
-};
+  )
+}
 
-export default InputFileGuide;
+export default InputFileGuide

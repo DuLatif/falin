@@ -1,11 +1,7 @@
-import CodeSnippet from "@/components/CodeSnippet";
-import { Box, Button, Card, Stack, Typography } from "@mui/material";
-import React from "react";
-import {
-  disabledContainedButtons,
-  disabledOutlinedButtons,
-  disabledTextButtons,
-} from "./_code/disabled-buttons";
+import CodeSnippet from "@/components/CodeSnippet"
+import { Box, Button, Card, Stack, Typography } from "@mui/material"
+import React from "react"
+import { disabledContainedButtons, disabledOutlinedButtons, disabledTextButtons } from "./_code/disabled-buttons"
 
 const DisabledButtonsGuide: React.FC = () => {
   return (
@@ -103,7 +99,7 @@ const DisabledButtonsGuide: React.FC = () => {
         </Box>
       </Stack>
     </Card>
-  );
-};
+  )
+}
 
-export default DisabledButtonsGuide;
+export default DisabledButtonsGuide

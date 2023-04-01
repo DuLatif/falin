@@ -1,17 +1,15 @@
-import { shadows } from "@/theme/shadows";
-import { Box, Card, Grid, Typography } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import { shadows } from "@/theme/shadows"
+import { Box, Card, Grid, Typography } from "@mui/material"
+import React, { useEffect, useState } from "react"
 
 const Shadow: React.FC = () => {
-  const [variants, setVariants] = useState<string[]>([]);
+  const [variants, setVariants] = useState<string[]>([])
 
   useEffect(() => {
     for (const variant of Object.keys(shadows)) {
-      setVariants((prev) =>
-        !prev.includes(variant) ? [...prev, variant] : [...prev]
-      );
+      setVariants((prev) => (!prev.includes(variant) ? [...prev, variant] : [...prev]))
     }
-  }, []);
+  }, [])
 
   return (
     <Box>
@@ -35,7 +33,7 @@ const Shadow: React.FC = () => {
         </Grid>
       </Card>
     </Box>
-  );
-};
+  )
+}
 
-export default Shadow;
+export default Shadow

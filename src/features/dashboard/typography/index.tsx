@@ -1,13 +1,5 @@
-import {
-  Box,
-  Card,
-  Divider,
-  Grid,
-  Stack,
-  Typography,
-  TypographyVariant,
-} from "@mui/material";
-import React from "react";
+import { Box, Card, Divider, Grid, Stack, Typography, TypographyVariant } from "@mui/material"
+import React from "react"
 
 const listTypograpy: TypographyVariant[] = [
   "h1",
@@ -22,7 +14,7 @@ const listTypograpy: TypographyVariant[] = [
   "body2",
   "caption",
   "overline",
-];
+]
 
 const TypographyList: React.FC = () => {
   return (
@@ -83,7 +75,7 @@ const TypographyList: React.FC = () => {
         </Grid>
       </Grid>
     </Box>
-  );
-};
+  )
+}
 
-export default TypographyList;
+export default TypographyList

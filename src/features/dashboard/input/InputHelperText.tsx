@@ -1,8 +1,8 @@
-import CodeSnippet from "@/components/CodeSnippet";
-import InputGroup from "@/components/InputGroup";
-import { Card, Grid, InputAdornment, Typography } from "@mui/material";
-import { CurrencyDollar, EnvelopeSimple } from "phosphor-react";
-import React from "react";
+import CodeSnippet from "@/components/CodeSnippet"
+import InputGroup from "@/components/InputGroup"
+import { Card, Grid, InputAdornment, Typography } from "@mui/material"
+import { CurrencyDollar, EnvelopeSimple } from "phosphor-react"
+import React from "react"
 import {
   inputHelperAddress,
   inputHelperDisabled,
@@ -10,7 +10,7 @@ import {
   inputHelperName,
   inputHelperReadonly,
   inputHelperSale,
-} from "./_code/code-snippet";
+} from "./_code/code-snippet"
 
 const InputHelperTextGuide: React.FC = () => {
   return (
@@ -20,11 +20,7 @@ const InputHelperTextGuide: React.FC = () => {
       </Typography>
       <Grid container spacing={2}>
         <Grid item md={6}>
-          <InputGroup
-            label="Name"
-            placeholder="Full Name"
-            helperText="This is a hint text to help user"
-          />
+          <InputGroup label="Name" placeholder="Full Name" helperText="This is a hint text to help user" />
           <CodeSnippet code={inputHelperName} />
         </Grid>
         <Grid item md={6}>
@@ -42,12 +38,7 @@ const InputHelperTextGuide: React.FC = () => {
           <CodeSnippet code={inputHelperEmail} />
         </Grid>
         <Grid item md={6}>
-          <InputGroup
-            label="Readonly input"
-            placeholder="This is value"
-            helperText="This is readonly input"
-            readOnly
-          />
+          <InputGroup label="Readonly input" placeholder="This is value" helperText="This is readonly input" readOnly />
           <CodeSnippet code={inputHelperReadonly} />
         </Grid>
         <Grid item md={6}>
@@ -61,13 +52,7 @@ const InputHelperTextGuide: React.FC = () => {
           <CodeSnippet code={inputHelperDisabled} />
         </Grid>
         <Grid item md={6}>
-          <InputGroup
-            error
-            required
-            helperText="This is error message"
-            label="Address"
-            placeholder="Your address"
-          />
+          <InputGroup error required helperText="This is error message" label="Address" placeholder="Your address" />
           <CodeSnippet code={inputHelperAddress} />
         </Grid>
         <Grid item md={6}>
@@ -88,7 +73,7 @@ const InputHelperTextGuide: React.FC = () => {
         </Grid>
       </Grid>
     </Card>
-  );
-};
+  )
+}
 
-export default InputHelperTextGuide;
+export default InputHelperTextGuide
