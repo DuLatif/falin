@@ -1,0 +1,132 @@
+.Box {
+  .ReactCalendar {
+    border: none;
+    margin-top: 1em;
+  }
+
+  .ReactCalendar :global(button) {
+    transition: 0.2s;
+  }
+
+  .ReactCalendar :global(abbr) {
+    text-decoration: none;
+  }
+
+  .ReactCalendar :global(div.react-calendar__navigation) {
+    align-items: center;
+    height: 36px;
+  }
+
+  .ReactCalendar :global(button.react-calendar__navigation__prev2-button),
+  .ReactCalendar :global(button.react-calendar__navigation__next2-button) {
+    display: none;
+  }
+
+  .ReactCalendar :global(button.react-calendar__navigation__arrow) {
+    border: 1px solid $neutral-300;
+    width: 36px;
+    height: 100%;
+    padding: 0;
+    border-radius: 8px;
+    position: relative;
+  }
+
+  .ReactCalendar :global(button.react-calendar__navigation__arrow svg) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: $neutral-500;
+  }
+
+  .ReactCalendar :global(button.react-calendar__navigation__label) {
+    margin: 0px 12px;
+    height: 100%;
+    border-radius: 8px;
+  }
+
+  .ReactCalendar :global(span.react-calendar__navigation__label__labelText) {
+    font-weight: $font-medium;
+    font-size: $text-body1;
+    line-height: 150%;
+    color: $neutral-700;
+  }
+
+  .ReactCalendar :global(.react-calendar__month-view__weekdays__weekday) {
+    font-weight: $font-medium;
+    font-size: $text-body2;
+    line-height: 150%;
+    color: $neutral-700;
+    text-transform: capitalize;
+  }
+
+  .ReactCalendar :global(button.react-calendar__tile) {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 11px 0px;
+    padding-bottom: 3px;
+    color: $neutral-700;
+    font-size: $text-body2;
+    font-weight: $font-medium;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ReactCalendar
+    :global(button.react-calendar__tile.react-calendar__tile--now) {
+    background-color: #fff;
+    border: 1px solid $info-500;
+  }
+
+  .ReactCalendar
+    :global(
+      button.react-calendar__tile.react-calendar__month-view__days__day--neighboringMonth
+    ) {
+    color: $neutral-400;
+  }
+
+  .ReactCalendar
+    :global(button.react-calendar__tile.react-calendar__tile--active) {
+    background-color: $info-500;
+    color: #fff;
+  }
+
+  .ReactCalendar :global(button.react-calendar__tile div.event) {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: transparent;
+    margin-top: 2px;
+  }
+
+  .ReactCalendar
+    :global(
+      button.react-calendar__tile.react-calendar__tile--active div.event.default
+    ) {
+    background: transparent !important;
+  }
+  .ReactCalendar
+    :global(
+      button.react-calendar__tile.react-calendar__tile--active div.event
+    ) {
+    background: #fff !important;
+  }
+  .ReactCalendar :global(button.react-calendar__tile div.event.primary) {
+    background: $primary-500;
+  }
+  .ReactCalendar :global(button.react-calendar__tile div.event.success) {
+    background: $success-500;
+  }
+  .ReactCalendar :global(button.react-calendar__tile div.event.info) {
+    background: $info-500;
+  }
+  .ReactCalendar :global(button.react-calendar__tile div.event.warning) {
+    background: $warning-500;
+  }
+  .ReactCalendar :global(button.react-calendar__tile div.event.danger) {
+    background: $danger-500;
+  }
+}

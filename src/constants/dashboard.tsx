@@ -20,6 +20,7 @@ import {
   StackSimple,
   Textbox,
   CloudArrowUp,
+  Calendar,
 } from "phosphor-react";
 import { IMenuProps } from "@/components/dashboard/Menu";
 
@@ -140,5 +141,10 @@ export const listComponents: IMenuProps[] = [
     text: "Modal",
     path: "/dashboard/modal",
     icon: <StackSimple size={26} weight={"bold"} />,
+  },
+  {
+    text: "Calendar",
+    path: "/dashboard/calendar",
+    icon: <Calendar size={26} weight={"bold"} />,
   },
 ];

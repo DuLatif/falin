@@ -21,6 +21,7 @@ import TablePage from "./table";
 import TooltipPage from "./tooltip";
 import TypographyPage from "./typography";
 import UploadFilePage from "./upload-file";
+import CalendarPage from "./calendar";
 
 const styles: { root: SxProps } = {
   root: {
@@ -54,6 +55,7 @@ const DashboardRoute: React.FC = () => {
           <Route path={"/modal"} element={<ModalPage />} />
           <Route path={"/table"} element={<TablePage />} />\
           <Route path={"/upload-file"} element={<UploadFilePage />} />
+          <Route path={"/calendar"} element={<CalendarPage />} />
           <Route path={"*"} element={<Error404 />} />
         </Routes>
       </Content>
