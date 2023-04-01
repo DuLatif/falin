@@ -8,7 +8,8 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "prepare": "husky install",
-    "lint": "eslint --ext .jsx,.js,.ts,.tsx src/ --fix"
+    "lint": "eslint --ext .ts,.tsx src/ --fix",
+    "pretty": "yarn pretty-quick --staged && yarn lint-staged"
   },
   "dependencies": {
     "@emotion/react": "^11.10.6",
@@ -51,8 +52,6 @@
     "vite": "^4.1.0"
   },
   "lint-staged": {
-    "*.js": "eslint --fix",
-    "*.jsx": "eslint --fix",
     "*.ts": "eslint --fix",
     "*.tsx": "eslint --fix"
   }
