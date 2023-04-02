@@ -1,0 +1,46 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Theme Palette > should match snapshot 1`] = `
+{
+  "error": {
+    "dark": "#d92d20",
+    "light": "#f97066",
+    "main": "#f04438",
+  },
+  "grey": {
+    "100": "#f2f4f7",
+    "200": "#eaecf0",
+    "300": "#d0d5dd",
+    "400": "#98a2b3",
+    "500": "#667085",
+    "600": "#475467",
+    "700": "#344054",
+    "800": "#1D2939",
+    "900": "#101828",
+  },
+  "info": {
+    "dark": "#0d92d3",
+    "light": "#3cdffd",
+    "main": "#13c1fc",
+  },
+  "primary": {
+    "dark": "#155eef",
+    "light": "#528bff",
+    "main": "#2970dd",
+  },
+  "success": {
+    "dark": "#039855",
+    "light": "#32d583",
+    "main": "#12b76a",
+  },
+  "text": {
+    "primary": "#344054",
+    "secondary": "#667085",
+  },
+  "warning": {
+    "dark": "#dc6803",
+    "light": "#fdb022",
+    "main": "#f79009",
+  },
+}
+`;

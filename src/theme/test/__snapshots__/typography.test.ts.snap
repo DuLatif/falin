@@ -1,0 +1,64 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Theme Typography > should match snapshot 1`] = `
+{
+  "body1": {
+    "fontSize": "1rem",
+    "lineHeight": "1.5rem",
+  },
+  "body2": {
+    "fontSize": "0.875rem",
+    "lineHeight": "1.25rem",
+  },
+  "caption": {
+    "fontSize": "0.75rem",
+    "lineHeight": "1.125rem",
+  },
+  "fontFamily": "Inter",
+  "fontSize": 16,
+  "fontWeightBold": 700,
+  "fontWeightMedium": 500,
+  "fontWeightRegular": 400,
+  "fontWeightSemiBold": 600,
+  "h1": {
+    "fontSize": "4.5rem",
+    "letterSpacing": "-2%",
+    "lineHeight": "5.625rem",
+  },
+  "h2": {
+    "fontSize": "3.75rem",
+    "letterSpacing": "-2%",
+    "lineHeight": "4.5rem",
+  },
+  "h3": {
+    "fontSize": "3rem",
+    "letterSpacing": "-2%",
+    "lineHeight": "3.75rem",
+  },
+  "h4": {
+    "fontSize": "2.25rem",
+    "letterSpacing": "-2%",
+    "lineHeight": "2.75rem",
+  },
+  "h5": {
+    "fontSize": "1.875rem",
+    "lineHeight": "2.375rem",
+  },
+  "h6": {
+    "fontSize": "1.5rem",
+    "lineHeight": "2rem",
+  },
+  "overline": {
+    "fontSize": "0.625rem",
+    "lineHeight": "1rem",
+  },
+  "subtitle1": {
+    "fontSize": "1.25rem",
+    "lineHeight": "1.875rem",
+  },
+  "subtitle2": {
+    "fontSize": "1.125rem",
+    "lineHeight": "1.75rem",
+  },
+}
+`;
