@@ -1,5 +1,5 @@
 import Logo from "@/assets/logos/Capsule-Logo-Text.svg"
-import { listComponents, listCustomization, listMenuForms } from "@/constants/dashboard"
+import { listComponents, listCustomization, listExtraUI, listMenuForms } from "@/constants/dashboard"
 import { Box, MenuList, Typography } from "@mui/material"
 import { Gauge } from "phosphor-react"
 import React from "react"
@@ -28,6 +28,12 @@ const Sidebar: React.FC = () => {
           ))}
         <Typography className={styles.TitleMenu}>Components</Typography>
         {listComponents
+          .sort((a, b) => a.text.localeCompare(b.text))
+          .map((item, i) => (
+            <Menu key={i} {...item} />
+          ))}
+        <Typography className={styles.TitleMenu}>Extra UI</Typography>
+        {listExtraUI
           .sort((a, b) => a.text.localeCompare(b.text))
           .map((item, i) => (
             <Menu key={i} {...item} />

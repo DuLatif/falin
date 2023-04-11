@@ -21,6 +21,7 @@ import {
   Textbox,
   CloudArrowUp,
   Calendar,
+  ChartLineUp,
 } from "phosphor-react"
 import { IMenuProps } from "@/components/dashboard/Menu"
 
@@ -146,5 +147,13 @@ export const listComponents: IMenuProps[] = [
     text: "Calendar",
     path: "/dashboard/calendar",
     icon: <Calendar size={26} weight={"bold"} />,
+  },
+]
+
+export const listExtraUI: IMenuProps[] = [
+  {
+    text: "Chart",
+    path: "/dashboard/chart",
+    icon: <ChartLineUp size={26} weight={"bold"} />,
   },
 ]
