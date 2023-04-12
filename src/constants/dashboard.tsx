@@ -22,6 +22,8 @@ import {
   CloudArrowUp,
   Calendar,
   ChartLineUp,
+  MapTrifold,
+  BracketsAngle,
 } from "phosphor-react"
 import { IMenuProps } from "@/components/dashboard/Menu"
 
@@ -74,6 +76,11 @@ export const listMenuForms: IMenuProps[] = [
     path: "/dashboard/upload-file",
     icon: <CloudArrowUp size={26} weight={"bold"} />,
   },
+  {
+    text: "Form Editor",
+    path: "/dashboard/form-editor",
+    icon: <BracketsAngle size={26} weight={"bold"} />,
+  },
 ]
 
 export const listComponents: IMenuProps[] = [
@@ -98,11 +105,7 @@ export const listComponents: IMenuProps[] = [
     path: "/dashboard/tooltip",
     icon: <Info size={26} weight={"bold"} />,
   },
-  {
-    text: "Sliders",
-    path: "/dashboard/slider",
-    icon: <Sliders size={26} weight={"bold"} />,
-  },
+
   {
     text: "Alert",
     path: "/dashboard/alert",
@@ -143,11 +146,6 @@ export const listComponents: IMenuProps[] = [
     path: "/dashboard/modal",
     icon: <StackSimple size={26} weight={"bold"} />,
   },
-  {
-    text: "Calendar",
-    path: "/dashboard/calendar",
-    icon: <Calendar size={26} weight={"bold"} />,
-  },
 ]
 
 export const listExtraUI: IMenuProps[] = [
@@ -155,5 +153,20 @@ export const listExtraUI: IMenuProps[] = [
     text: "Chart",
     path: "/dashboard/chart",
     icon: <ChartLineUp size={26} weight={"bold"} />,
+  },
+  {
+    text: "Calendar",
+    path: "/dashboard/calendar",
+    icon: <Calendar size={26} weight={"bold"} />,
+  },
+  {
+    text: "Sliders",
+    path: "/dashboard/slider",
+    icon: <Sliders size={26} weight={"bold"} />,
+  },
+  {
+    text: "Map",
+    path: "/dashboard/map",
+    icon: <MapTrifold size={26} weight={"bold"} />,
   },
 ]

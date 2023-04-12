@@ -24,6 +24,8 @@ import UploadFilePage from "./upload-file"
 import CalendarPage from "./calendar"
 import ChartPage from "./chart"
 import AccordionPage from "./accordion"
+import MapPage from "./map"
+import SliderPage from "./slider"
 
 const styles: { root: SxProps } = {
   root: {
@@ -60,6 +62,8 @@ const DashboardRoute: React.FC = () => {
           <Route path={"/calendar"} element={<CalendarPage />} />
           <Route path={"/chart"} element={<ChartPage />} />
           <Route path={"/accordion"} element={<AccordionPage />} />
+          <Route path={"/map"} element={<MapPage />} />
+          <Route path={"/slider"} element={<SliderPage />} />
           <Route path={"*"} element={<Error404 />} />
         </Routes>
       </Content>
