@@ -13,6 +13,8 @@
     "test": "vitest"
   },
   "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^37.0.1",
+    "@ckeditor/ckeditor5-react": "^6.0.0",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@fullcalendar/daygrid": "^6.1.5",
