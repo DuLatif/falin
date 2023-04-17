@@ -1,0 +1,102 @@
+@mixin iconColor($color, $bgColor, $shadowColor) {
+  color: $color;
+  @if $shadowColor != null {
+    background-color: $bgColor;
+    box-shadow: 0px 0px 0px 8px $shadowColor;
+  } @else {
+    border: 1px solid $bgColor;
+  }
+}
+
+.Container {
+  .Modal_Header {
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    padding-bottom: 0px;
+    &.Divider {
+      border-bottom: 1px solid $neutral-200;
+      padding-bottom: 16px;
+    }
+  }
+
+  .Modal_Icon {
+    width: 48px;
+    height: 48px;
+    position: relative;
+    margin-right: 16px;
+
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 28px;
+    }
+
+    &.Contained {
+      border-radius: 50%;
+
+      &.Neutral {
+        @include iconColor($neutral-600, $neutral-100, $neutral-50);
+      }
+      &.Primary {
+        @include iconColor($primary-600, $primary-100, $primary-50);
+      }
+      &.Success {
+        @include iconColor($success-600, $success-100, $success-50);
+      }
+      &.Info {
+        @include iconColor($info-600, $info-100, $info-50);
+      }
+      &.Warning {
+        @include iconColor($warning-600, $warning-100, $warning-50);
+      }
+      &.Error {
+        @include iconColor($danger-600, $danger-100, $danger-50);
+      }
+    }
+
+    &.Outlined {
+      border-radius: 10px;
+      border-width: 1px;
+
+      &.Neutral {
+        @include iconColor($neutral-600, $neutral-200, null);
+      }
+      &.Primary {
+        @include iconColor($primary-600, $primary-200, null);
+      }
+      &.Success {
+        @include iconColor($success-600, $success-200, null);
+      }
+      &.Info {
+        @include iconColor($info-600, $info-100, null);
+      }
+      &.Warning {
+        @include iconColor($warning-600, $warning-100, null);
+      }
+      &.Error {
+        @include iconColor($danger-600, $danger-100, null);
+      }
+    }
+  }
+
+  .Modal_Body {
+    padding: 24px;
+  }
+
+  .Modal_Footer {
+    padding: 16px 24px;
+    padding-top: 0px;
+
+    &.Divider {
+      border-top: 1px solid $neutral-200;
+      padding-top: 16px;
+    }
+
+    & :global(.MuiButton-root) {
+      flex: 1;
+    }
+  }
+}
