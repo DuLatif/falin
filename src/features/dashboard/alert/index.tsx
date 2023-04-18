@@ -2,6 +2,7 @@ import { Box, Card, Typography, Alert, Stack, IconButton, AlertTitle, Grid } fro
 import React from "react"
 import { XCircle } from "phosphor-react"
 import AlertFilled from "./AlertFilled"
+import AlertOutlined from "./AlertOutlined"
 
 const AlertGuide: React.FC = () => {
   return (
@@ -11,6 +12,9 @@ const AlertGuide: React.FC = () => {
         <Grid container spacing={4}>
           <Grid item md={6}>
             <AlertFilled />
+          </Grid>
+          <Grid item md={6}>
+            <AlertOutlined />
           </Grid>
         </Grid>
       </Box>
