@@ -11,12 +11,16 @@ const BadgeGuide: React.FC = () => {
       <Typography variant="h6">Badge Guide</Typography>
       <Box mt={4}>
         <Grid container spacing={4}>
-          <Grid item container direction={"column"} gap={4} md={7}>
-            <BadgeColorsGuide />
+          <Grid item md={7}>
+            <Box mb={4}>
+              <BadgeColorsGuide />
+            </Box>
             <BadgeSizesGuide />
           </Grid>
-          <Grid item container direction={"column"} gap={4} md={5}>
-            <BadgeVariantsGuide />
+          <Grid item md={5}>
+            <Box mb={4}>
+              <BadgeVariantsGuide />
+            </Box>
             <BadgeActionsGuide />
           </Grid>
         </Grid>
