@@ -1,12 +1,10 @@
+export const bigCalendarCode = `import React, { useEffect, useRef, useState } from "react"
 import dayGridPlugin from "@fullcalendar/daygrid"
 import FullCalendar from "@fullcalendar/react"
 import { Box, Button, Card, Stack, Typography } from "@mui/material"
 import dayjs from "dayjs"
 import { CaretLeft, CaretRight } from "phosphor-react"
-import React, { useEffect, useRef, useState } from "react"
 import classes from "./_.module.scss"
-import CodeSnippet from "@/components/CodeSnippet"
-import { bigCalendarCode } from "./_code/big-calendar"
 
 const listEvents = [
   {
@@ -93,9 +91,9 @@ const BigCalendarGuide: React.FC = () => {
           />
         </Box>
       </Box>
-      <CodeSnippet code={bigCalendarCode} />
     </Card>
   )
 }
 
 export default BigCalendarGuide
+`

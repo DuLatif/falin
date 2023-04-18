@@ -1,10 +1,8 @@
+export const smallCalendarCode = `import React from 'react';
 import Calendar from "@/components/Calendar"
-import CodeSnippet from "@/components/CodeSnippet"
 import { Card, Typography } from "@mui/material"
-import React from "react"
-import { smallCalendarCode } from "./_code/small-calendar"
 
-const SmallCalendarGuide: React.FC = () => {
+const App: React.FC = () => {
   return (
     <Card>
       <Typography variant="subtitle1" fontWeight={"semiBold"} mb={1}>
@@ -19,9 +17,10 @@ const SmallCalendarGuide: React.FC = () => {
           { date: "26-04-2023", color: "success" },
         ]}
       />
-      <CodeSnippet code={smallCalendarCode} />
     </Card>
   )
 }
 
-export default SmallCalendarGuide
+export default App
+
+`
