@@ -1,11 +1,9 @@
-import { Box, Card, Typography } from "@mui/material"
+export const splideSliderCode = `import { Box, Card, Typography } from "@mui/material"
 import React from "react"
 import { Splide, SplideSlide } from "@splidejs/react-splide"
 
 // Default theme
 import "@splidejs/react-splide/css"
-import CodeSnippet from "@/components/CodeSnippet"
-import { splideSliderCode } from "./_code/slider-splide"
 
 // or other themes
 // import "@splidejs/react-splide/css/skyblue"
@@ -57,7 +55,6 @@ const SliderGuide: React.FC = () => {
               />
             </SplideSlide>
           </Splide>
-          <CodeSnippet code={splideSliderCode} />
         </Card>
       </Box>
     </Box>
@@ -65,3 +62,4 @@ const SliderGuide: React.FC = () => {
 }
 
 export default SliderGuide
+`
