@@ -1,8 +1,6 @@
-import CodeSnippet from "@/components/CodeSnippet"
-import { Card, Typography } from "@mui/material"
+export const chartLineCode = `import { Card, Typography } from "@mui/material"
 import React from "react"
 import Chart from "react-apexcharts"
-import { chartLineCode } from "./_code/chart-line"
 
 const chartData: any = {
   series: [
@@ -40,16 +38,16 @@ const chartData: any = {
     },
   },
 }
-const ChartLine: React.FC = () => {
+const App: React.FC = () => {
   return (
     <Card>
       <Typography variant="subtitle1" mb={1} fontWeight={"semiBold"}>
         Chart Line
       </Typography>
       <Chart options={chartData.options} series={chartData.series} type="line" />
-      <CodeSnippet code={chartLineCode} />
     </Card>
   )
 }
 
-export default ChartLine
+export default App
+`
