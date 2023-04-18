@@ -6,7 +6,7 @@ import { badgeColorCode } from "./_code/badge-color"
 const BadgeColorsGuide: React.FC = () => {
   return (
     <Card>
-      <Typography variant="subtitle1" mb={1}>
+      <Typography variant="subtitle1" mb={1} fontWeight={"semiBold"}>
         Badge Colors
       </Typography>
       <Stack direction="row" spacing={2}>

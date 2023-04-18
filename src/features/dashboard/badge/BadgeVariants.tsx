@@ -6,7 +6,7 @@ import { badgeVariantCode } from "./_code/badge-variant"
 const BadgeVariantsGuide: React.FC = () => {
   return (
     <Card>
-      <Typography variant="subtitle1" mb={1}>
+      <Typography variant="subtitle1" mb={1} fontWeight={"semiBold"}>
         Badge Variants
       </Typography>
       <Stack direction="row" spacing={2}>

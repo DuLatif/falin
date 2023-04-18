@@ -6,7 +6,7 @@ import { badgeSizesCode } from "./_code/badge-size"
 const BadgeSizesGuide: React.FC = () => {
   return (
     <Card>
-      <Typography variant="subtitle1" mb={1}>
+      <Typography variant="subtitle1" mb={1} fontWeight={"semiBold"}>
         Badge Sizes
       </Typography>
       <Stack direction="row" spacing={2}>

@@ -9,7 +9,9 @@ const RadioGuide: React.FC = () => {
     <Box>
       <Typography variant="h6">Radio Guide</Typography>
       <Card sx={{ mt: 4 }}>
-        <Typography variant="subtitle1">Radios</Typography>
+        <Typography variant="subtitle1" fontWeight={"semiBold"} mb={1}>
+          Radios
+        </Typography>
         <RadioGroup row>
           <Radio label="Option 1" value="option 1" />
           <Radio label="Option 2" value="option 2" />

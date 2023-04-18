@@ -7,7 +7,7 @@ const UploadFilePondGuide: React.FC = () => {
 
   return (
     <Card sx={{ mb: 4 }}>
-      <Typography variant="subtitle1" fontWeight={"semiBold"}>
+      <Typography variant="subtitle1" fontWeight={"semiBold"} mb={1}>
         Upload Using FilePond
       </Typography>
       <Grid container spacing={2}>

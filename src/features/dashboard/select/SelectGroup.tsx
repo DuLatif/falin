@@ -20,7 +20,9 @@ const listOptions = [
 const SelectGroupGuide: React.FC = () => {
   return (
     <Card>
-      <Typography variant="subtitle1">Select Group</Typography>
+      <Typography variant="subtitle1" fontWeight={"semiBold"} mb={1}>
+        Select Group
+      </Typography>
       <Grid container spacing={2}>
         <Grid item md={6}>
           <SelectGroup label="Basic Select" options={listOptions} />

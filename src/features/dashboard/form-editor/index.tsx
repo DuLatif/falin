@@ -9,7 +9,7 @@ const FormEditorGuide: React.FC = () => {
       <Typography variant="h6">Form Editor Guide</Typography>
       <Box mt={4}>
         <Card>
-          <Typography variant="subtitle1" mb={1}>
+          <Typography variant="subtitle1" mb={1} fontWeight={"semiBold"}>
             CkEditor
           </Typography>
           <CKEditor editor={ClassicEditor} data="<p>Hello from CKEditor 5!</p>" />

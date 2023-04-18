@@ -9,7 +9,9 @@ const CheckboxGuide: React.FC = () => {
     <Box>
       <Typography variant="h6">Checkbox Guide</Typography>
       <Card sx={{ mt: 4 }}>
-        <Typography variant="subtitle1">Checkboxes</Typography>
+        <Typography variant="subtitle1" fontWeight={"semiBold"} mb={1}>
+          Checkboxes
+        </Typography>
         <Checkbox label="Remember Me" />
         <Checkbox label="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti itaque voluptatem reiciendis unde quam quae ratione, natus magnam officia amet eum porro et est, a, veritatis provident vel cumque ex. " />
         <Checkbox

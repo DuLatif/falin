@@ -7,7 +7,7 @@ import { badgeActionClickableCode, badgeActionDeleteableCode } from "./_code/bad
 const BadgeActionsGuide: React.FC = () => {
   return (
     <Card>
-      <Typography variant="subtitle1" mb={1}>
+      <Typography variant="subtitle1" mb={1} fontWeight={"semiBold"}>
         Badge Actions
       </Typography>
       <Stack direction="column">
