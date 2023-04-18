@@ -1,11 +1,19 @@
-import { Box, Card, Typography, Alert, Stack, IconButton, AlertTitle } from "@mui/material"
+import { Box, Card, Typography, Alert, Stack, IconButton, AlertTitle, Grid } from "@mui/material"
 import React from "react"
 import { XCircle } from "phosphor-react"
+import AlertFilled from "./AlertFilled"
 
 const AlertGuide: React.FC = () => {
   return (
     <Box>
       <Typography variant="h6">Alert Guide</Typography>
+      <Box mt={4}>
+        <Grid container spacing={4}>
+          <Grid item md={6}>
+            <AlertFilled />
+          </Grid>
+        </Grid>
+      </Box>
       <Card sx={{ mt: 4 }}>
         <Stack direction="column" spacing={1} mb={2}>
           <Typography variant="subtitle1">Alert Filled</Typography>
