@@ -1,8 +1,8 @@
-import Calendar from "@/components/Calendar"
 import CodeSnippet from "@/components/CodeSnippet"
 import { Card, Typography } from "@mui/material"
 import React from "react"
 import { smallCalendarCode } from "./_code/small-calendar"
+import { SmallCalendar } from "@/components/Calendar"
 
 const SmallCalendarGuide: React.FC = () => {
   return (
@@ -16,7 +16,7 @@ const SmallCalendarGuide: React.FC = () => {
           React Calendar
         </a>
       </Typography>
-      <Calendar
+      <SmallCalendar
         events={[
           { date: "10-04-2023", color: "primary" },
           { date: "12-04-2023", color: "info" },
