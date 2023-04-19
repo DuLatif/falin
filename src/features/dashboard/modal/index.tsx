@@ -4,6 +4,7 @@ import { Box, Button, Card, Stack, Typography } from "@mui/material"
 import { CheckCircle, Trash, UploadSimple } from "phosphor-react"
 import React, { useState } from "react"
 import { modalCode } from "./_code/modal"
+import ModalErrorGuide from "./ModalErrorGuide"
 
 const ModalGuide: React.FC = () => {
   const [showModal, setShowModal] = useState(false)
@@ -20,6 +21,7 @@ const ModalGuide: React.FC = () => {
             <Button onClick={() => setShowModal(true)} color={"error"}>
               Open Modal Delete
             </Button>
+
             <Button onClick={() => setShowModalHeader(true)} color={"success"}>
               Open Modal Header
             </Button>
@@ -27,6 +29,7 @@ const ModalGuide: React.FC = () => {
               Open Modal Info
             </Button>
             <Button onClick={() => setShowModalSubmit(true)}>Open Modal Submit</Button>
+            <ModalErrorGuide />
           </Stack>
           <CodeSnippet code={modalCode} />
         </Card>

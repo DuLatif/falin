@@ -1,0 +1,28 @@
+.Body.Payload_Copy {
+  position: absolute;
+  right: 8px;
+  top: 4px;
+}
+
+.Body.Payload {
+  background-color: $neutral-100;
+  padding: 16px 24px;
+  border-radius: 4px;
+  margin: 20px auto;
+
+  :global(.string) {
+    color: $success-500;
+  }
+  :global(.number) {
+    color: $info-500;
+  }
+  :global(.boolean) {
+    color: $primary-500;
+  }
+  :global(.null) {
+    color: $danger-500;
+  }
+  :global(.key) {
+    color: $neutral-600;
+  }
+}
