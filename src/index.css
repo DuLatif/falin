@@ -4,3 +4,10 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+a.link {
+  color: #2970dd;
+}
+a.link:hover {
+  text-decoration: underline;
+}

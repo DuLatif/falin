@@ -10,6 +10,12 @@ const UploadFilePondGuide: React.FC = () => {
       <Typography variant="subtitle1" fontWeight={"semiBold"} mb={1}>
         Upload Using FilePond
       </Typography>
+      <Typography mb={1}>
+        This component using library{" "}
+        <a href="https://pqina.nl/filepond/docs/getting-started/installation/react/" className="link" target="_blank" rel="noreferrer">
+          FilePond
+        </a>
+      </Typography>
       <Grid container spacing={2}>
         <Grid item md={6}>
           <UploadFilePond

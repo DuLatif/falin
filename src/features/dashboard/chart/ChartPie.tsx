@@ -34,7 +34,7 @@ const ChartPie: React.FC = () => {
         Chart Pie
       </Typography>
       <Chart options={chartData.options} series={chartData.series} type="pie" />
-      <CodeSnippet code={chartPieCode} />
+      <CodeSnippet code={chartPieCode} infoUrl="https://apexcharts.com/react-chart-demos/pie-charts/" />
     </Card>
   )
 }

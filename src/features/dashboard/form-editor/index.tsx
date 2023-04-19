@@ -12,6 +12,16 @@ const FormEditorGuide: React.FC = () => {
           <Typography variant="subtitle1" mb={1} fontWeight={"semiBold"}>
             CkEditor
           </Typography>
+          <Typography mb={1}>
+            This component using library{" "}
+            <a
+              href="https://ckeditor.com/docs/ckeditor5/latest/installation/frameworks/react.html"
+              className="link"
+              target="_blank" rel="noreferrer"
+            >
+              CK Editor
+            </a>
+          </Typography>
           <CKEditor editor={ClassicEditor} data="<p>Hello from CKEditor 5!</p>" />
         </Card>
       </Box>

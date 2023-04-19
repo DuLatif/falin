@@ -66,7 +66,7 @@ const ChartColumn: React.FC = () => {
         Chart Column
       </Typography>
       <Chart options={chartData.options} series={chartData.series} type="bar" />
-      <CodeSnippet code={chartColumnCode} />
+      <CodeSnippet code={chartColumnCode} infoUrl="https://apexcharts.com/react-chart-demos/column-charts/" />
     </Card>
   )
 }

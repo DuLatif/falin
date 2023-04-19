@@ -10,6 +10,12 @@ const SmallCalendarGuide: React.FC = () => {
       <Typography variant="subtitle1" fontWeight={"semiBold"} mb={1}>
         Small Calendar
       </Typography>
+      <Typography mb={1}>
+        This component using library{" "}
+        <a href="https://www.npmjs.com/package/react-calendar" className="link" target="_blank" rel="noreferrer">
+          React Calendar
+        </a>
+      </Typography>
       <Calendar
         events={[
           { date: "10-04-2023", color: "primary" },

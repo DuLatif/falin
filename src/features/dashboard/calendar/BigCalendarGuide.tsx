@@ -67,6 +67,12 @@ const BigCalendarGuide: React.FC = () => {
       <Typography variant="subtitle1" fontWeight={"semiBold"} mb={1}>
         Big Calendar
       </Typography>
+      <Typography mb={1}>
+        This component using library{" "}
+        <a href="https://fullcalendar.io/docs/react" className="link" target="_blank" rel="noreferrer">
+          React Full Calendar
+        </a>
+      </Typography>
       <Box>
         <Box className="p-dashboard">
           <Stack direction="row" alignItems={"center"} justifyContent="space-between">

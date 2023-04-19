@@ -20,6 +20,12 @@ const SliderGuide: React.FC = () => {
           <Typography variant="subtitle1" mb={1} fontWeight={"semiBold"}>
             Splide Slider
           </Typography>
+          <Typography mb={1}>
+            This component using library{" "}
+            <a href="https://splidejs.com/integration/react-splide/" className="link" target="_blank" rel="noreferrer">
+              Splide.js
+            </a>
+          </Typography>
           <Splide aria-label="My Favorite Images">
             <SplideSlide>
               <img

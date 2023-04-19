@@ -47,7 +47,7 @@ const ChartLine: React.FC = () => {
         Chart Line
       </Typography>
       <Chart options={chartData.options} series={chartData.series} type="line" />
-      <CodeSnippet code={chartLineCode} />
+      <CodeSnippet code={chartLineCode} infoUrl="https://apexcharts.com/react-chart-demos/line-charts/" />
     </Card>
   )
 }

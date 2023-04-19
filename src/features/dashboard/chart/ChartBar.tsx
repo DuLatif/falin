@@ -47,7 +47,7 @@ const ChartBar: React.FC = () => {
         Chart Bar
       </Typography>
       <Chart options={chartData.options} series={chartData.series} type="bar" />
-      <CodeSnippet code={chartBarCode} />
+      <CodeSnippet code={chartBarCode} infoUrl="https://apexcharts.com/react-chart-demos/bar-charts/" />
     </Card>
   )
 }

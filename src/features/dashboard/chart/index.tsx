@@ -12,6 +12,17 @@ const ChartGuide: React.FC = () => {
     <Box>
       <Typography variant="h6">Chart Guide</Typography>
       <Box mt={4}>
+        <Typography mb={3}>
+          This charts using{" "}
+          <a href="https://apexcharts.com/docs/react-charts/#" className="link" target="_blank" rel="noreferrer">
+            Apex Chart
+          </a>{" "}
+          . You can create a chart using this{" "}
+          <a href="https://apexcharts.com/graph-maker/" className="link">
+            editor
+          </a>
+          .
+        </Typography>
         <Grid container spacing={4}>
           <Grid item md={6}>
             <ChartLine />

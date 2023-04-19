@@ -28,7 +28,7 @@ const ChartRadial: React.FC = () => {
         Chart Radial
       </Typography>
       <Chart options={chartData.options} series={chartData.series} type="radialBar" />
-      <CodeSnippet code={chartRadialCode} />
+      <CodeSnippet code={chartRadialCode} infoUrl="https://apexcharts.com/react-chart-demos/radialbar-charts/" />
     </Card>
   )
 }

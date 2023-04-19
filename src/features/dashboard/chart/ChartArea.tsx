@@ -52,7 +52,7 @@ const ChartArea: React.FC = () => {
         Chart Area
       </Typography>
       <Chart options={chartData.options} series={chartData.series} type="area" />
-      <CodeSnippet code={chartAreaCode} />
+      <CodeSnippet code={chartAreaCode} infoUrl="https://apexcharts.com/react-chart-demos/area-charts/" />
     </Card>
   )
 }
