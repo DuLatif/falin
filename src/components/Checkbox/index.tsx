@@ -26,7 +26,7 @@ const styles: { box: SxProps; label: SxProps; checkbox: SxProps } = {
 export interface ICheckboxProps extends Omit<FormControlLabelProps, keyof { control: any }> {
   align?: "center" | "top"
 }
-const Checkbox: React.FC<ICheckboxProps> = ({ align, ...props }) => {
+const Checkbox: React.FC<ICheckboxProps> = React.forwardRef(({ align, ...props }, ref) => {
   const id = useId()
   const [icon, setIcon] = useState(UncheckIcon)
 
@@ -42,6 +42,7 @@ const Checkbox: React.FC<ICheckboxProps> = ({ align, ...props }) => {
     <Box data-testid="checkbox-label" id={id} sx={styles.box}>
       <FormControlLabel
         {...props}
+        ref={ref}
         sx={controlLabelSx}
         onMouseOver={() => !props.disabled && setIcon(HoverIcon)}
         onMouseLeave={() => setIcon(UncheckIcon)}
@@ -55,6 +56,7 @@ const Checkbox: React.FC<ICheckboxProps> = ({ align, ...props }) => {
       />
     </Box>
   )
-}
+})
 
+Checkbox.displayName = "Checkbox"
 export default Checkbox

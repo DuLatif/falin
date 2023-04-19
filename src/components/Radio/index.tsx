@@ -26,7 +26,7 @@ const styles: { box: SxProps; label: SxProps; radio: SxProps } = {
 export interface IRadioProps extends Omit<FormControlLabelProps, keyof { control: any }> {
   align?: "center" | "top"
 }
-const Radio: React.FC<IRadioProps> = ({ align, ...props }) => {
+const Radio: React.FC<IRadioProps> = React.forwardRef(({ align, ...props }, ref) => {
   const id = useId()
   const [icon, setIcon] = useState(UncheckIcon)
 
@@ -42,6 +42,7 @@ const Radio: React.FC<IRadioProps> = ({ align, ...props }) => {
     <Box data-testid="radio-label" id={id} sx={styles.box}>
       <FormControlLabel
         {...props}
+        ref={ref}
         sx={controlLabelSx}
         onMouseOver={() => !props.disabled && setIcon(HoverIcon)}
         onMouseLeave={() => setIcon(UncheckIcon)}
@@ -55,6 +56,7 @@ const Radio: React.FC<IRadioProps> = ({ align, ...props }) => {
       />
     </Box>
   )
-}
+})
 
+Radio.displayName = "Radio"
 export default Radio

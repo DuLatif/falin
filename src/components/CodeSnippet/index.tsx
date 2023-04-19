@@ -8,11 +8,11 @@ import BtnShowCode from "./BtnShowCode"
 import { Info } from "phosphor-react"
 import Render from "../Render/Render"
 
-const CodeSnippet: React.FC<{ code: string; infoUrl?: string }> = ({ code, infoUrl }) => {
+const CodeSnippet: React.FC<{ code: string; infoUrl?: string }> = React.forwardRef(({ code, infoUrl }, ref) => {
   const inputState = useShowCode()
 
   return (
-    <Box mt={1}>
+    <Box mt={1} ref={ref}>
       <BtnShowCode onClick={inputState.toggle} />
       <Render in={!!infoUrl}>
         <a href={infoUrl} target="_blank" rel="noreferrer">
@@ -40,6 +40,7 @@ const CodeSnippet: React.FC<{ code: string; infoUrl?: string }> = ({ code, infoU
       </Collapse>
     </Box>
   )
-}
+})
 
+CodeSnippet.displayName = "CodeSnippet"
 export default CodeSnippet

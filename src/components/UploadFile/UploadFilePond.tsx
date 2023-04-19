@@ -19,12 +19,13 @@ import { Box } from "@mui/material"
 // Register the plugins
 registerPlugin(FilePondPluginImageExifOrientation, FilePondPluginImagePreview)
 
-const UploadFilePond: React.FC<FilePondProps> = ({ ...props }) => {
+const UploadFilePond: React.FC<FilePondProps> = React.forwardRef(({ ...props }, ref) => {
   return (
-    <Box className={styles.Container}>
+    <Box className={styles.Container} ref={ref}>
       <FilePond className={styles.FilePond} {...props} />
     </Box>
   )
-}
+})
 
+UploadFilePond.displayName = "UploadFilePond"
 export default UploadFilePond

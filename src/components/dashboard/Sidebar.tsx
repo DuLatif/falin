@@ -6,9 +6,9 @@ import React from "react"
 import Menu from "./Menu"
 import styles from "./_.module.scss"
 
-const Sidebar: React.FC = () => {
+const Sidebar: React.FC = React.forwardRef((_, ref) => {
   return (
-    <Box className={styles.Sidebar} component="aside">
+    <Box className={styles.Sidebar} component="aside" ref={ref}>
       <Box className={styles.Header}>
         <img src={Logo} alt="logo capsule" />
       </Box>
@@ -41,6 +41,6 @@ const Sidebar: React.FC = () => {
       </MenuList>
     </Box>
   )
-}
-
+})
+Sidebar.displayName = "Sidebar"
 export default Sidebar

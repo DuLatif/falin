@@ -1,3 +1,4 @@
+import React from "react"
 import { Box } from "@mui/material"
 import dayjs from "dayjs"
 import { CaretLeft, CaretRight } from "phosphor-react"
@@ -12,7 +13,7 @@ interface ICalendarProps {
     color: "info" | "primary" | "danger" | "success" | "warning"
   }[]
 }
-const SmallCalendar: React.FC<ICalendarProps> = ({ events }) => {
+const SmallCalendar: React.FC<ICalendarProps> = React.forwardRef(({ events }, ref) => {
   const id = useId()
   const listEvents = new Map()
 
@@ -23,7 +24,7 @@ const SmallCalendar: React.FC<ICalendarProps> = ({ events }) => {
   }, [events])
 
   return (
-    <Box id={id} className={classes.Box}>
+    <Box id={id} className={classes.Box} ref={ref}>
       <ReactCalendar
         className={classes.ReactCalendar}
         prevLabel={<CaretLeft size={22} weight="bold" />}
@@ -41,6 +42,7 @@ const SmallCalendar: React.FC<ICalendarProps> = ({ events }) => {
       />
     </Box>
   )
-}
+})
 
+SmallCalendar.displayName = "SmallCalendar"
 export default SmallCalendar

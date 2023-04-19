@@ -8,7 +8,7 @@ export interface IUploadFileProps {
   disabled?: boolean
   onChange?: (file: File | null) => void
 }
-const UploadFile: React.FC<IUploadFileProps> = ({ disabled = false, onChange }) => {
+const UploadFile: React.FC<IUploadFileProps> = React.forwardRef(({ disabled = false, onChange }, ref) => {
   const {
     fileInput,
     imgSources,
@@ -108,6 +108,7 @@ const UploadFile: React.FC<IUploadFileProps> = ({ disabled = false, onChange }) 
       onDragOver={handleDrag}
       onDragEnter={() => setOnDropZone(true)}
       onDragLeave={() => setOnDropZone(false)}
+      ref={ref}
     >
       <input disabled={disabled} type="file" ref={fileInput} style={{ display: "none" }} onChange={handleChangeInput} />
       <Stack direction="column" sx={{ height: "100%" }} justifyContent={"center"} alignItems={"center"} spacing={3}>
@@ -115,6 +116,7 @@ const UploadFile: React.FC<IUploadFileProps> = ({ disabled = false, onChange }) 
       </Stack>
     </Box>
   )
-}
+})
 
+UploadFile.displayName = "UploadFile"
 export default UploadFile
