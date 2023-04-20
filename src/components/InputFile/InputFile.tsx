@@ -1,10 +1,11 @@
+import { neutral } from "@/theme/colors"
 import { appendStyle } from "@/utils/styles"
 import { Box, Button, Chip, FormControl, FormHelperText, FormLabel, InputLabel, Stack } from "@mui/material"
-import React, { useEffect, useId, useRef, useState } from "react"
-import { neutral } from "@/theme/colors"
+import React, { useId, useRef } from "react"
 import { styles } from "./InputFile.styles"
+import useLogic from "./useLogic"
 
-export interface IInputFile extends Omit<React.InputHTMLAttributes<HTMLInputElement>, "onChange"> {
+export interface IInputFileProps extends Omit<React.InputHTMLAttributes<HTMLInputElement>, "onChange"> {
   onChange?: (value: File | FileList | File[]) => void
   label: string
   helperText?: string
@@ -14,46 +15,16 @@ export interface IInputFile extends Omit<React.InputHTMLAttributes<HTMLInputElem
   placeholder?: string
   color?: "inherit" | "primary" | "error" | "secondary" | "info" | "success" | "warning"
 }
-const InputFile: React.FC<IInputFile> = React.forwardRef((propsParam, ref) => {
-  const {
-    label,
-    helperText,
-    required,
-    error,
-    disabled,
-    placeholder = "Select a file...",
-    color = "primary",
-    onChange,
-    ...props
-  } = propsParam
+const InputFile: React.FC<IInputFileProps> = React.forwardRef((propsParam, ref) => {
   const id = useId()
   const inputRef = useRef<HTMLInputElement | null>(null)
-  const [fileName, setFileName] = useState<string | null>(null)
-  const [file, setFile] = useState<File | null>(null)
-  const [files, setFiles] = useState<FileList | File[]>([])
-
-  useEffect(() => {
-    if (file && onChange && !props.multiple) {
-      onChange(file)
-    }
-  }, [file])
-
-  useEffect(() => {
-    if (files && onChange && props.multiple) {
-      onChange(files)
-    }
-  }, [files])
-
-  const handleChangeInput = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.files) {
-      if (!props.multiple) {
-        setFileName(e.target.files[0].name)
-        setFile(e.target.files[0])
-      } else {
-        setFiles(e.target.files)
-      }
-    }
-  }
+  const {
+    params: { placeholder, label, helperText, required, disabled, error, color, ...props },
+    files,
+    setFiles,
+    fileName,
+    handleChangeInput,
+  } = useLogic(propsParam)
 
   const Placeholder = () => (
     <FormLabel
