@@ -18,3 +18,13 @@ export const styles: { box: SxProps; label: SxProps; radio: SxProps } = {
     },
   },
 }
+
+export const getStyles = (align: "center" | "top" | undefined) => {
+  return {
+    alignItems: align === "center" ? "center" : "flex-start",
+    "& span.MuiRadio-root": {
+      marginTop: align === "center" ? "0px" : "4px",
+    },
+    ...styles.label,
+  }
+}
