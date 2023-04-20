@@ -5,7 +5,7 @@ import { CaretLeft, CaretRight } from "phosphor-react"
 import { useEffect, useId } from "react"
 import ReactCalendar from "react-calendar"
 import "react-calendar/dist/Calendar.css"
-import classes from "./_.module.scss"
+import classes from "./styles/SmallCalendar.module.scss"
 
 interface ICalendarProps {
   events?: {

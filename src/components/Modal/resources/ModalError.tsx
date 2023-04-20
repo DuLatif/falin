@@ -3,9 +3,9 @@ import { Box, Button, Typography } from "@mui/material"
 import { Bug, CopySimple } from "phosphor-react"
 import React, { useEffect, useState } from "react"
 import Modal from "./Modal"
-import classes from "./ModalError.module.scss"
+import classes from "../styles/ModalError.module.scss"
 import { AxiosError } from "axios"
-import { syntaxHighlight } from "./syntaxHighlight"
+import { syntaxHighlight } from "../utils/syntaxHighlight"
 
 export interface IModalErrorProps {
   open: boolean

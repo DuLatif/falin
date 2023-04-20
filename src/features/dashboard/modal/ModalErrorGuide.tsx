@@ -1,4 +1,4 @@
-import ModalError, { IModalErrorProps } from "@/components/Modal/ModalError"
+import { IModalErrorProps, ModalError } from "@/components/Modal"
 import { Button } from "@mui/material"
 import axios, { AxiosError } from "axios"
 import React, { useState } from "react"

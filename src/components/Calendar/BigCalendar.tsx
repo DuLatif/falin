@@ -4,7 +4,7 @@ import { Box, Button, Stack, Typography, BoxProps } from "@mui/material"
 import dayjs from "dayjs"
 import { CaretLeft, CaretRight } from "phosphor-react"
 import React, { useEffect, useRef, useState } from "react"
-import classes from "./BigCalendar.module.scss"
+import classes from "./styles/BigCalendar.module.scss"
 
 export interface ICalendarEvent {
   title: string

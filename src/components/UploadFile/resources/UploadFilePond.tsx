@@ -1,6 +1,6 @@
 import React from "react"
 import { FilePondProps } from "react-filepond"
-import styles from "./FilePond.module.scss"
+import styles from "../styles/FilePond.module.scss"
 
 // Import React FilePond
 import { FilePond, registerPlugin } from "react-filepond"

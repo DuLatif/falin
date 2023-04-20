@@ -1,10 +1,10 @@
 import CodeSnippet from "@/components/CodeSnippet"
-import Modal from "@/components/Modal/Modal"
 import { Box, Button, Card, Stack, Typography } from "@mui/material"
 import { CheckCircle, Trash, UploadSimple } from "phosphor-react"
 import React, { useState } from "react"
 import { modalCode } from "./_code/modal"
 import ModalErrorGuide from "./ModalErrorGuide"
+import { Modal } from "@/components/Modal"
 
 const ModalGuide: React.FC = () => {
   const [showModal, setShowModal] = useState(false)
