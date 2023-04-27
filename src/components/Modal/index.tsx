@@ -1,10 +1,10 @@
-export type { IModalHeaderProps } from "./resources/Header"
-export type { IModalBodyProps } from "./resources/Body"
-export type { IModalProps } from "./resources/Modal"
-export type { IModalFooterProps } from "./resources/Footer"
-import Modal from "./resources/Modal"
+export type { IModalHeaderProps } from "./ui/Header"
+export type { IModalBodyProps } from "./ui/Body"
+export type { IModalProps } from "./ui/Modal"
+export type { IModalFooterProps } from "./ui/Footer"
+import Modal from "./ui/Modal"
 export { Modal }
 
-export type { IModalErrorProps } from "./resources/ModalError"
-import ModalError from "./resources/ModalError"
+export type { IModalErrorProps } from "./ui/ModalError"
+import ModalError from "./ui/ModalError"
 export { ModalError }

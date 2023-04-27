@@ -1,4 +1,4 @@
-import UploadFilePond from "@/components/UploadFile/UploadFilePond"
+import { UploadFilePond } from "@/components/UploadFile"
 import { Card, Grid, Typography } from "@mui/material"
 import React, { useState } from "react"
 
@@ -12,7 +12,12 @@ const UploadFilePondGuide: React.FC = () => {
       </Typography>
       <Typography mb={1}>
         This component using library{" "}
-        <a href="https://pqina.nl/filepond/docs/getting-started/installation/react/" className="link" target="_blank" rel="noreferrer">
+        <a
+          href="https://pqina.nl/filepond/docs/getting-started/installation/react/"
+          className="link"
+          target="_blank"
+          rel="noreferrer"
+        >
           FilePond
         </a>
       </Typography>

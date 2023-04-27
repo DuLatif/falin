@@ -10,7 +10,8 @@
     "prepare": "husky install",
     "lint": "eslint --ext .ts,.tsx src/ --fix",
     "pretty": "yarn pretty-quick --staged && yarn lint-staged",
-    "test": "vitest"
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "@ckeditor/ckeditor5-build-classic": "^37.0.1",

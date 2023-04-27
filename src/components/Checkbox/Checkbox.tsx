@@ -19,14 +19,16 @@ const Checkbox: React.FC<ICheckboxProps> = React.forwardRef(({ align, ...props }
     ...styles.label,
   }
 
+  const handleMouseOver = () => !props.disabled && setIcon(HoverIcon)
+  const handleMouseLeave = () => setIcon(UncheckIcon)
   return (
     <Box data-testid="checkbox-label" id={id} sx={styles.box}>
       <FormControlLabel
         {...props}
         ref={ref}
         sx={controlLabelSx}
-        onMouseOver={() => !props.disabled && setIcon(HoverIcon)}
-        onMouseLeave={() => setIcon(UncheckIcon)}
+        onMouseOver={handleMouseOver}
+        onMouseLeave={handleMouseLeave}
         control={
           <MuiCheckbox
             sx={styles.checkbox}
