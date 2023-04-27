@@ -1,8 +1,8 @@
-import { neutral } from "@/theme/colors"
-import { appendStyle } from "@/utils/styles"
-import { Box, Button, Chip, FormControl, FormHelperText, FormLabel, InputLabel, Stack } from "@mui/material"
-import React, { useId, useRef } from "react"
-import { styles } from "./InputFile.styles"
+import { Box, FormControl, FormHelperText, InputLabel } from "@mui/material"
+import React, { useId } from "react"
+import Render from "../Render/Render"
+import InputBox from "./ui/InputBox"
+import ListFiles from "./ui/ListFiles"
 import useLogic from "./useLogic"
 
 export interface IInputFileProps extends Omit<React.InputHTMLAttributes<HTMLInputElement>, "onChange"> {
@@ -17,59 +17,21 @@ export interface IInputFileProps extends Omit<React.InputHTMLAttributes<HTMLInpu
 }
 const InputFile: React.FC<IInputFileProps> = React.forwardRef((propsParam, ref) => {
   const id = useId()
-  const inputRef = useRef<HTMLInputElement | null>(null)
   const {
     params: { placeholder, label, helperText, required, disabled, error, color, ...props },
     files,
     setFiles,
-    fileName,
-    handleChangeInput,
   } = useLogic(propsParam)
-
-  const Placeholder = () => (
-    <FormLabel
-      sx={[...appendStyle(styles.label), { color: !fileName ? neutral[400] : "inherit" }]}
-      required={false}
-      error={false}
-    >
-      {props.multiple ? placeholder : fileName || placeholder}
-    </FormLabel>
-  )
-
-  const InputBox = () => (
-    <>
-      <input id={id} {...props} disabled={disabled} ref={inputRef} type="file" hidden onChange={handleChangeInput} />
-      <label htmlFor={id}>
-        <Box sx={[...appendStyle(styles.root), error && styles.error, disabled && styles.disabled]}>
-          <Placeholder />
-          <Button color={color} sx={styles.btn} disabled={disabled} onClick={() => inputRef?.current?.click()}>
-            Browse file
-          </Button>
-        </Box>
-      </label>
-    </>
-  )
-
-  const ListFiles = () => (
-    <Stack direction="row" flexWrap={"wrap"} spacing={1} rowGap={1} sx={{ marginTop: "4px" }}>
-      {Array.from(files).map((item) => (
-        <Chip
-          key={item.name}
-          size="small"
-          label={item.name}
-          onDelete={() => setFiles(Array.from(files).filter((file) => file.name !== item.name))}
-        />
-      ))}
-    </Stack>
-  )
 
   return (
     <Box ref={ref}>
       <FormControl required={required} disabled={disabled} error={error}>
         <InputLabel htmlFor={id}>{label}</InputLabel>
-        <InputBox />
+        <InputBox id={id} inputProps={propsParam} />
         <FormHelperText>{helperText}</FormHelperText>
-        {props.multiple && <ListFiles />}
+        <Render in={!!props.multiple}>
+          <ListFiles files={files} setFiles={setFiles} />
+        </Render>
       </FormControl>
     </Box>
   )
