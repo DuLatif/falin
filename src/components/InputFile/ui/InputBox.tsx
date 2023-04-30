@@ -7,15 +7,16 @@ import Placeholder from "./Placeholder"
 import { IInputFileProps } from "../InputFile"
 
 interface IInputBoxProps {
-  inputProps: IInputFileProps
+  inputFileProps: IInputFileProps
   id: string
 }
-const InputBox: React.FC<IInputBoxProps> = ({ inputProps, id }) => {
+const InputBox: React.FC<IInputBoxProps> = ({ inputFileProps, id }) => {
   const {
     fileName,
     handleChangeInput,
-    params: { disabled, error, placeholder, color },
-  } = useLogic(inputProps)
+    params: { disabled, error, placeholder, color, multiple },
+    inputProps,
+  } = useLogic(inputFileProps)
   const inputRef = useRef<HTMLInputElement | null>(null)
 
   return (
@@ -31,7 +32,7 @@ const InputBox: React.FC<IInputBoxProps> = ({ inputProps, id }) => {
       />
       <label htmlFor={id}>
         <Box sx={[...appendStyle(styles.root), error && styles.error, disabled && styles.disabled]}>
-          <Placeholder multiple={inputProps.multiple} fileName={fileName} placeholder={placeholder} />
+          <Placeholder multiple={multiple} fileName={fileName} placeholder={placeholder} />
           <Button color={color} sx={styles.btn} disabled={disabled} onClick={() => inputRef?.current?.click()}>
             Browse file
           </Button>

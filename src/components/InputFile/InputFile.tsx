@@ -27,7 +27,7 @@ const InputFile: React.FC<IInputFileProps> = React.forwardRef((propsParam, ref) 
     <Box ref={ref}>
       <FormControl required={required} disabled={disabled} error={error}>
         <InputLabel htmlFor={id}>{label}</InputLabel>
-        <InputBox id={id} inputProps={propsParam} />
+        <InputBox id={id} inputFileProps={propsParam} />
         <FormHelperText>{helperText}</FormHelperText>
         <Render in={!!props.multiple}>
           <ListFiles files={files} setFiles={setFiles} />

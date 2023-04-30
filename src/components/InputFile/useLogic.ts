@@ -30,11 +30,15 @@ const useLogic = (propsParam: IInputFileProps) => {
     }
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const { label, helperText, error, color, required, ...inputProps } = propsParam
+
   return {
     // --- state ---
     params: propsParam,
     fileName,
     files,
+    inputProps,
 
     // --- function ---
     setFiles,
