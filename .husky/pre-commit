@@ -7,6 +7,6 @@ yarn test
 echo "=========================================================="
 echo " "
 echo "--------------- Run Prettier and ESLint ------------------"
-# yarn pretty-quick --staged && yarn lint-staged
+yarn pretty-quick --staged && yarn lint-staged
 echo "=========================================================="
 echo " "
