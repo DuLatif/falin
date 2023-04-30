@@ -28,12 +28,14 @@ const TableGuide: React.FC = () => {
         <TableContainer component={Paper} sx={{ marginTop: "20px" }}>
           <Table>
             <TableHead>
-              <TableCell>Name</TableCell>
-              <TableCell>Status</TableCell>
-              <TableCell>Role</TableCell>
-              <TableCell>Email</TableCell>
-              <TableCell>Teams</TableCell>
-              <TableCell>Action</TableCell>
+              <TableRow>
+                <TableCell>Name</TableCell>
+                <TableCell>Status</TableCell>
+                <TableCell>Role</TableCell>
+                <TableCell>Email</TableCell>
+                <TableCell>Teams</TableCell>
+                <TableCell>Action</TableCell>
+              </TableRow>
             </TableHead>
             <TableBody>
               {rows.map((row, i) => (
