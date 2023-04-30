@@ -13,8 +13,8 @@ const SelectGroup: React.FC<ISelectGroupProps> = React.forwardRef((props, ref) =
   return (
     <FormControl required={props.required} error={props.error} disabled={props.disabled}>
       <FormLabel htmlFor={id}>{label}</FormLabel>
-      <Select {...selectProps} defaultValue={props.defaultValue || " "} id={id} ref={ref}>
-        {props.placeholder && <MenuItem value=" ">-- {props.placeholder} ---</MenuItem>}
+      <Select {...selectProps} defaultValue={props.defaultValue || ""} id={id} ref={ref}>
+        {props.placeholder && <MenuItem value="">-- {props.placeholder} ---</MenuItem>}
         {options.map((item, i) => (
           <MenuItem key={i} value={item.value}>
             {item.label}
