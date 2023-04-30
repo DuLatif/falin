@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { Box } from "@mui/material"
 import dayjs from "dayjs"
 import { CaretLeft, CaretRight } from "phosphor-react"
@@ -7,20 +7,27 @@ import ReactCalendar from "react-calendar"
 import "react-calendar/dist/Calendar.css"
 import classes from "./styles/SmallCalendar.module.scss"
 
+type TColor = "info" | "primary" | "danger" | "success" | "warning"
+export interface ISmallCalendarEvent {
+  date: string
+  color: TColor
+}
 interface ICalendarProps {
   events?: {
     date: string
-    color: "info" | "primary" | "danger" | "success" | "warning"
+    color: TColor
   }[]
 }
 const SmallCalendar: React.FC<ICalendarProps> = React.forwardRef(({ events }, ref) => {
   const id = useId()
-  const listEvents = new Map()
+  const [listEvents, setListEvents] = useState<Map<any, any>>(new Map())
 
   useEffect(() => {
+    const resultEvents = new Map()
     events?.forEach((event) => {
-      listEvents.set(event.date, event.color)
+      resultEvents.set(event.date, event.color)
     })
+    setListEvents(resultEvents)
   }, [events])
 
   return (

@@ -13,7 +13,7 @@ export interface ICalendarEvent {
   className: "neutral" | "primary" | "info" | "warning" | "success" | "danger"
 }
 interface IBigCalendarProps extends BoxProps {
-  events: ICalendarEvent[]
+  events?: ICalendarEvent[]
 }
 const BigCalendar: React.FC<IBigCalendarProps> = React.forwardRef((props, ref) => {
   const { events, ...boxProps } = props
@@ -44,7 +44,7 @@ const BigCalendar: React.FC<IBigCalendarProps> = React.forwardRef((props, ref) =
   }
 
   return (
-    <Box {...boxProps} ref={ref}>
+    <Box {...boxProps} ref={ref} className="full-calendar">
       <Box className={classes.Container}>
         <Stack direction="row" alignItems={"center"} justifyContent="space-between">
           <Box>

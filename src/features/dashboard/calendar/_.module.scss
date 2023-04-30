@@ -72,6 +72,12 @@
     transform: translate(-6px, 1px);
     border-radius: 2px;
   }
+  .FullCalendar :global(a.fc-daygrid-event.neutral) {
+    background-color: $neutral-50;
+  }
+  .FullCalendar :global(a.fc-daygrid-event.neutral::before) {
+    background-color: $neutral-700;
+  }
   .FullCalendar :global(a.fc-daygrid-event.primary) {
     background-color: $primary-50;
   }
@@ -95,5 +101,11 @@
   }
   .FullCalendar :global(a.fc-daygrid-event.warning::before) {
     background-color: $warning-700;
+  }
+  .FullCalendar :global(a.fc-daygrid-event.danger) {
+    background-color: $danger-50;
+  }
+  .FullCalendar :global(a.fc-daygrid-event.danger::before) {
+    background-color: $danger-700;
   }
 }
