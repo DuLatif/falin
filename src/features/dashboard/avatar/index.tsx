@@ -1,13 +1,11 @@
-import { primary, success } from "@/theme/colors"
-import { Avatar, AvatarGroup, Box, Card, Grid, Stack, Typography } from "@mui/material"
-import { User, UserCircle, Users } from "phosphor-react"
+import { Box, Grid, Typography } from "@mui/material"
 import React from "react"
+import AvatarGrouped from "./AvatarGrouped"
+import AvatarIcons from "./AvatarIcons"
 import AvatarImage from "./AvatarImage"
 import AvatarLetter from "./AvatarLetter"
 import AvatarSizes from "./AvatarSizes"
-import AvatarIcons from "./AvatarIcons"
 import AvatarVariants from "./AvatarVariants"
-import AvatarGrouped from "./AvatarGrouped"
 
 const AvatarGuide: React.FC = () => {
   return (

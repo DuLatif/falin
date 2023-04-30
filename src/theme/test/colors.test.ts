@@ -3,6 +3,17 @@ import { danger, info, neutral, primary, success, warning } from "../colors"
 import { readFileSync } from "fs"
 
 describe("Theme Color", () => {
+  test("should have the complete level for each color", () => {
+    const totalLevel = 11
+    const getLength = (color: object) => Object.keys(color).length
+    expect(getLength(neutral)).toBe(totalLevel)
+    expect(getLength(primary)).toBe(totalLevel)
+    expect(getLength(success)).toBe(totalLevel)
+    expect(getLength(info)).toBe(totalLevel)
+    expect(getLength(warning)).toBe(totalLevel)
+    expect(getLength(danger)).toBe(totalLevel)
+  })
+
   test("should match neutral snapshot", () => {
     expect(neutral).toMatchSnapshot()
   })

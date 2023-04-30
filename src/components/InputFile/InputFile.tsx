@@ -18,7 +18,7 @@ export interface IInputFileProps extends Omit<React.InputHTMLAttributes<HTMLInpu
 const InputFile: React.FC<IInputFileProps> = React.forwardRef((propsParam, ref) => {
   const id = useId()
   const {
-    params: { placeholder, label, helperText, required, disabled, error, color, ...props },
+    params: { label, helperText, required, disabled, error, ...props },
     files,
     setFiles,
   } = useLogic(propsParam)

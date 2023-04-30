@@ -2,17 +2,7 @@ import { useEffect, useState } from "react"
 import { IInputFileProps } from "./InputFile"
 
 const useLogic = (propsParam: IInputFileProps) => {
-  const {
-    label,
-    helperText,
-    required,
-    error,
-    disabled,
-    placeholder = "Select a file...",
-    color = "primary",
-    onChange,
-    ...props
-  } = propsParam
+  const { onChange, ...props } = propsParam
   const [fileName, setFileName] = useState<string | null>(null)
   const [file, setFile] = useState<File | null>(null)
   const [files, setFiles] = useState<FileList | File[]>([])
