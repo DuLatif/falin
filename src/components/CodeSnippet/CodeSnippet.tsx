@@ -27,7 +27,7 @@ const CodeSnippet: React.FC<{ code: string; infoUrl?: string }> = React.forwardR
             width: "100%",
             border: `1px solid ${neutral[300]}`,
             borderRadius: "8px",
-            maxHeight: "250px",
+            maxHeight: "500px",
             fontSize: "12px",
           }}
           showLineNumbers

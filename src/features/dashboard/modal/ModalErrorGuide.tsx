@@ -1,7 +1,9 @@
+import CodeSnippet from "@/components/CodeSnippet/CodeSnippet"
 import { IModalErrorProps, ModalError } from "@/components/Modal"
-import { Button } from "@mui/material"
+import { Button, Card, Typography } from "@mui/material"
 import axios, { AxiosError } from "axios"
 import React, { useState } from "react"
+import { modalErrorCode } from "./_code/modal"
 
 const examplePayload = {
   step: 4,
@@ -48,9 +50,19 @@ const ModalErrorGuide: React.FC = () => {
 
   return (
     <>
-      <Button onClick={testFetchData} color={"error"}>
-        Open Modal Error
-      </Button>
+      <Card component="section">
+        <Typography variant="subtitle1" fontWeight={"semiBold"}>
+          Modal Error
+        </Typography>
+        <Typography mb={1.5} color="text.secondary">
+          Use this modal to showing the error message. Just throw the error as props, and then the error message will be
+          showed.
+        </Typography>
+        <Button onClick={testFetchData} color={"error"}>
+          Open Modal Error
+        </Button>
+        <CodeSnippet code={modalErrorCode} />
+      </Card>
 
       <ModalError {...showModalError} />
     </>

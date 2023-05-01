@@ -11,3 +11,12 @@ a.link {
 a.link:hover {
   text-decoration: underline;
 }
+
+code {
+  background-color: #eff4ff;
+  color: #528bff;
+  font-size: 12px;
+  padding: 1px 6px;
+  border-radius: 4px;
+  display: inline-block;
+}
