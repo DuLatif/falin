@@ -3,6 +3,7 @@ import { Card, Typography } from "@mui/material"
 import React from "react"
 import Chart from "react-apexcharts"
 import { chartLineCode } from "./_code/chart-line"
+import { primary } from "@/theme/colors"
 
 const chartData: any = {
   series: [
@@ -19,6 +20,7 @@ const chartData: any = {
         enabled: false,
       },
     },
+    colors: [primary[400]],
     dataLabels: {
       enabled: false,
     },
@@ -31,7 +33,7 @@ const chartData: any = {
     },
     grid: {
       row: {
-        colors: ["#f3f3f3", "transparent"], // takes an array which will be repeated on columns
+        colors: [primary[50], primary[25]], // takes an array which will be repeated on columns
         opacity: 0.5,
       },
     },

@@ -3,6 +3,7 @@ import { Card, Typography } from "@mui/material"
 import React from "react"
 import Chart from "react-apexcharts"
 import { chartColumnCode } from "./_code/chart-column"
+import { primary, success, warning } from "@/theme/colors"
 
 const chartData: any = {
   series: [
@@ -24,6 +25,7 @@ const chartData: any = {
       type: "bar",
       height: 350,
     },
+    colors: [primary[400], success[400], warning[400]],
     plotOptions: {
       bar: {
         horizontal: false,

@@ -3,6 +3,7 @@ import { Card, Typography } from "@mui/material"
 import React from "react"
 import Chart from "react-apexcharts"
 import { chartBarCode } from "./_code/chart-bar"
+import { primary } from "@/theme/colors"
 
 const chartData: any = {
   series: [
@@ -15,6 +16,7 @@ const chartData: any = {
       type: "bar",
       height: 350,
     },
+    colors: [primary[400]],
     plotOptions: {
       bar: {
         borderRadius: 4,

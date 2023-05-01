@@ -3,6 +3,7 @@ import { Card, Typography } from "@mui/material"
 import React from "react"
 import Chart from "react-apexcharts"
 import { chartRadialCode } from "./_code/chart-radial"
+import { primary } from "@/theme/colors"
 
 const chartData: any = {
   series: [70],
@@ -11,6 +12,7 @@ const chartData: any = {
       height: 350,
       type: "radialBar",
     },
+    colors: [primary[400]],
     plotOptions: {
       radialBar: {
         hollow: {

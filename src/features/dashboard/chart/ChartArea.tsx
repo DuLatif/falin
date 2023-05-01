@@ -3,6 +3,7 @@ import { Card, Typography } from "@mui/material"
 import React from "react"
 import Chart from "react-apexcharts"
 import { chartAreaCode } from "./_code/chart-area"
+import { primary, success } from "@/theme/colors"
 
 const chartData: any = {
   series: [
@@ -20,6 +21,7 @@ const chartData: any = {
       height: 350,
       type: "area",
     },
+    colors: [primary[400], success[400]],
     dataLabels: {
       enabled: false,
     },
