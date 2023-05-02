@@ -1,0 +1,24 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Theme Spacing > should match snapshot 1`] = `
+[
+  0,
+  4,
+  8,
+  12,
+  16,
+  20,
+  24,
+  32,
+  40,
+  48,
+  64,
+  80,
+  96,
+  128,
+  160,
+  192,
+  224,
+  256,
+]
+`;

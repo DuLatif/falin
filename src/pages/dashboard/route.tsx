@@ -27,6 +27,7 @@ import AccordionPage from "./accordion"
 import MapPage from "./map"
 import SliderPage from "./slider"
 import FormEditorPage from "./form-editor"
+import SpacingPage from "./spacing"
 
 const styles: { root: SxProps } = {
   root: {
@@ -66,6 +67,7 @@ const DashboardRoute: React.FC = () => {
           <Route path={"/map"} element={<MapPage />} />
           <Route path={"/slider"} element={<SliderPage />} />
           <Route path={"/form-editor"} element={<FormEditorPage />} />
+          <Route path={"/spacing"} element={<SpacingPage />} />
           <Route path={"*"} element={<Error404 />} />
         </Routes>
       </Content>

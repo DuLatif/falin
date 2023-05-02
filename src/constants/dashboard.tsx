@@ -24,6 +24,7 @@ import {
   ChartLineUp,
   MapTrifold,
   BracketsAngle,
+  SquaresFour,
 } from "phosphor-react"
 import { IMenuProps } from "@/components/dashboard/Menu"
 
@@ -47,6 +48,11 @@ export const listCustomization: IMenuProps[] = [
     text: "Icons",
     path: "/dashboard/icon",
     icon: <Smiley size={26} weight={"bold"} />,
+  },
+  {
+    text: "Spacing",
+    path: "/dashboard/spacing",
+    icon: <SquaresFour size={26} weight={"bold"} />,
   },
 ]
 
