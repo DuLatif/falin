@@ -8,7 +8,7 @@ import { inputAdorAddress, inputAdorAmount, inputAdorEmail, inputAdorName } from
 const InputAdormentGuide: React.FC = () => {
   return (
     <Card sx={{ mb: 4 }}>
-      <Typography variant="subtitle1" fontWeight={"semiBold"}>
+      <Typography variant="subtitle1" fontWeight={"semiBold"} mb={1}>
         Input Adornment
       </Typography>
       <Grid container spacing={2}>

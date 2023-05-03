@@ -7,7 +7,7 @@ import { baseInputAmount, baseInputDisabled, baseInputName, baseInputReadonly } 
 const BasicInputGuide: React.FC = () => {
   return (
     <Card sx={{ mb: 4 }}>
-      <Typography variant="subtitle1" fontWeight={"semiBold"}>
+      <Typography variant="subtitle1" fontWeight={"semiBold"} mb={1}>
         Basic Input
       </Typography>
       <Grid container spacing={2}>

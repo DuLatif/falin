@@ -54,7 +54,7 @@ const ModalErrorGuide: React.FC = () => {
         <Typography variant="subtitle1" fontWeight={"semiBold"}>
           Modal Error
         </Typography>
-        <Typography mb={1.5} color="text.secondary">
+        <Typography mb={2} color="text.secondary">
           Use this modal to showing the error message. Just throw the error as props, and then the error message will be
           showed.
         </Typography>

@@ -11,11 +11,11 @@ const ModalBasicGuide: React.FC = () => {
   return (
     <>
       <Card component="section" sx={{ height: 1 }}>
-        <Box mb={2}>
+        <Box mb={5}>
           <Typography variant="subtitle1" fontWeight={"semiBold"}>
             Basic Modal
           </Typography>
-          <Typography mb={1.5} color="text.secondary">
+          <Typography mb={2} color="text.secondary">
             This modal is the very basic modal that you can use.
           </Typography>
           <Button onClick={() => setShowModalBasic(true)}>Open Modal</Button>
@@ -25,7 +25,7 @@ const ModalBasicGuide: React.FC = () => {
           <Typography variant="subtitle2" fontWeight={"semiBold"}>
             With Divider
           </Typography>
-          <Typography mb={1.5} color="text.secondary">
+          <Typography mb={2} color="text.secondary">
             You can add divider by passing the <code>divider</code> as props on the <code>{"<Modal.Header />"}</code>{" "}
             and <code>{"<Modal.Footer />"}</code> component
           </Typography>

@@ -13,16 +13,16 @@ const ModalIconGuide: React.FC = () => {
   return (
     <>
       <Card component="section">
-        <Box mb={2}>
+        <Box mb={5}>
           <Typography variant="subtitle1" fontWeight={"semiBold"}>
             Modal Icon
           </Typography>
-          <Typography mb={1.5} color="text.secondary">
+          <Typography mb={2} color="text.secondary">
             If you want to add the icon on the header, you can pass the <code>icon</code> as props on the{" "}
             <code>{"<Modal.Header />"}</code>. The icon comes with two variants: <code>contained</code> and{" "}
             <code>outlined</code>.
           </Typography>
-          <Stack direction="row" spacing={1}>
+          <Stack direction="row" spacing={2}>
             <Button onClick={() => setShowModalDefault(true)}>Contained Icon Modal</Button>
             <Button onClick={() => setShowModalOutlinedIcon(true)}>Outlined Icon Modal</Button>
           </Stack>
@@ -32,7 +32,7 @@ const ModalIconGuide: React.FC = () => {
           <Typography variant="subtitle2" fontWeight={"semiBold"}>
             Without Title
           </Typography>
-          <Typography mb={1.5} color="text.secondary">
+          <Typography mb={2} color="text.secondary">
             You can create the modal icon without the title and subtitle because both of them are not required as props
             for <code>{"<Modal.Header />"}</code> component.
           </Typography>

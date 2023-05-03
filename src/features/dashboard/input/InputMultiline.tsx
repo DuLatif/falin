@@ -7,7 +7,7 @@ import { inputMultiline1 } from "./_code/code-snippet"
 const InputMultilineGuide: React.FC = () => {
   return (
     <Card sx={{ mb: 4 }}>
-      <Typography variant="subtitle1" fontWeight={"semiBold"}>
+      <Typography variant="subtitle1" fontWeight={"semiBold"} mb={1}>
         Input Multiline
       </Typography>
       <Grid container spacing={2}>
