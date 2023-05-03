@@ -1,14 +1,28 @@
 import Logo from "@/assets/logos/Capsule-Logo-Text.svg"
 import { listComponents, listCustomization, listExtraUI, listMenuForms } from "@/constants/dashboard"
-import { Box, MenuList, Typography } from "@mui/material"
+import { Box, MenuList, Typography, Button } from "@mui/material"
 import { Gauge } from "phosphor-react"
-import React from "react"
+import React, { useState } from "react"
 import Menu from "./Menu"
 import styles from "./_.module.scss"
+import { List } from "phosphor-react"
+import { combineClasses } from "@/utils/styles"
 
 const Sidebar: React.FC = React.forwardRef((_, ref) => {
+  const [showSidebar, setShowSidebar] = useState(true)
+
   return (
-    <Box className={styles.Sidebar} component="aside" ref={ref}>
+    <Box className={combineClasses([styles.Sidebar, !showSidebar && styles.Hide])} component="aside" ref={ref}>
+      <Button
+        data-shape="icon"
+        variant="text"
+        color="primary"
+        size="lg"
+        sx={{ position: "absolute", top: 8, left: 8, zIndex: 10 }}
+        onClick={() => setShowSidebar(!showSidebar)}
+      >
+        <List size={24} weight="bold" style={{ transform: "scale(1.2)" }} />
+      </Button>
       <Box className={styles.Header}>
         <img src={Logo} alt="logo capsule" />
       </Box>

@@ -5,11 +5,18 @@
   overflow: auto;
   padding: 12px 24px;
   border-right: 1px solid $neutral-200;
+  transition: 0.5s ease-in-out;
 
   .Header {
     padding-bottom: 20px;
     margin-bottom: 20px;
     border-bottom: 2px solid $neutral-200;
+    display: flex;
+    justify-content: center;
+
+    img {
+      height: 40px;
+    }
   }
 
   .TitleMenu {
@@ -39,6 +46,31 @@
       }
     }
   }
+
+  &.Hide {
+    width: 60px;
+    padding: 12px 4px;
+
+    .Header {
+      opacity: 0;
+      transition: 0.25s;
+    }
+
+    .TitleMenu {
+      color: transparent;
+      border-bottom: 2px solid $neutral-200;
+      margin-bottom: 12px;
+    }
+
+    .Menu {
+      padding: 12px;
+
+      p:global(.MuiTypography-root) {
+        transition: 0.25s;
+        opacity: 0;
+      }
+    }
+  }
 }
 
 // ------------- Content ------------
@@ -47,5 +79,6 @@
   flex: 1;
   height: 100vh;
   padding: 32px;
+  padding-top: 40px;
   overflow: auto;
 }
