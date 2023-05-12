@@ -316,16 +316,16 @@ export const components: Components = {
         color: "#fff",
       },
       filledError: {
-        background: danger[400],
+        background: danger[500],
       },
       filledWarning: {
-        background: warning[300],
+        background: warning[500],
       },
       filledInfo: {
         background: info[500],
       },
       filledSuccess: {
-        background: success[400],
+        background: success[500],
       },
       outlinedError: {
         border: `1px solid ${danger[300]}`,

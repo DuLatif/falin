@@ -1,10 +1,10 @@
-import { CircularProgress } from "@mui/material"
+import { LoadingScreen } from "@/components/LoadingPage"
 import React, { lazy, Suspense } from "react"
 const InputGuide = lazy(() => import("@/features/dashboard/input"))
 
 const InputPage: React.FC = () => {
   return (
-    <Suspense fallback={<CircularProgress />}>
+    <Suspense fallback={<LoadingScreen />}>
       <InputGuide />
     </Suspense>
   )

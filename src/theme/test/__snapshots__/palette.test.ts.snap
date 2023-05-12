@@ -3,30 +3,30 @@
 exports[`Theme Palette > should match snapshot 1`] = `
 {
   "error": {
-    "dark": "#d92d20",
-    "light": "#f97066",
-    "main": "#f04438",
+    "dark": "#dc2626",
+    "light": "#f87171",
+    "main": "#ef4444",
   },
   "grey": {
-    "100": "#f2f4f7",
-    "200": "#eaecf0",
-    "300": "#d0d5dd",
-    "400": "#98a2b3",
-    "500": "#667085",
-    "600": "#475467",
-    "700": "#344054",
-    "800": "#1D2939",
-    "900": "#101828",
+    "100": "#f1f5f9",
+    "200": "#e2e8f0",
+    "300": "#cbd5e1",
+    "400": "#94a3b8",
+    "500": "#64748b",
+    "600": "#475569",
+    "700": "#334155",
+    "800": "#1e293b",
+    "900": "#0f172a",
   },
   "info": {
-    "dark": "#0d92d3",
-    "light": "#3cdffd",
-    "main": "#13c1fc",
+    "dark": "#0284c7",
+    "light": "#38bdf8",
+    "main": "#0ea5e9",
   },
   "primary": {
-    "dark": "#155eef",
-    "light": "#528bff",
-    "main": "#2970dd",
+    "dark": "#2563eb",
+    "light": "#60a5fa",
+    "main": "#3b82f6",
   },
   "success": {
     "dark": "#039855",
@@ -34,13 +34,13 @@ exports[`Theme Palette > should match snapshot 1`] = `
     "main": "#12b76a",
   },
   "text": {
-    "primary": "#344054",
-    "secondary": "#667085",
+    "primary": "#334155",
+    "secondary": "#64748b",
   },
   "warning": {
-    "dark": "#dc6803",
-    "light": "#fdb022",
-    "main": "#f79009",
+    "dark": "#ea580c",
+    "light": "#fb923c",
+    "main": "#f97316",
   },
 }
 `;

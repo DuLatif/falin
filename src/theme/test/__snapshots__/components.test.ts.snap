@@ -8,32 +8,32 @@ exports[`Theme Component > should match snapshot 1`] = `
         "color": "#fff",
       },
       "filledError": {
-        "background": "#f97066",
+        "background": "#ef4444",
       },
       "filledInfo": {
-        "background": "#13c1fc",
+        "background": "#0ea5e9",
       },
       "filledSuccess": {
-        "background": "#32d583",
+        "background": "#12b76a",
       },
       "filledWarning": {
-        "background": "#fec84b",
+        "background": "#f97316",
       },
       "outlinedError": {
-        "border": "1px solid #fda29b",
-        "color": "#b42318",
+        "border": "1px solid #fca5a5",
+        "color": "#b91c1c",
       },
       "outlinedInfo": {
-        "border": "1px solid #5ff2fe",
-        "color": "#086bab",
+        "border": "1px solid #7dd3fc",
+        "color": "#0369a1",
       },
       "outlinedSuccess": {
         "border": "1px solid #6ce9a6",
         "color": "#027a48",
       },
       "outlinedWarning": {
-        "border": "1px solid #fec84b",
-        "color": "#b54708",
+        "border": "1px solid #fdba74",
+        "color": "#c2410c",
       },
       "root": {
         "borderRadius": "12px",
@@ -56,58 +56,58 @@ exports[`Theme Component > should match snapshot 1`] = `
     "styleOverrides": {
       "containedError": {
         ":disabled": {
-          "background": "#fecdca",
+          "background": "#fecaca",
           "color": "#fff",
         },
         ":focus": {
-          "boxShadow": "0px 0px 0px 4px #fee4e2",
+          "boxShadow": "0px 0px 0px 4px #fee2e2",
         },
         ":hover": {
-          "background": "#b42318",
+          "background": "#b91c1c",
         },
-        "background": "#d92d20",
+        "background": "#dc2626",
         "color": "#fff",
       },
       "containedInfo": {
         ":disabled": {
-          "background": "#91fefe",
+          "background": "#bae6fd",
           "color": "#fff",
         },
         ":focus": {
-          "boxShadow": "0px 0px 0px 4px #c6fffa",
+          "boxShadow": "0px 0px 0px 4px #e0f2fe",
         },
         ":hover": {
-          "background": "#086bab",
+          "background": "#0369a1",
         },
-        "background": "#0d92d3",
+        "background": "#0284c7",
         "color": "#fff",
       },
       "containedInherit": {
         ":disabled": {
-          "background": "#eaecf0",
+          "background": "#e2e8f0",
           "color": "#fff",
         },
         ":focus": {
-          "boxShadow": "0px 0px 0px 4px #f2f4f7",
+          "boxShadow": "0px 0px 0px 4px #f1f5f9",
         },
         ":hover": {
-          "background": "#344054",
+          "background": "#334155",
         },
-        "background": "#475467",
+        "background": "#475569",
         "color": "#fff",
       },
       "containedPrimary": {
         ":disabled": {
-          "background": "#b2ccff",
+          "background": "#bfdbfe",
           "color": "#fff",
         },
         ":focus": {
-          "boxShadow": "0px 0px 0px 4px #d1e0ff",
+          "boxShadow": "0px 0px 0px 4px #dbeafe",
         },
         ":hover": {
-          "background": "#004eeb",
+          "background": "#1d4ed8",
         },
-        "background": "#155eef",
+        "background": "#2563eb",
         "color": "#fff",
       },
       "containedSuccess": {
@@ -126,16 +126,16 @@ exports[`Theme Component > should match snapshot 1`] = `
       },
       "containedWarning": {
         ":disabled": {
-          "background": "#fedf89",
+          "background": "#fed7aa",
           "color": "#fff",
         },
         ":focus": {
-          "boxShadow": "0px 0px 0px 4px #fef0c7",
+          "boxShadow": "0px 0px 0px 4px #ffedd5",
         },
         ":hover": {
-          "background": "#b54708",
+          "background": "#c2410c",
         },
-        "background": "#dc6803",
+        "background": "#ea580c",
         "color": "#fff",
       },
       "root": {
@@ -218,58 +218,58 @@ exports[`Theme Component > should match snapshot 1`] = `
       "textError": {
         ":disabled": {
           "background": "none",
-          "color": "#fda29b",
+          "color": "#fca5a5",
         },
         ":focus": {
-          "background": "#fef3f2",
-          "boxShadow": "0px 0px 0px 4px #fee4e2",
+          "background": "#fef2f2",
+          "boxShadow": "0px 0px 0px 4px #fee2e2",
         },
         ":hover": {
-          "background": "#fee4e2",
+          "background": "#fee2e2",
         },
-        "background": "#fef3f2",
+        "background": "#fef2f2",
       },
       "textInfo": {
         ":disabled": {
           "background": "none",
-          "color": "#5ff2fe",
+          "color": "#7dd3fc",
         },
         ":focus": {
-          "background": "#f0fcff",
-          "boxShadow": "0px 0px 0px 4px #c6fffa",
+          "background": "#f0f9ff",
+          "boxShadow": "0px 0px 0px 4px #e0f2fe",
         },
         ":hover": {
-          "background": "#c6fffa",
+          "background": "#e0f2fe",
         },
-        "background": "#f0fcff",
+        "background": "#f0f9ff",
       },
       "textInherit": {
         ":disabled": {
           "background": "none",
-          "color": "#d0d5dd",
+          "color": "#cbd5e1",
         },
         ":focus": {
-          "background": "#f2f4f7",
-          "boxShadow": "0px 0px 0px 4px #f2f4f7",
+          "background": "#f8fafc",
+          "boxShadow": "0px 0px 0px 4px #f1f5f9",
         },
         ":hover": {
-          "background": "#f2f4f7",
+          "background": "#f1f5f9",
         },
-        "background": "#f2f4f7",
+        "background": "#f8fafc",
       },
       "textPrimary": {
         ":disabled": {
           "background": "none",
-          "color": "#84adff",
+          "color": "#93c5fd",
         },
         ":focus": {
-          "background": "#eff4ff",
-          "boxShadow": "0px 0px 0px 4px #d1e0ff",
+          "background": "#eff6ff",
+          "boxShadow": "0px 0px 0px 4px #dbeafe",
         },
         ":hover": {
-          "background": "#d1e0ff",
+          "background": "#dbeafe",
         },
-        "background": "#eff4ff",
+        "background": "#eff6ff",
       },
       "textSuccess": {
         ":disabled": {
@@ -288,16 +288,16 @@ exports[`Theme Component > should match snapshot 1`] = `
       "textWarning": {
         ":disabled": {
           "background": "none",
-          "color": "#fec84b",
+          "color": "#fdba74",
         },
         ":focus": {
-          "background": "#fffaeb",
-          "boxShadow": "0px 0px 0px 4px #fef0c7",
+          "background": "#fff7ed",
+          "boxShadow": "0px 0px 0px 4px #ffedd5",
         },
         ":hover": {
-          "background": "#fef0c7",
+          "background": "#ffedd5",
         },
-        "background": "#fffaeb",
+        "background": "#fff7ed",
       },
     },
   },
@@ -313,22 +313,22 @@ exports[`Theme Component > should match snapshot 1`] = `
     "styleOverrides": {
       "colorError": {
         "&.MuiChip-filled": {
-          "background": "#fef3f2",
-          "color": "#b42318",
+          "background": "#fef2f2",
+          "color": "#b91c1c",
         },
         "&.MuiChip-outlined": {
-          "borderColor": "#b42318",
-          "color": "#b42318",
+          "borderColor": "#b91c1c",
+          "color": "#b91c1c",
         },
       },
       "colorInfo": {
         "&.MuiChip-filled": {
-          "background": "#f0fcff",
-          "color": "#086bab",
+          "background": "#f0f9ff",
+          "color": "#0369a1",
         },
         "&.MuiChip-outlined": {
-          "borderColor": "#086bab",
-          "color": "#086bab",
+          "borderColor": "#0369a1",
+          "color": "#0369a1",
         },
       },
       "colorSuccess": {
@@ -343,30 +343,30 @@ exports[`Theme Component > should match snapshot 1`] = `
       },
       "colorWarning": {
         "&.MuiChip-filled": {
-          "background": "#fffaeb",
-          "color": "#b54708",
+          "background": "#fff7ed",
+          "color": "#c2410c",
         },
         "&.MuiChip-outlined": {
-          "borderColor": "#b54708",
-          "color": "#b54708",
+          "borderColor": "#c2410c",
+          "color": "#c2410c",
         },
       },
       "filled": {
-        "background": "#f2f4f7",
-        "color": "#344054",
+        "background": "#f1f5f9",
+        "color": "#334155",
       },
       "filledPrimary": {
-        "background": "#eff4ff",
-        "color": "#004eeb",
+        "background": "#eff6ff",
+        "color": "#1d4ed8",
       },
       "outlined": {
-        "borderColor": "#344054",
+        "borderColor": "#334155",
         "borderWidth": "2px",
-        "color": "#344054",
+        "color": "#334155",
       },
       "outlinedPrimary": {
-        "borderColor": "#004eeb",
-        "color": "#004eeb",
+        "borderColor": "#1d4ed8",
+        "color": "#1d4ed8",
       },
       "sizeMedium": {
         "fontSize": "14px",
@@ -397,7 +397,7 @@ exports[`Theme Component > should match snapshot 1`] = `
         },
         "&.Mui-error": {
           "& fieldset,& fieldset:hover": {
-            "border": "1px solid #fda29b",
+            "border": "1px solid #fca5a5",
           },
         },
         "marginTop": "16px",
@@ -417,7 +417,7 @@ exports[`Theme Component > should match snapshot 1`] = `
     "styleOverrides": {
       "root": {
         "& .MuiFormLabel-asterisk": {
-          "color": "#f97066",
+          "color": "#f87171",
         },
         "color": "inherit",
         "fontSize": "14px",
@@ -440,27 +440,27 @@ exports[`Theme Component > should match snapshot 1`] = `
         },
         "&.Mui-error": {
           "& svg": {
-            "color": "#f04438",
+            "color": "#ef4444",
           },
           "&.Mui-focused": {
-            "border": "1px solid #fda29b",
-            "boxShadow": "0px 0px 0px 3px #fee4e2",
+            "border": "1px solid #fca5a5",
+            "boxShadow": "0px 0px 0px 3px #fee2e2",
           },
-          "border": "1px solid #fda29b",
+          "border": "1px solid #fca5a5",
         },
         "&.Mui-focused": {
-          "border": "1px solid #84adff",
-          "boxShadow": "0px 0px 0px 3px #d1e0ff",
+          "border": "1px solid #93c5fd",
+          "boxShadow": "0px 0px 0px 3px #dbeafe",
         },
         "&.MuiInputBase-multiline": {
           "height": "auto",
         },
         "&::placeholder": {
-          "color": "#667085",
+          "color": "#64748b",
         },
         "&:not([datatype='select-input'])": {},
         "backgroundColor": "#fff",
-        "border": "1px solid #d0d5dd",
+        "border": "1px solid #cbd5e1",
         "borderRadius": "8px",
         "height": "40px",
         "padding": "8px 12px",
@@ -485,7 +485,7 @@ exports[`Theme Component > should match snapshot 1`] = `
     "styleOverrides": {
       "root": {
         "& .MuiFormLabel-asterisk": {
-          "color": "#f97066",
+          "color": "#f87171",
         },
         "color": "inherit",
         "marginBottom": "4px",
@@ -525,8 +525,8 @@ exports[`Theme Component > should match snapshot 1`] = `
     "styleOverrides": {
       "root": {
         "&.Mui-selected": {
-          "background": "#eff4ff",
-          "color": "#2970dd",
+          "background": "#eff6ff",
+          "color": "#3b82f6",
           "fontWeight": 500,
           "pointerEvents": "none",
         },
@@ -544,7 +544,7 @@ exports[`Theme Component > should match snapshot 1`] = `
         },
         "&.select-dropdown li.MuiMenuItem-root": {
           "&:active": {
-            "backgroundColor": "#b2ccff",
+            "backgroundColor": "#bfdbfe",
           },
           "borderRadius": "6px",
           "height": "44px",
@@ -595,7 +595,7 @@ exports[`Theme Component > should match snapshot 1`] = `
       "root": {
         "& .MuiPaper-root": {
           "background": "#fff",
-          "color": "#344054",
+          "color": "#334155",
         },
       },
     },
@@ -604,16 +604,16 @@ exports[`Theme Component > should match snapshot 1`] = `
     "styleOverrides": {
       "root": {
         "& .MuiTableRow-root .MuiTableCell-root": {
-          "color": "#344054",
+          "color": "#334155",
         },
         "& .MuiTableRow-root .MuiTableCell-root svg": {
           "width": "17px",
         },
         "&.hoverable .MuiTableRow-root:hover": {
           "& .MuiTableCell-root": {
-            "color": "#101828",
+            "color": "#0f172a",
           },
-          "backgroundColor": "#f0fcff",
+          "backgroundColor": "#f0f9ff",
           "cursor": "pointer",
         },
       },
@@ -624,7 +624,7 @@ exports[`Theme Component > should match snapshot 1`] = `
       "root": {
         "& .MuiIconButton-root.MuiButtonBase-root": {
           "& svg": {
-            "color": "#667085",
+            "color": "#64748b",
             "left": "50%",
             "position": "absolute",
             "top": "50%",
@@ -637,14 +637,14 @@ exports[`Theme Component > should match snapshot 1`] = `
         },
         "& .MuiIconButton-root.MuiButtonBase-root:hover": {
           "& svg": {
-            "color": "#13c1fc",
+            "color": "#0ea5e9",
           },
-          "background": "#c6fffa",
+          "background": "#e0f2fe",
         },
         "& a": {
-          "color": "#344054",
+          "color": "#334155",
         },
-        "borderBottom": "1px solid #eaecf0",
+        "borderBottom": "1px solid #e2e8f0",
         "fontSize": "14px",
         "fontWeight": 500,
         "height": "54px",
@@ -656,8 +656,8 @@ exports[`Theme Component > should match snapshot 1`] = `
     "styleOverrides": {
       "root": {
         "& .MuiTableRow-root .MuiTableCell-root": {
-          "borderTop": "1px solid #eaecf0",
-          "color": "#344054",
+          "borderTop": "1px solid #e2e8f0",
+          "color": "#334155",
           "fontSize": "12px",
         },
       },
@@ -682,14 +682,14 @@ exports[`Theme Component > should match snapshot 1`] = `
               "& fieldset,&:hover fieldset": {
                 "border": "none",
               },
-              "border": "1px solid #84adff",
-              "boxShadow": "0px 0px 0px 3px #d1e0ff",
+              "border": "1px solid #93c5fd",
+              "boxShadow": "0px 0px 0px 3px #dbeafe",
             },
             "&::placeholder": {
-              "color": "#667085",
+              "color": "#64748b",
             },
             "&:hover fieldset": {
-              "border": "1px solid #d0d5dd",
+              "border": "1px solid #cbd5e1",
             },
             "backgroundColor": "#fff",
             "borderRadius": "8px",
@@ -716,7 +716,7 @@ exports[`Theme Component > should match snapshot 1`] = `
         "background": "#fff",
         "borderRadius": "8px",
         "boxShadow": "0px 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03)",
-        "color": "#667085",
+        "color": "#64748b",
         "padding": "8px 12px",
       },
     },

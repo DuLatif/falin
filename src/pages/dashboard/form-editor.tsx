@@ -1,10 +1,10 @@
+import { LoadingScreen } from "@/components/LoadingPage"
 import FormEditorGuide from "@/features/dashboard/form-editor"
-import { CircularProgress } from "@mui/material"
 import React, { Suspense } from "react"
 
 const FormEditorPage: React.FC = () => {
   return (
-    <Suspense fallback={<CircularProgress />}>
+    <Suspense fallback={<LoadingScreen />}>
       <FormEditorGuide />
     </Suspense>
   )

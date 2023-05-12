@@ -1,10 +1,10 @@
-import { CircularProgress } from "@mui/material"
+import { LoadingScreen } from "@/components/LoadingPage"
 import React, { Suspense, lazy } from "react"
 const AccordionGuide = lazy(() => import("@/features/dashboard/accordion"))
 
 const AccordionPage: React.FC = () => {
   return (
-    <Suspense fallback={<CircularProgress />}>
+    <Suspense fallback={<LoadingScreen />}>
       <AccordionGuide />
     </Suspense>
   )

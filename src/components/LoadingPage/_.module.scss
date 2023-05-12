@@ -1,0 +1,137 @@
+.Container {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  background: linear-gradient(180deg, #ffffff 45.16%, $primary-100 131.72%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  z-index: 1000000;
+
+  &.Screen {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+  }
+
+  .Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .Title {
+      font-size: 24px;
+      font-weight: 500;
+      margin-top: 6px;
+      margin-bottom: 16px;
+    }
+
+    .Subtitle {
+      color: $neutral-500;
+    }
+  }
+
+  .Logo {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+  }
+}
+
+// ------ Animation ------
+.Container .Loading {
+  .Loading_Progress {
+    -webkit-animation: loading 2s infinite;
+    animation: loading 2s infinite linear;
+    transform-origin: 69px 63px;
+  }
+
+  .Logo {
+    -webkit-animation-delay: 0.225s;
+    animation-delay: 0.225s;
+    -webkit-animation: fadeUp 1s ease-in-out forwards;
+    animation: fadeUp 1s ease-in-out forwards;
+    animation-delay: 0.225s;
+    opacity: 0;
+  }
+  .Logo_Down {
+    -webkit-animation-delay: 0.225s;
+    animation-delay: 0.225s;
+    -webkit-animation: fadeUp2 1s ease-in-out forwards;
+    animation: fadeUp2 1s ease-in-out forwards;
+    animation-delay: 0.225s;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  80% {
+    transform: translateY(-3px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@-webkit-keyframes fadeUp2 {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fadeUp2 {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  80% {
+    transform: translateY(-3px);
+  }
+  100% {
+    opacity: 0.4;
+    transform: translateY(0px);
+  }
+}

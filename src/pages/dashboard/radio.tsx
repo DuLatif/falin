@@ -1,10 +1,10 @@
-import { CircularProgress } from "@mui/material"
+import { LoadingScreen } from "@/components/LoadingPage"
 import React, { lazy, Suspense } from "react"
 const RadioGuide = lazy(() => import("@/features/dashboard/radio"))
 
 const RadioPage: React.FC = () => {
   return (
-    <Suspense fallback={<CircularProgress />}>
+    <Suspense fallback={<LoadingScreen />}>
       <RadioGuide />
     </Suspense>
   )
