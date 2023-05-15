@@ -1,6 +1,7 @@
 import { LoadingScreen } from "@/components/LoadingPage"
-import FormEditorGuide from "@/features/dashboard/form-editor"
-import React, { Suspense } from "react"
+import { delayLoading } from "@/utils/delay-loading"
+import React, { Suspense, lazy } from "react"
+const FormEditorGuide = lazy(() => delayLoading(import("@/features/dashboard/form-editor")))
 
 const FormEditorPage: React.FC = () => {
   return (

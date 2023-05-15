@@ -8,7 +8,7 @@ export const LoadingScreen: React.FC = () => {
   return (
     <Box className={combineClasses([classes.Container, classes.Screen])}>
       <Box className={classes.Content}>
-        <Illustration />
+        <Illustration trackColor="#e2e8f0" />
 
         <Typography className={classes.Title}>Preparing your experience</Typography>
         <Typography className={classes.Subtitle}>Setting up the info required</Typography>
@@ -33,7 +33,7 @@ const LoadingPage: React.FC = () => {
 
 export default LoadingPage
 
-function Illustration() {
+const Illustration: React.FC<{ trackColor?: string }> = ({ trackColor = "#F2F4F7" }) => {
   return (
     <svg
       width="136"
@@ -45,7 +45,7 @@ function Illustration() {
     >
       <path
         d="M121.571 64C121.571 71.0351 120.186 78.0013 117.493 84.5009C114.801 91.0005 110.855 96.9062 105.881 101.881C100.906 106.855 95.0004 110.801 88.5008 113.494C82.0012 116.186 75.035 117.571 67.9999 117.571C60.9648 117.571 53.9986 116.186 47.499 113.494C40.9994 110.801 35.0937 106.855 30.1192 101.881C25.1446 96.9061 21.1986 91.0005 18.5063 84.5009C15.8141 78.0013 14.4285 71.0351 14.4285 64C14.4285 56.9649 15.8141 49.9987 18.5064 43.4991C21.1986 36.9995 25.1446 31.0938 30.1192 26.1193C35.0938 21.1447 40.9994 17.1987 47.499 14.5064C53.9986 11.8142 60.9648 10.4286 67.9999 10.4286C75.035 10.4286 82.0012 11.8142 88.5008 14.5065C95.0004 17.1987 100.906 21.1447 105.881 26.1193C110.855 31.0939 114.801 36.9995 117.493 43.4991C120.186 49.9987 121.571 56.9649 121.571 64L121.571 64Z"
-        stroke="#F2F4F7"
+        stroke={trackColor}
         strokeWidth="4"
         strokeLinecap="round"
         strokeLinejoin="round"

@@ -1,6 +1,7 @@
 import { LoadingScreen } from "@/components/LoadingPage"
+import { delayLoading } from "@/utils/delay-loading"
 import React, { lazy, Suspense } from "react"
-const TypographyList = lazy(() => import("@/features/dashboard/typography"))
+const TypographyList = lazy(() => delayLoading(import("@/features/dashboard/typography")))
 
 const TypographyPage: React.FC = () => {
   return (

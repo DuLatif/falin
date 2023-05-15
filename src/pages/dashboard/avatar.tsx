@@ -1,6 +1,7 @@
 import { LoadingScreen } from "@/components/LoadingPage"
+import { delayLoading } from "@/utils/delay-loading"
 import React, { lazy, Suspense } from "react"
-const AvatarGuide = lazy(() => import("@/features/dashboard/avatar"))
+const AvatarGuide = lazy(() => delayLoading(import("@/features/dashboard/avatar")))
 
 const AvatarPage: React.FC = () => {
   return (
