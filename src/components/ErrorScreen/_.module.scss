@@ -1,9 +1,17 @@
 .Container {
+  width: 100vw;
+  background: linear-gradient(180deg, #ffffff 45.16%, $primary-100 131.72%);
+
+  &.Screen {
+    background: transparent;
+    width: 100%;
+  }
+
   .ErrorCode {
     font-size: 240px;
     line-height: 110%;
     font-weight: bold;
-    background: -webkit-linear-gradient(#2563eb, #60a5fa);
+    background: -webkit-linear-gradient($primary-600, $primary-400);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

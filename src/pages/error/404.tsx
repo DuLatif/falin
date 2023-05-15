@@ -1,10 +1,18 @@
+import ErrorScreen, { TErrorScreen } from "@/components/ErrorScreen/ErrorScreen"
 import React from "react"
-import NotFoundPage from "@/components/ErrorScreen/NotFoundPage"
 
-const Error404: React.FC = () => {
+interface IError404Props {
+  type?: TErrorScreen
+}
+const Error404: React.FC<IError404Props> = ({ type = "screen" }) => {
   return (
     <>
-      <NotFoundPage />
+      <ErrorScreen
+        code={404}
+        type={type}
+        title="Something missing"
+        subtitle="We can't seem to find page you're looking"
+      />
     </>
   )
 }
