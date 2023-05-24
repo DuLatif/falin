@@ -393,6 +393,9 @@ export const components: Components = {
   MuiPaper: {
     styleOverrides: {
       root: {
+        "&.MuiCard-root": {
+          overflow: "initial",
+        },
         "&.select-dropdown": {
           padding: "4px 10px",
           border: "1px solid #EAECF0",
@@ -525,6 +528,14 @@ export const components: Components = {
           right: "12px",
           top: "12px",
         },
+      },
+    },
+  },
+  MuiBackdrop: {
+    styleOverrides: {
+      root: {
+        backgroundImage: "linear-gradient(to bottom, rgba(52, 64, 84, 0.4), rgba(52, 64, 84, 0.6))",
+        backdropFilter: "blur(4px)",
       },
     },
   },
