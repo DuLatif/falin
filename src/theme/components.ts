@@ -507,6 +507,13 @@ export const components: Components = {
     },
   },
   MuiModal: {
+    defaultProps: {
+      slotProps: {
+        backdrop: {
+          timeout: 500,
+        },
+      },
+    },
     styleOverrides: {
       root: {
         display: "flex",
@@ -535,7 +542,7 @@ export const components: Components = {
     styleOverrides: {
       root: {
         backgroundImage: "linear-gradient(to bottom, rgba(52, 64, 84, 0.4), rgba(52, 64, 84, 0.6))",
-        backdropFilter: "blur(4px)",
+        backdropFilter: "blur(1px)",
       },
     },
   },
