@@ -14,6 +14,9 @@ const slotProps = {
   popper: {
     className: "date-picker__popper",
   },
+  desktopPaper: {
+    className: "date-picker__paper",
+  },
 }
 export interface IInputDateProps extends DatePickerProps<Dayjs> {
   label: string

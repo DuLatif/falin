@@ -418,6 +418,9 @@ export const components: Components = {
         "&.select-dropdown li.MuiMenuItem-root[data-value=' ']": {
           display: "none",
         },
+        "&.date-picker__paper": {
+          boxShadow: shadows.lg,
+        },
       },
     },
   },

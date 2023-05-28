@@ -41,6 +41,7 @@
     "react-calendar": "^4.1.0",
     "react-dom": "^18.2.0",
     "react-filepond": "^7.1.2",
+    "react-hook-form": "^7.44.1",
     "react-router-dom": "^6.8.1",
     "react-simple-maps": "^3.0.0",
     "react-syntax-highlighter": "^15.5.0"

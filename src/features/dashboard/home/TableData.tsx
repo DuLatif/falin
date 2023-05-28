@@ -48,13 +48,6 @@ function createData(name: string, status: boolean, role: string, email: string, 
   return { name, status, role, email, teams }
 }
 
-const rows = [
-  createData("Olivia Rhye", true, "Product Designer", "olivia@untitledui.com", ["Design", "Product", "Marketing"]),
-  createData("Olivia Rhye", true, "Product Designer", "olivia@untitledui.com", ["Design", "Product", "Marketing"]),
-  createData("Olivia Rhye", true, "Product Designer", "olivia@untitledui.com", ["Design", "Product", "Marketing"]),
-  createData("Olivia Rhye", true, "Product Designer", "olivia@untitledui.com", ["Design", "Product", "Marketing"]),
-]
-
 const TableData: React.FC = () => {
   const columns = useMemo(
     //column definitions...

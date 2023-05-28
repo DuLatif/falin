@@ -1,0 +1,140 @@
+.FormGroup {
+  position: relative;
+}
+
+.InputLabel {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.Label {
+  font-weight: $font-regular;
+  font-size: 14px;
+  line-height: 150%;
+  color: $neutral-500;
+  position: absolute;
+  z-index: 1;
+  position: absolute;
+  left: 24px;
+  transition: 0.15s;
+  pointer-events: none;
+  transform: translate(0, 0);
+
+  .Asteric {
+    color: $danger-500;
+    margin-left: 4px;
+  }
+}
+
+.Container.Error .Label {
+  color: $danger-500;
+}
+
+.Input {
+  box-sizing: border-box;
+  padding: 8px 16px;
+  padding-top: 22px;
+  width: 100%;
+  height: 56px;
+  background: #ffffff;
+  border: 1px solid $neutral-300;
+  border-radius: 12px;
+  font-size: 16px;
+  color: $neutral-900;
+  font-weight: $font-medium;
+  transition: 0.15s;
+}
+
+.Input:hover {
+  border: 1px solid $neutral-400;
+}
+
+.Container.Error .Input {
+  border: 1px solid $danger-500;
+  &:focus {
+    box-shadow: 0px 0px 0px 0.8px $danger-500, 0px 0px 0px 4px $danger-100;
+  }
+}
+
+.Input:focus {
+  outline: none;
+  border: 1px solid $primary-500;
+  box-shadow: 0px 0px 0px 0.8px $primary-500, 0px 0px 0px 4px $primary-100;
+}
+
+.Input:focus + .Label {
+  transform: translate(-8px, -14px);
+}
+
+.InputLabel .Input:not(:placeholder-shown) + .Label {
+  transform: translate(-8px, -14px);
+}
+
+.InputLabel .Input:placeholder-shown:not(:focus) + .Label {
+  transform: translate(0);
+}
+
+.HelperText:global(.MuiFormHelperText-root) {
+  font-weight: $font-medium;
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  margin-top: 8px;
+  color: $neutral-500;
+}
+
+.Container.Error .HelperText {
+  color: $danger-500;
+}
+
+.Container.Disabled {
+  pointer-events: none;
+}
+
+.Container.Disabled .Input {
+  background: $neutral-100;
+  border: 1px solid $neutral-300;
+  color: $neutral-300;
+}
+
+.Container.Disabled .Label,
+.Container.Disabled .Input,
+.Container.Disabled .HelperText {
+  color: $neutral-300;
+}
+
+.StartIcon {
+  position: absolute;
+  left: 18px;
+  z-index: 10;
+  top: 14px;
+  pointer-events: none;
+  color: $neutral-500;
+}
+
+.EndIcon {
+  position: absolute;
+  top: 14px;
+  right: 50px;
+  z-index: 22222;
+  color: $neutral-500;
+  transform: translate(100%);
+  display: block;
+  cursor: pointer;
+  width: 30px !important;
+}
+
+.Container.Input_startIcon .Input {
+  padding-left: 52px;
+}
+
+.Container.Input_startIcon .Input:focus + .Label {
+  transform: translate(29px, -14px);
+}
+.Container.Input_startIcon .InputLabel .Input:not(:placeholder-shown) + .Label {
+  transform: translate(29px, -14px);
+}
+.Container.Input_startIcon .InputLabel .Input:placeholder-shown:not(:focus) + .Label {
+  transform: translate(32px);
+}
