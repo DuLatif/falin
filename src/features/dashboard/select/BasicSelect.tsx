@@ -8,6 +8,7 @@ import {
   basicSelectErrorCode,
   basicSelectPlaceholderCode,
 } from "./_code/basic-select"
+import SelectSearchable from "@/components/SelectSearchable/SelectSearchable"
 
 const BasicSelectGuide: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const BasicSelectGuide: React.FC = () => {
       <Typography variant="subtitle1" fontWeight={"semiBold"} mb={1}>
         Basic Select
       </Typography>
+
       <Grid container spacing={2}>
         <Grid item md={6}>
           <FormControl>
@@ -83,6 +85,22 @@ const BasicSelectGuide: React.FC = () => {
             </Select>
           </FormControl>
           <CodeSnippet code={basicDisabledSelectCode} />
+        </Grid>
+        <Grid item md={6}>
+          <FormControl required>
+            <FormLabel htmlFor="Country">Searchable Select</FormLabel>
+            <SelectSearchable
+              onChange={(val) => console.log(val)}
+              options={[
+                { label: "Indonesia", value: "Indonesia" },
+                { label: "Malaysia", value: "Malaysia" },
+                { label: "Singapore", value: "Singapore" },
+                { label: "Thailand", value: "Thailand" },
+                { label: "Myanmar", value: "Myanmar" },
+                { label: "India", value: "India" },
+              ]}
+            />
+          </FormControl>
         </Grid>
       </Grid>
     </Card>

@@ -12,7 +12,7 @@ export interface IModalProps extends Omit<ModalProps, "children"> {
 }
 const Modal = ({ containerProps, ...props }: IModalProps) => {
   return (
-    <MuiModal {...props}>
+    <MuiModal {...props} slotProps={{ backdrop: { timeout: 500, className: "modal-backdrop" } }}>
       <Fade in={props.open}>
         <Box {...containerProps} className={classes.Container}>
           <IconButton className="btn-close" onClick={(e) => props?.onClose && props.onClose(e, "backdropClick")}>

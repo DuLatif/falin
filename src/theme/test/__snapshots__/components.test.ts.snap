@@ -47,6 +47,16 @@ exports[`Theme Component > should match snapshot 1`] = `
       },
     },
   },
+  "MuiBackdrop": {
+    "styleOverrides": {
+      "root": {
+        "&.modal-backdrop": {
+          "backdropFilter": "blur(1px)",
+          "backgroundImage": "linear-gradient(to bottom, rgba(52, 64, 84, 0.4), rgba(52, 64, 84, 0.6))",
+        },
+      },
+    },
+  },
   "MuiButton": {
     "defaultProps": {
       "disableRipple": true,
@@ -536,6 +546,9 @@ exports[`Theme Component > should match snapshot 1`] = `
   "MuiPaper": {
     "styleOverrides": {
       "root": {
+        "&.MuiCard-root": {
+          "overflow": "initial",
+        },
         "&.select-dropdown": {
           "border": "1px solid #EAECF0",
           "borderRadius": "8px",
