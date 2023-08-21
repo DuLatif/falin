@@ -1,4 +1,4 @@
-import { Box, Button, Chip, Stack, Typography } from "@mui/material"
+import { Box, Button, Card, Chip, Stack, Typography } from "@mui/material"
 import Paper from "@mui/material/Paper"
 import Table from "@mui/material/Table"
 import TableBody from "@mui/material/TableBody"
@@ -27,6 +27,8 @@ import {
   EyeSlash,
   PushPinSimple,
 } from "phosphor-react"
+import usePagination from "@/hooks/usePagination"
+import Pagination from "@/components/Pagination/Pagination"
 
 const phosphorIcon: Partial<MRT_Icons> = {
   ArrowDownwardIcon: (props: any) => <ArrowDown weight="regular" {...props} />,
@@ -65,6 +67,11 @@ const rows = [
 ]
 
 const TableGuide: React.FC = () => {
+  const pagination = usePagination({
+    total: 15,
+    page: 1,
+  })
+
   const columns = useMemo(
     //column definitions...
     () =>
@@ -148,6 +155,15 @@ const TableGuide: React.FC = () => {
 
       <Box mt={4}>
         <MaterialReactTable columns={columns} data={data} enableColumnOrdering icons={phosphorIcon} />
+      </Box>
+
+      <Box mt={4}>
+        <Card>
+          <Typography variant="subtitle1" fontWeight={"semiBold"} mb={2}>
+            Pagination
+          </Typography>
+          <Pagination {...pagination} />
+        </Card>
       </Box>
     </Box>
   )
