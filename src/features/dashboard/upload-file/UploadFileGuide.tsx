@@ -8,7 +8,7 @@ const UploadFileGuide: React.FC = () => {
       <Typography variant="subtitle1" fontWeight={"semiBold"} mb={1}>
         Upload File Guide
       </Typography>
-      <UploadFile />
+      <UploadFile placeholder=".CSV (max. 5MB)" />
     </Card>
   )
 }

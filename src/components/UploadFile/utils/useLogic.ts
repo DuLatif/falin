@@ -18,6 +18,12 @@ const useLogic = (onChange: TonChange) => {
     setIsImage(false)
   }, [file])
 
+  const reset = () => {
+    setFile(null)
+    setIsImage(false)
+    setImgSources(null)
+  }
+
   const handleFile = (file: File | null) => {
     if (file) {
       const reader = new FileReader()
@@ -79,6 +85,7 @@ const useLogic = (onChange: TonChange) => {
     // ----- set state -----
     setOnDropZone,
     // ----- function -----
+    reset,
     handleFile,
     handleDrop,
     handleDrag,
