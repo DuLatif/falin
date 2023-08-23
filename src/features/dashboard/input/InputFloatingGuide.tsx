@@ -1,7 +1,8 @@
-import { Card, Typography, Grid, FormControl } from "@mui/material"
-import React from "react"
 import InputFloating from "@/components/InputFloating"
+import InputFloatingDate from "@/components/InputFloating/InputFloatingDate"
+import { Card, FormControl, Grid, Typography } from "@mui/material"
 import { EnvelopeSimple, Info } from "phosphor-react"
+import React from "react"
 
 const InputFloatingGuide: React.FC = () => {
   return (
@@ -32,6 +33,15 @@ const InputFloatingGuide: React.FC = () => {
               endIcon={<Info fontSize={24} />}
               error
               label="Email"
+            />
+          </FormControl>
+        </Grid>
+        <Grid item md={6}>
+          <FormControl>
+            <InputFloatingDate
+              label="Date of Birth"
+              required
+              onChange={(val) => console.log(val?.format("DD-MM-YYYY"))}
             />
           </FormControl>
         </Grid>

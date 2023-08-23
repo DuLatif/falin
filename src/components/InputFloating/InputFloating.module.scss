@@ -138,3 +138,42 @@
 .Container.Input_startIcon .InputLabel .Input:placeholder-shown:not(:focus) + .Label {
   transform: translate(32px);
 }
+
+// ---------- input date ----------
+.Container.InputDate {
+  :global(.MuiFormControl-root) {
+    margin: 0;
+  }
+  .InputLabel .Label {
+    transform: translate(-6px, -12px);
+  }
+
+  .EndIcon {
+    transform: translateY(-20px);
+  }
+}
+.Container :global(.date-picker) {
+  width: 100%;
+  :global(.MuiInputBase-root.MuiOutlinedInput-root) {
+    box-sizing: border-box;
+    padding: 8px 16px;
+    padding-top: 22px;
+    width: 100%;
+    height: 56px;
+    background: #ffffff;
+    border: 1px solid $neutral-300;
+    border-radius: 12px;
+    font-size: 16px;
+    color: $neutral-900;
+    font-weight: $font-medium;
+    transition: 0.15s;
+
+    fieldset:global(.MuiOutlinedInput-notchedOutline) {
+      border: none;
+    }
+
+    :global(.MuiInputAdornment-root) button:global(.MuiButtonBase-root.MuiIconButton-root) {
+      transform: translateY(-8px);
+    }
+  }
+}

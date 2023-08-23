@@ -13,7 +13,7 @@ const InputDateGuide: React.FC = () => {
           <InputDate
             label="Date of Birth"
             onChange={(value) => {
-              alert(value?.format("DD-MM-YYYY"))
+              console.log(value?.format("DD-MM-YYYY"))
             }}
           />
         </Grid>
