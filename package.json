@@ -23,7 +23,7 @@
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.11.10",
     "@mui/x-date-pickers": "^6.0.3",
-    "@splidejs/react-splide": "^0.7.12",
+    "@splidejs/react-splide": "Splidejs/react-splide#pull/73/head",
     "@splidejs/splide": "^4.1.4",
     "@testing-library/react": "^14.0.0",
     "@types/react-simple-maps": "^3.0.0",

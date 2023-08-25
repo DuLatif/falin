@@ -999,10 +999,9 @@
   resolved "https://registry.npmjs.org/@remix-run/router/-/router-1.3.2.tgz"
   integrity sha512-t54ONhl/h75X94SWsHGQ4G/ZrCEguKSRQr7DrjTciJXW0YU1QhlwYeycvK5JgkzlxmvrK7wq1NB/PLtHxoiDcA==
 
-"@splidejs/react-splide@^0.7.12":
+"@splidejs/react-splide@Splidejs/react-splide#pull/73/head":
   version "0.7.12"
-  resolved "https://registry.yarnpkg.com/@splidejs/react-splide/-/react-splide-0.7.12.tgz#c7efe231bbbb6812da64689178b6c871269baff5"
-  integrity sha512-UfXH+j47jsMc4x5HA/aOwuuHPqn6y9+ZTNYPWDRD8iLKvIVMZlzq2unjUEvyDAU+TTVPZOXkG2Ojeoz0P4AkZw==
+  resolved "https://codeload.github.com/Splidejs/react-splide/tar.gz/dd726250623c340ccd934c8094cbd52af6c102aa"
   dependencies:
     "@splidejs/splide" "^4.1.3"
 
