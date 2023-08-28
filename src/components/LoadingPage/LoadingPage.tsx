@@ -1,10 +1,18 @@
 import { Box, Typography } from "@mui/material"
-import React from "react"
+import React, { useEffect } from "react"
 import ReactDOM from "react-dom"
 import classes from "./_.module.scss"
 import { combineClasses } from "@/utils/styles"
+import NProgress from "nprogress"
 
 export const LoadingScreen: React.FC = () => {
+  useEffect(() => {
+    NProgress.start()
+
+    return () => {
+      NProgress.done()
+    }
+  })
   return (
     <Box className={combineClasses([classes.Container, classes.Screen])}>
       <Box className={classes.Content}>
@@ -18,6 +26,13 @@ export const LoadingScreen: React.FC = () => {
 }
 
 const LoadingPage: React.FC = () => {
+  useEffect(() => {
+    NProgress.start()
+
+    return () => {
+      NProgress.done()
+    }
+  })
   return ReactDOM.createPortal(
     <Box className={classes.Container}>
       <Box className={classes.Content}>
