@@ -18,7 +18,7 @@ const viteConfig: UserConfigExport = {
     preprocessorOptions: {
       scss: {
         additionalData:
-          "@import 'src/theme/scss/colors.scss';@import 'src/theme/scss/typography.scss';@import 'src/theme/scss/shadows.scss';",
+          "@import 'src/theme/scss/colors.scss';@import 'src/theme/scss/spacing.scss';@import 'src/theme/scss/typography.scss';@import 'src/theme/scss/shadows.scss';",
       },
     },
   },

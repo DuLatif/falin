@@ -1,0 +1,26 @@
+.Root {
+  background-color: $neutral-100;
+  min-height: 100vh;
+  width: 100vw;
+  padding-top: 100px;
+}
+
+.Container {
+  .Card {
+    border-color: $danger-200;
+  }
+
+  .Stacks {
+    padding: $space-4 $space-8;
+    border-radius: 8px;
+    margin-top: $space-3;
+
+    .Title {
+      margin-bottom: $space-2;
+    }
+
+    .Body {
+      color: $neutral-500;
+    }
+  }
+}
