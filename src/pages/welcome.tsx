@@ -61,12 +61,12 @@ const WelcomePage: React.FC = () => {
         </Typography>
       </Box>
       <Stack direction="row" spacing={4}>
-        <Link to="/dashboard/home">
+        <Link to="https://filan-inter.netlify.app/dashboard/home">
           <Button size="xl" sx={styles.button} startIcon={<FileSearch size={26} weight="regular" />}>
             Documentation
           </Button>
         </Link>
-        <a href="https://github.com/BJ-stack-art/falin" target="_blank" rel="noreferrer">
+        <a href="https://github.com/DuLatif/falin" target="_blank" rel="noreferrer">
           <Button size="xl" sx={styles.button} color="inherit" startIcon={<GitBranch size={26} weight="regular" />}>
             Github
           </Button>
