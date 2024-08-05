@@ -2,8 +2,8 @@ import { Button, Card, Typography } from "@mui/material"
 import axios, { AxiosError } from "axios"
 import React, { useState } from "react"
 import { modalErrorCode } from "./_code/modal"
-import { IModalErrorProps, ModalError } from "@/ui/sections/Modal"
 import CodeSnippet from "@/ui/components/CodeSnippet"
+import { IModalErrorProps, ModalError } from "@/ui/layouts/Modal"
 
 const examplePayload = {
   step: 4,

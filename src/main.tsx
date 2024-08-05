@@ -6,7 +6,7 @@ import App from "./App"
 import "./index.css"
 import { theme } from "./theme/theme"
 import "./theme/nprogress.css"
-import ErrorBoundary from "./ui/sections/ErrorBoundary"
+import ErrorBoundary from "./ui/layouts/ErrorBoundary"
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>

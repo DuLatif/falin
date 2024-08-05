@@ -1,4 +1,4 @@
-import { LoadingScreen } from "@/ui/sections/LoadingPage"
+import { LoadingScreen } from "@/ui/views/LoadingPage"
 import { delayLoading } from "@/utils/delay-loading"
 import React, { lazy, Suspense } from "react"
 const TableGuide = lazy(() => delayLoading(import("@/app/design-system/table")))

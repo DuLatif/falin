@@ -28,7 +28,7 @@ import {
   PushPinSimple,
 } from "phosphor-react"
 import usePagination from "@/hooks/usePagination"
-import Pagination from "@/ui/components/Pagination"
+import Pagination from "@/ui/sections/Pagination"
 
 const phosphorIcon: Partial<MRT_Icons> = {
   ArrowDownwardIcon: (props: any) => <ArrowDown weight="regular" {...props} />,

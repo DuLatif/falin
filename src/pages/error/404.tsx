@@ -1,4 +1,4 @@
-import ErrorScreen, { TErrorScreen } from "@/ui/sections/ErrorScreen/ErrorScreen"
+import ErrorScreen, { TErrorScreen } from "@/ui/views/ErrorScreen/ErrorScreen"
 import React from "react"
 
 interface IError404Props {

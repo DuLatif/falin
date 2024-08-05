@@ -3,7 +3,7 @@ import { CheckCircle, Trash, UploadSimple } from "phosphor-react"
 import React, { useState } from "react"
 import { modalIconContainedCode, modalIconWithoutTitleCode } from "./_code/modal"
 import CodeSnippet from "@/ui/components/CodeSnippet"
-import { Modal } from "@/ui/sections/Modal"
+import { Modal } from "@/ui/layouts/Modal"
 
 const ModalIconGuide: React.FC = () => {
   const [showModalDefault, setShowModalDefault] = useState(false)

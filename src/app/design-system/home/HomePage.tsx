@@ -4,7 +4,8 @@ import CardDashboard, { ICardDashboardProps } from "./CardDashboard"
 import { CurrencyDollar } from "phosphor-react"
 import ListEvents from "./ListEvents"
 import TableData from "./TableData"
-import SmallCalendar, { ISmallCalendarEvent } from "@/ui/components/Calendar/SmallCalendar"
+import { SmallCalendar } from "@/ui/sections/Calendar"
+import { ISmallCalendarEvent } from "@/ui/sections/Calendar/SmallCalendar"
 
 const listDashboard: ICardDashboardProps[] = [
   {

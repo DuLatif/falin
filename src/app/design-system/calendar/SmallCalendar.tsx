@@ -2,7 +2,7 @@ import { Card, Typography } from "@mui/material"
 import React from "react"
 import { smallCalendarCode } from "./_code/small-calendar"
 import CodeSnippet from "@/ui/components/CodeSnippet"
-import { SmallCalendar } from "@/ui/components/Calendar"
+import { SmallCalendar } from "@/ui/sections/Calendar"
 
 const SmallCalendarGuide: React.FC = () => {
   return (

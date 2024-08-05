@@ -1,8 +1,8 @@
 import { Box, Button, Card, Typography } from "@mui/material"
 import React, { useState } from "react"
 import { modalBasicCode, modalDividerCode } from "./_code/modal"
-import { Modal } from "@/ui/sections/Modal"
 import CodeSnippet from "@/ui/components/CodeSnippet"
+import { Modal } from "@/ui/layouts/Modal"
 
 const ModalBasicGuide: React.FC = () => {
   const [showModalBasic, setShowModalBasic] = useState(false)

@@ -3,7 +3,7 @@ import React from "react"
 import classes from "./_.module.scss"
 import { bigCalendarCode } from "./_code/big-calendar"
 import CodeSnippet from "@/ui/components/CodeSnippet"
-import { BigCalendar, ICalendarEvent } from "@/ui/components/Calendar"
+import { BigCalendar, ICalendarEvent } from "@/ui/sections/Calendar"
 
 const listEvents: ICalendarEvent[] = [
   {

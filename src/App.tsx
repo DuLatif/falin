@@ -3,7 +3,7 @@ import DashboardRoute from "@/pages/dashboard/route"
 import Error404 from "./pages/error/404"
 import { Error500 } from "./pages/error/500"
 import WelcomePage from "./pages"
-import LoadingPage from "./ui/sections/LoadingPage"
+import LoadingPage from "./ui/views/LoadingPage"
 
 function App() {
   return (
