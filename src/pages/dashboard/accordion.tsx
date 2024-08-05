@@ -1,7 +1,7 @@
-import { LoadingScreen } from "@/components/LoadingPage"
+import { LoadingScreen } from "@/ui/sections/LoadingPage"
 import { delayLoading } from "@/utils/delay-loading"
 import React, { Suspense, lazy } from "react"
-const AccordionGuide = lazy(() => delayLoading(import("@/features/dashboard/accordion")))
+const AccordionGuide = lazy(() => delayLoading(import("@/app/design-system/accordion")))
 
 const AccordionPage: React.FC = () => {
   return (

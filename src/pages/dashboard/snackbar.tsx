@@ -1,7 +1,7 @@
-import { LoadingScreen } from "@/components/LoadingPage"
+import { LoadingScreen } from "@/ui/sections/LoadingPage"
 import { delayLoading } from "@/utils/delay-loading"
 import React, { lazy, Suspense } from "react"
-const SnackbarGuide = lazy(() => delayLoading(import("@/features/dashboard/snackbar")))
+const SnackbarGuide = lazy(() => delayLoading(import("@/app/design-system/snackbar")))
 
 const SnackbarPage: React.FC = () => {
   return (

@@ -1,5 +1,3 @@
-import Content from "@/components/dashboard/Content"
-import Sidebar from "@/components/dashboard/Sidebar"
 import { Box, SxProps } from "@mui/material"
 import React from "react"
 import { Routes, Route } from "react-router-dom"
@@ -28,6 +26,8 @@ import MapPage from "./map"
 import SliderPage from "./slider"
 import FormEditorPage from "./form-editor"
 import SpacingPage from "./spacing"
+import Sidebar from "@/ui/layouts/design-system/Sidebar"
+import Content from "@/ui/layouts/design-system/Content"
 
 const styles: { root: SxProps } = {
   root: {

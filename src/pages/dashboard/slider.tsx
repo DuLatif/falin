@@ -1,7 +1,7 @@
-import { LoadingScreen } from "@/components/LoadingPage"
+import { LoadingScreen } from "@/ui/sections/LoadingPage"
 import { delayLoading } from "@/utils/delay-loading"
 import React, { Suspense, lazy } from "react"
-const SliderGuide = lazy(() => delayLoading(import("@/features/dashboard/slider")))
+const SliderGuide = lazy(() => delayLoading(import("@/app/design-system/slider")))
 
 const SliderPage: React.FC = () => {
   return (

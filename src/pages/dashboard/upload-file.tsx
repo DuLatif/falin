@@ -1,7 +1,7 @@
-import { LoadingScreen } from "@/components/LoadingPage"
+import { LoadingScreen } from "@/ui/sections/LoadingPage"
 import { delayLoading } from "@/utils/delay-loading"
 import React, { lazy, Suspense } from "react"
-const UploadFileGuide = lazy(() => delayLoading(import("@/features/dashboard/upload-file")))
+const UploadFileGuide = lazy(() => delayLoading(import("@/app/design-system/upload-file")))
 
 const UploadFilePage: React.FC = () => {
   return (

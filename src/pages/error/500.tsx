@@ -1,4 +1,4 @@
-import ErrorScreen from "@/components/ErrorScreen/ErrorScreen"
+import ErrorScreen from "@/ui/sections/ErrorScreen/ErrorScreen"
 import React from "react"
 
 export const Error500: React.FC = () => {
