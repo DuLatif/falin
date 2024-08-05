@@ -20,8 +20,8 @@ const styles: { box: SxProps } = {
 // Default theme
 import "@splidejs/react-splide/css"
 import { splideCustomNavigationCode, splideSliderCode } from "./_code/slider-splide"
-import { spacing } from "@/theme/spacing"
-import { neutral } from "@/theme/colors"
+import { spacing } from "@/theme/ts/spacing"
+import { neutral } from "@/theme/ts/colors"
 import { ArrowLeft, ArrowRight } from "phosphor-react"
 
 // or other themes

@@ -1,4 +1,4 @@
-import { neutral } from "@/theme/colors"
+import { neutral } from "@/theme/ts/colors"
 import { Box, Button, Stack, SxProps, Typography } from "@mui/material"
 import { CloudArrowUp, Trash } from "phosphor-react"
 import React, { useEffect } from "react"

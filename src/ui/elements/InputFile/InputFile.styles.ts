@@ -1,5 +1,5 @@
 import { SxProps } from "@mui/material"
-import { danger, neutral } from "@/theme/colors"
+import { danger, neutral } from "@/theme/ts/colors"
 
 interface IStyle {
   root: SxProps

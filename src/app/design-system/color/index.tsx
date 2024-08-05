@@ -1,4 +1,4 @@
-import { danger, info, neutral, primary, success, warning } from "@/theme/colors"
+import { danger, info, neutral, primary, success, warning } from "@/theme/ts/colors"
 import { Box, Card, Grid, Stack, Typography, useTheme } from "@mui/material"
 import React from "react"
 

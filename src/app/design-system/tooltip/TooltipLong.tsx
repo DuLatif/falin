@@ -1,4 +1,4 @@
-import { neutral } from "@/theme/colors"
+import { neutral } from "@/theme/ts/colors"
 import { Card, Stack, Tooltip, Typography } from "@mui/material"
 import React from "react"
 import { tooltipLongCode } from "./_code/tooltip-long"

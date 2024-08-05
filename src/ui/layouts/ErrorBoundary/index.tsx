@@ -2,7 +2,7 @@ import React, { Component, ErrorInfo } from "react"
 import { Container, Typography, Box, Card } from "@mui/material"
 import { Navigate } from "react-router-dom"
 import classes from "./ErrorBoundary.module.scss"
-import { shadows } from "@/theme/shadows"
+import { shadows } from "@/theme/ts/shadows"
 import { combineClasses } from "@/utils/styles"
 
 interface ErrorBoundaryProps {

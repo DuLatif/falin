@@ -1,9 +1,9 @@
 import { createTheme } from "@mui/material"
-import { components } from "./components"
-import { palette } from "./palette"
-import { shadowsArray } from "./shadows"
-import { typography } from "./typography"
-import { spacing } from "./spacing"
+import { components } from "./ts/components"
+import { palette } from "./ts/palette"
+import { shadowsArray } from "./ts/shadows"
+import { typography } from "./ts/typography"
+import { spacing } from "./ts/spacing"
 
 export const theme = createTheme({
   spacing: spacing,

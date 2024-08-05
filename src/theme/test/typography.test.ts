@@ -1,5 +1,5 @@
 import { describe, expect, test } from "vitest"
-import { typography } from "../typography"
+import { typography } from "../ts/typography"
 import { readFileSync } from "fs"
 
 describe("Theme Typography", () => {

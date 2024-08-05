@@ -1,5 +1,5 @@
 import { describe, expect, test } from "vitest"
-import { shadows, shadowsArray } from "../shadows"
+import { shadows, shadowsArray } from "../ts/shadows"
 import { readFileSync } from "fs"
 
 describe("Theme Shadows", () => {

@@ -1,4 +1,4 @@
-import { primary } from "@/theme/colors"
+import { primary } from "@/theme/ts/colors"
 import { Box, Stack, SxProps, Button, Typography } from "@mui/material"
 import { GitBranch, FileSearch } from "phosphor-react"
 import React from "react"

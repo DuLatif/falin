@@ -2,7 +2,7 @@ import { Box, Grow, IconButton, Input, MenuItem, Paper, InputProps, SxProps } fr
 import { CaretDown, CaretUp } from "phosphor-react"
 import React, { useId, useMemo, useState } from "react"
 import Render from "../../elements/Render/Render"
-import { danger } from "@/theme/colors"
+import { danger } from "@/theme/ts/colors"
 
 const styles: { input: SxProps; icon: SxProps; dropdown: { paper: SxProps; box: SxProps } } = {
   input: { marginTop: "0px !important" },

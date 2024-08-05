@@ -1,5 +1,5 @@
 export const tooltipLongCode = `import React from 'react';
-import { neutral } from "@/theme/colors"
+import { neutral } from "@/theme/ts/colors"
 import { Card, Stack, Tooltip, Typography } from "@mui/material"
 
 const TooltipMessage: React.ReactNode = (

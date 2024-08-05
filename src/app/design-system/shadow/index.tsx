@@ -1,4 +1,4 @@
-import { shadows } from "@/theme/shadows"
+import { shadows } from "@/theme/ts/shadows"
 import { Box, Card, Grid, Typography } from "@mui/material"
 import React, { useEffect, useState } from "react"
 

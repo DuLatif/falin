@@ -1,4 +1,4 @@
-import { primary, success } from "@/theme/colors"
+import { primary, success } from "@/theme/ts/colors"
 import { Avatar, Card, Stack, Typography } from "@mui/material"
 import React from "react"
 import { avatarLetterCode } from "./_code/avatar-letter"

@@ -1,4 +1,4 @@
-import { neutral } from "@/theme/colors"
+import { neutral } from "@/theme/ts/colors"
 import { combineClasses } from "@/utils/styles"
 import { Box, BoxProps, Typography } from "@mui/material"
 import React, { ReactNode } from "react"

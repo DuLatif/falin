@@ -1,5 +1,5 @@
 import useShowCode from "@/hooks/useShowCode"
-import { neutral } from "@/theme/colors"
+import { neutral } from "@/theme/ts/colors"
 import { Box, Button, Collapse } from "@mui/material"
 import React from "react"
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter"

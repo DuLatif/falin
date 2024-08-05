@@ -1,5 +1,5 @@
 import { describe, expect, test } from "vitest"
-import { components } from "../components"
+import { components } from "../ts/components"
 
 describe("Theme Component", () => {
   test("should match snapshot", () => {

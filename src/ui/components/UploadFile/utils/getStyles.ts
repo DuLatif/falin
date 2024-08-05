@@ -1,4 +1,4 @@
-import { info, neutral, primary } from "@/theme/colors"
+import { info, neutral, primary } from "@/theme/ts/colors"
 import { SxProps } from "@mui/material"
 
 export function getStyles(

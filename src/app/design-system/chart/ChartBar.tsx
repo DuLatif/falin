@@ -2,7 +2,7 @@ import { Card, Typography } from "@mui/material"
 import React from "react"
 import Chart from "react-apexcharts"
 import { chartBarCode } from "./_code/chart-bar"
-import { primary } from "@/theme/colors"
+import { primary } from "@/theme/ts/colors"
 import CodeSnippet from "@/ui/components/CodeSnippet"
 
 const chartData: any = {

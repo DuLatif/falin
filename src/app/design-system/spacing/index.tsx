@@ -1,4 +1,4 @@
-import { spacing } from "@/theme/spacing"
+import { spacing } from "@/theme/ts/spacing"
 import { Box, Card, LinearProgress, Table, TableBody, TableCell, TableHead, TableRow, Typography } from "@mui/material"
 import React from "react"
 

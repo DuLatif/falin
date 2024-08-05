@@ -1,5 +1,5 @@
 import { describe, expect, test } from "vitest"
-import { danger, info, neutral, primary, success, warning } from "../colors"
+import { danger, info, neutral, primary, success, warning } from "../ts/colors"
 import { readFileSync } from "fs"
 
 describe("Theme Color", () => {
