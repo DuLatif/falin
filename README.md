@@ -34,13 +34,13 @@ Before you begin, ensure you have the following installed:
 1. **Clone the repository**:
 
 ```bash
-git clone https://github.com/your-username/ui-template-project.git
+git clone https://github.com/Dulatif/falin.git
 ```
 
 2. **Navigate to the project directory**:
 
 ```bash
-cd ui-template-project
+cd falin
 ```
 
 3. **Install the dependencies**:
@@ -57,7 +57,7 @@ Start the development server with:
 npm run dev
 ```
 
-The project will be available at `http://localhost:3000`.
+The project will be available at `http://localhost:3010`.
 
 ## License
 
