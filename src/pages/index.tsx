@@ -61,7 +61,7 @@ const WelcomePage: React.FC = () => {
         </Typography>
       </Box>
       <Stack direction="row" spacing={4}>
-        <Link to="/dashboard/home">
+        <Link to="/design-system/home">
           <Button size="xl" sx={styles.button} startIcon={<FileSearch size={26} weight="regular" />}>
             Documentation
           </Button>
