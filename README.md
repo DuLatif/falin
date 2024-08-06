@@ -10,7 +10,7 @@ A cutting-edge, reusable UI component library crafted with TypeScript, React, Vi
 
 ## Description
 
-Welcome to the UI Template Project! This repository features a collection of highly reusable and customizable UI components, built with the latest technologies including TypeScript, React, Vite, and Material-UI. Whether you're starting a new project or enhancing an existing one, our components are designed to help you build a polished and professional user interface quickly and efficiently.
+Welcome to the Falin UI! This repository features a collection of highly reusable and customizable UI components, built with the latest technologies including TypeScript, React, Vite, and Material-UI. Whether you're starting a new project or enhancing an existing one, our components are designed to help you build a polished and professional user interface quickly and efficiently.
 
 ### Key Features
 
