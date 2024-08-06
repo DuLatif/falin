@@ -1,4 +1,4 @@
-![Falin](https://filan-inter.netlify.app/favicon.svg)
+![Falin](https://falin.netlify.app/favicon.svg)
 # Falin UI
 
 A cutting-edge, reusable UI component library crafted with TypeScript, React, Vite, and Material-UI. Designed to accelerate your development process with a sleek, modern, and customizable interface.
