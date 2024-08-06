@@ -31,27 +31,27 @@ import {
 export const listCustomization: IMenuProps[] = [
   {
     text: "Typography",
-    path: "/dashboard/typography",
+    path: "/design-system/typography",
     icon: <TextT size={26} weight={"bold"} />,
   },
   {
     text: "Shadows",
-    path: "/dashboard/shadow",
+    path: "/design-system/shadow",
     icon: <WaveSine size={26} weight={"bold"} />,
   },
   {
     text: "Colors",
-    path: "/dashboard/color",
+    path: "/design-system/color",
     icon: <Palette size={26} weight={"bold"} />,
   },
   {
     text: "Icons",
-    path: "/dashboard/icon",
+    path: "/design-system/icon",
     icon: <Smiley size={26} weight={"bold"} />,
   },
   {
     text: "Spacing",
-    path: "/dashboard/spacing",
+    path: "/design-system/spacing",
     icon: <SquaresFour size={26} weight={"bold"} />,
   },
 ]
@@ -59,32 +59,32 @@ export const listCustomization: IMenuProps[] = [
 export const listMenuForms: IMenuProps[] = [
   {
     text: "Inputs",
-    path: "/dashboard/input",
+    path: "/design-system/input",
     icon: <Textbox size={26} weight={"bold"} />,
   },
   {
     text: "Checkbox",
-    path: "/dashboard/checkbox",
+    path: "/design-system/checkbox",
     icon: <CheckCircle size={26} weight={"bold"} />,
   },
   {
     text: "Radio",
-    path: "/dashboard/radio",
+    path: "/design-system/radio",
     icon: <RadioButton size={26} weight={"bold"} />,
   },
   {
     text: "Select",
-    path: "/dashboard/select",
+    path: "/design-system/select",
     icon: <Rows size={26} weight={"bold"} />,
   },
   {
     text: "Upload File",
-    path: "/dashboard/upload-file",
+    path: "/design-system/upload-file",
     icon: <CloudArrowUp size={26} weight={"bold"} />,
   },
   {
     text: "Form Editor",
-    path: "/dashboard/form-editor",
+    path: "/design-system/form-editor",
     icon: <BracketsAngle size={26} weight={"bold"} />,
   },
 ]
@@ -92,64 +92,64 @@ export const listMenuForms: IMenuProps[] = [
 export const listComponents: IMenuProps[] = [
   {
     text: "Button",
-    path: "/dashboard/button",
+    path: "/design-system/button",
     icon: <Rectangle size={26} weight={"bold"} />,
   },
   {
     text: "Badge",
-    path: "/dashboard/badge",
+    path: "/design-system/badge",
     icon: <Pill size={26} weight={"bold"} />,
   },
 
   {
     text: "Avatars",
-    path: "/dashboard/avatar",
+    path: "/design-system/avatar",
     icon: <UserCircle size={26} weight={"bold"} />,
   },
   {
     text: "Tooltips",
-    path: "/dashboard/tooltip",
+    path: "/design-system/tooltip",
     icon: <Info size={26} weight={"bold"} />,
   },
 
   {
     text: "Alert",
-    path: "/dashboard/alert",
+    path: "/design-system/alert",
     icon: <WarningCircle size={26} weight={"bold"} />,
   },
   {
     text: "Snackbar",
-    path: "/dashboard/snackbar",
+    path: "/design-system/snackbar",
     icon: <BellRinging size={26} weight={"bold"} />,
   },
   {
     text: "Table",
-    path: "/dashboard/table",
+    path: "/design-system/table",
     icon: <Table size={26} weight={"bold"} />,
   },
   {
     text: "Accordion",
-    path: "/dashboard/accordion",
+    path: "/design-system/accordion",
     icon: <Rows size={26} weight={"bold"} />,
   },
   {
     text: "Card",
-    path: "/dashboard/card",
+    path: "/design-system/card",
     icon: <Cards size={26} weight={"bold"} />,
   },
   {
     text: "Breadcrumbs",
-    path: "/dashboard/breadcrumb",
+    path: "/design-system/breadcrumb",
     icon: <Link size={26} weight={"bold"} />,
   },
   {
     text: "Tabs",
-    path: "/dashboard/tabs",
+    path: "/design-system/tabs",
     icon: <Tabs size={26} weight={"bold"} />,
   },
   {
     text: "Modal",
-    path: "/dashboard/modal",
+    path: "/design-system/modal",
     icon: <StackSimple size={26} weight={"bold"} />,
   },
 ]
@@ -157,22 +157,22 @@ export const listComponents: IMenuProps[] = [
 export const listExtraUI: IMenuProps[] = [
   {
     text: "Chart",
-    path: "/dashboard/chart",
+    path: "/design-system/chart",
     icon: <ChartLineUp size={26} weight={"bold"} />,
   },
   {
     text: "Calendar",
-    path: "/dashboard/calendar",
+    path: "/design-system/calendar",
     icon: <Calendar size={26} weight={"bold"} />,
   },
   {
     text: "Sliders",
-    path: "/dashboard/slider",
+    path: "/design-system/slider",
     icon: <Sliders size={26} weight={"bold"} />,
   },
   {
     text: "Map",
-    path: "/dashboard/map",
+    path: "/design-system/map",
     icon: <MapTrifold size={26} weight={"bold"} />,
   },
 ]
