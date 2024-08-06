@@ -52,12 +52,12 @@ const WelcomePage: React.FC = () => {
             ...styles.icon,
           }}
         >
-          <img src="https://filan-inter.netlify.app/favicon.svg" />
+          <img src="https://falin.netlify.app/favicon.svg" />
         </Box>
       </Stack>
       <Box>
         <Typography variant="h3" fontWeight={"semiBold"}>
-          Interaktiv Starter Template
+          Falin UI
         </Typography>
       </Box>
       <Stack direction="row" spacing={4}>

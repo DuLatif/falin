@@ -1,4 +1,4 @@
-import Logo from "@/assets/logos/Capsule-Logo-Text.svg"
+import Logo from "@/assets/logos/Capsule-Logo.svg"
 import { listComponents, listCustomization, listExtraUI, listMenuForms } from "@/constants/design-system"
 import { Box, MenuList, Typography, Button } from "@mui/material"
 import { Gauge } from "phosphor-react"
@@ -25,9 +25,12 @@ const Sidebar: React.FC = React.forwardRef((_, ref) => {
       </Button>
       <Box className={styles.Header}>
         <img src={Logo} alt="logo capsule" />
+        <Typography variant="subtitle1" fontWeight={"semiBold"}>
+          Falin UI
+        </Typography>
       </Box>
       <MenuList>
-        <Menu path="/dashboard/home" icon={<Gauge size={26} weight={"bold"} />} text="Home" />
+        <Menu path="/design-system/home" icon={<Gauge size={26} weight={"bold"} />} text="Home" />
         <Typography className={styles.TitleMenu}>Customization</Typography>
         {listCustomization
           .sort((a, b) => a.text.localeCompare(b.text))

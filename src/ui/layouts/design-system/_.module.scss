@@ -12,6 +12,8 @@
     margin-bottom: 20px;
     border-bottom: 2px solid $neutral-200;
     display: flex;
+    align-items: center;
+    gap: $space-2;
     justify-content: center;
 
     img {
